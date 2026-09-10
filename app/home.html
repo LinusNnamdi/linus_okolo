@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter App Brief — EarnDee Limited</title>
+    <link rel="icon" href="../images/earndee.png" type="image/png">
+    <meta name="description"
+        content="Share detailed requirements for your Flutter mobile application. Structured questionnaire for professional app development.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="questionnaire-page">
+
+    <header class="site-header compact">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <span class="logo-mark"><img src="../images/earndee.png" alt=""></span>
+                <span class="logo-text">EarnDee Limited</span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Main">
+                <a href="../index.html">Home</a>
+                <a href="../home.html#services">All Questionnaires</a>
+                <a href="#questionnaire" class="btn btn-primary btn-sm">App Questionnaire</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intro + Sample Apps -->
+        <section class="app-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <p class="eyebrow">Flutter App Development</p>
+                    <h1>Plan Your Mobile Application</h1>
+                    <p class="lead">
+                        Below are 2 sample concepts, then walk through a structured brief. The more details you share,
+                        the more accurately we can scope architecture, design and delivery to suite your taste.
+                    </p>
+                </div>
+
+                <div class="samples-grid">
+                    <!-- Sample 1 — Fintech -->
+                    <article class="sample-card" data-sample="1">
+                        <div class="sample-label">Sample App 01 — Fintech & Wallet</div>
+                        <div class="device-mockup fintech">
+                            <div class="device-frame">
+                                <div class="device-notch"></div>
+                                <div class="device-screen">
+                                    <div class="mock-status"></div>
+                                    <div class="mock-header">
+                                        <div class="mock-avatar"></div>
+                                        <div class="mock-user">
+                                            <span class="mock-name">EarnDee Limited</span>
+                                            <span class="mock-sub">Premium</span>
+                                        </div>
+                                        <div class="mock-bell"></div>
+                                    </div>
+                                    <div class="mock-balance-card">
+                                        <span class="mock-label">Total Balance</span>
+                                        <span class="mock-amount">$12,480.50</span>
+                                        <div class="mock-actions">
+                                            <span>Send</span>
+                                            <span>Withdraw</span>
+                                        </div>
+                                    </div>
+                                    <div class="mock-stats">
+                                        <div class="mock-stat income"><span>Income</span><strong>+$2,340</strong></div>
+                                        <div class="mock-stat expense"><span>Expense</span><strong>-$890</strong></div>
+                                    </div>
+                                    <div class="mock-section-title">Recent</div>
+                                    <div class="mock-tx">
+                                        <div class="mock-tx-icon"></div>
+                                        <div class="mock-tx-info"><span>Transfer</span><small>Today</small></div>
+                                        <span class="mock-tx-amount">-$120</span>
+                                    </div>
+                                    <div class="mock-tx">
+                                        <div class="mock-tx-icon green"></div>
+                                        <div class="mock-tx-info"><span>Salary</span><small>Yesterday</small></div>
+                                        <span class="mock-tx-amount positive">+$3,200</span>
+                                    </div>
+                                    <div class="mock-bottom-nav">
+                                        <span class="active"></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="sample-desc">A modern financial application with secure authentication, wallet
+                            management, transactions and financial dashboards.</p>
+                        <button type="button" class="btn btn-outline choose-style" data-style="Fintech">
+                            <a href="flutter/home.html">View more Samples</a>
+                        </button>
+                    </article>
+
+                    <!-- Sample 2 — Service / Workforce -->
+                    <article class="sample-card" data-sample="2">
+                        <div class="sample-label">Sample App 02 — Service & Workforce</div>
+                        <div class="device-mockup workforce">
+                            <div class="device-frame">
+                                <div class="device-notch"></div>
+                                <div class="device-screen">
+                                    <div class="mock-status light"></div>
+                                    <div class="mock-search-bar">
+                                        <span>Search jobs, skills…</span>
+                                    </div>
+                                    <div class="mock-tabs">
+                                        <span class="active">Jobs</span>
+                                        <span>Applied</span>
+                                        <span>Saved</span>
+                                    </div>
+                                    <div class="mock-job-card">
+                                        <div class="mock-job-title">Senior Flutter Dev</div>
+                                        <div class="mock-job-meta">Remote · Full-time</div>
+                                        <div class="mock-job-tags"><span>Flutter</span><span>Dart</span></div>
+                                    </div>
+                                    <div class="mock-job-card alt">
+                                        <div class="mock-job-title">UI/UX Designer</div>
+                                        <div class="mock-job-meta">Hybrid · Contract</div>
+                                        <div class="mock-job-tags"><span>Figma</span><span>Design</span></div>
+                                    </div>
+                                    <div class="mock-job-card">
+                                        <div class="mock-job-title">Product Manager</div>
+                                        <div class="mock-job-meta">On-site · Full-time</div>
+                                        <div class="mock-job-tags"><span>Strategy</span></div>
+                                    </div>
+                                    <div class="mock-bottom-nav light">
+                                        <span></span><span class="active"></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="sample-desc">A professional service marketplace / workforce application for
+                            discovering jobs, managing services and connecting users.</p>
+                        <button type="button" class="btn btn-outline choose-style" data-style="Service & Workforce">
+                            <a href="flutter/home.html">View more Samples</a>
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Questionnaire -->
+        <section id="questionnaire" class="questionnaire-section">
+            <div class="container narrow">
+                <div class="questionnaire-header">
+                    <h2>Tell Us About Your App (Project)</h2>
+                    <p>
+                        The more information you provide, the better we can understand
+                        your idea, recommend the right architecture, estimate scope and
+                        design an application that matches your goals exactly.
+                    </p>
+                    <p class="required-note"><span class="req">*</span> Required fields</p>
+                    <div class="draft-notice" id="draftNotice" hidden>
+                        Your progress are being saved your device, so you don't restart.
+                        <button type="button" class="link-btn" id="clearDraftBtn">Clear Form</button>
+                    </div>
+                </div>
+
+                <div class="progress-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                        aria-valuenow="10" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">Section 1 of 11</div>
+                </div>
+
+                <form id="appBriefForm" method="POST" action="https://api.web3forms.com/submit" novalidate>
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                    <input type="hidden" name="subject" value="New Flutter App Project Brief">
+                    <input type="hidden" name="from_name" value="EarnDee Limited Questionnaire">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+                    <!-- SECTION 1 -->
+                    <fieldset class="form-section is-active" data-section="1" aria-labelledby="sec1-title">
+                        <legend id="sec1-title">1. Business & Product</legend>
+                        <p class="section-desc">Core product identity and business context.</p>
+
+                        <div class="field">
+                            <label for="app_name">App name <span class="req">*</span></label>
+                            <input type="text" id="app_name" name="app_name" required autocomplete="off"
+                                placeholder="e.g. PayFlow, TaskHive">
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="business_problem">What problem does your app solve? <span
+                                    class="req">*</span></label>
+                            <textarea id="business_problem" name="business_problem" rows="3" required
+                                placeholder="Describe the pain point or opportunity"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="primary_purpose">What is the main purpose of the app? <span
+                                    class="req">*</span></label>
+                            <textarea id="primary_purpose" name="primary_purpose" rows="3" required
+                                placeholder="One or two sentences on the core purpose"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>What are your primary business goals? <span class="req">*</span></label>
+                            <div class="checkbox-group" data-required-group="business_goals">
+                                <label class="check-label"><input type="checkbox" name="business_goals"
+                                        value="Generate revenue"> Generate revenue</label>
+                                <label class="check-label"><input type="checkbox" name="business_goals"
+                                        value="Acquire customers"> Acquire customers</label>
+                                <label class="check-label"><input type="checkbox" name="business_goals"
+                                        value="Automate business processes"> Automate business processes</label>
+                                <label class="check-label"><input type="checkbox" name="business_goals"
+                                        value="Increase engagement"> Increase engagement</label>
+                                <label class="check-label"><input type="checkbox" name="business_goals"
+                                        value="Provide a service"> Provide a service</label>
+                                <label class="check-label"><input type="checkbox" name="business_goals"
+                                        value="Sell products"> Sell products</label>
+                                <label class="check-label"><input type="checkbox" name="business_goals"
+                                        value="Manage employees"> Manage employees</label>
+                                <label class="check-label"><input type="checkbox" name="business_goals" value="Other">
+                                    Other</label>
+                            </div>
+                            <textarea name="business_goals_other" rows="2" placeholder="If Other, please specify"
+                                class="mt-sm"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="differentiators">What makes your app different from competitors? <span
+                                    class="optional">Optional</span></label>
+                            <textarea id="differentiators" name="differentiators" rows="3"
+                                placeholder="Unique value, features, positioning"></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label for="app_owner">Who owns / manages the application? <span
+                                    class="req">*</span></label>
+                            <input type="text" id="app_owner" name="app_owner" required
+                                placeholder="Company or individual">
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="business_model">What business model will the app use? <span
+                                    class="req">*</span></label>
+                            <select id="business_model" name="business_model" required>
+                                <option value="">Select…</option>
+                                <option value="Free">Free</option>
+                                <option value="Subscription">Subscription</option>
+                                <option value="Commission">Commission</option>
+                                <option value="Advertising">Advertising</option>
+                                <option value="One-time payment">One-time payment</option>
+                                <option value="Freemium">Freemium</option>
+                                <option value="Transaction fees">Transaction fees</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="regions">Countries / regions where the app will operate <span
+                                    class="req">*</span></label>
+                            <input type="text" id="regions" name="regions" required
+                                placeholder="e.g. Nigeria, West Africa, Global">
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="languages">Languages the application should support <span
+                                    class="req">*</span></label>
+                            <input type="text" id="languages" name="languages" required
+                                placeholder="e.g. English, French, Yoruba">
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Target platforms <span class="req">*</span></label>
+                            <div class="checkbox-group" data-required-group="platforms">
+                                <label class="check-label"><input type="checkbox" name="platforms" value="Android">
+                                    Android</label>
+                                <label class="check-label"><input type="checkbox" name="platforms" value="iOS">
+                                    iOS</label>
+                                <label class="check-label"><input type="checkbox" name="platforms" value="Web">
+                                    Web</label>
+                                <label class="check-label"><input type="checkbox" name="platforms" value="Windows">
+                                    Windows</label>
+                                <label class="check-label"><input type="checkbox" name="platforms" value="macOS">
+                                    macOS</label>
+                                <label class="check-label"><input type="checkbox" name="platforms" value="Linux">
+                                    Linux</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECTION 2 -->
+                    <fieldset class="form-section" data-section="2" aria-labelledby="sec2-title" hidden>
+                        <legend id="sec2-title">2. Users & User Roles</legend>
+                        <p class="section-desc">Who will use the product and what they can do.</p>
+
+                        <div class="field">
+                            <label for="primary_users">Who are the primary users? <span class="req">*</span></label>
+                            <textarea id="primary_users" name="primary_users" rows="2" required
+                                placeholder="e.g. freelancers, small business owners, students"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="user_characteristics">What are the users' typical characteristics? <span
+                                    class="optional">Optional</span></label>
+                            <textarea id="user_characteristics" name="user_characteristics" rows="2"
+                                placeholder="Age range, tech comfort, location, etc."></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label>What user roles exist? <span class="req">*</span></label>
+                            <div class="checkbox-group" data-required-group="user_roles">
+                                <label class="check-label"><input type="checkbox" name="user_roles" value="Customer">
+                                    Customer</label>
+                                <label class="check-label"><input type="checkbox" name="user_roles" value="Vendor">
+                                    Vendor</label>
+                                <label class="check-label"><input type="checkbox" name="user_roles" value="Worker">
+                                    Worker</label>
+                                <label class="check-label"><input type="checkbox" name="user_roles" value="Employer">
+                                    Employer</label>
+                                <label class="check-label"><input type="checkbox" name="user_roles"
+                                        value="Administrator"> Administrator</label>
+                                <label class="check-label"><input type="checkbox" name="user_roles" value="Manager">
+                                    Manager</label>
+                                <label class="check-label"><input type="checkbox" name="user_roles" value="Moderator">
+                                    Moderator</label>
+                                <label class="check-label"><input type="checkbox" name="user_roles" value="Other">
+                                    Other</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="role_capabilities">What can each user role do? <span
+                                    class="req">*</span></label>
+                            <textarea id="role_capabilities" name="role_capabilities" rows="4" required
+                                placeholder="List roles and their key permissions / actions"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Do you need an administrator dashboard? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="admin_dashboard" value="Yes"
+                                        required> Yes</label>
+                                <label class="radio-label"><input type="radio" name="admin_dashboard" value="No">
+                                    No</label>
+                                <label class="radio-label"><input type="radio" name="admin_dashboard" value="Not sure">
+                                    Not sure</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Can users create accounts themselves? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="self_registration" value="Yes"
+                                        required> Yes</label>
+                                <label class="radio-label"><input type="radio" name="self_registration" value="No">
+                                    No</label>
+                                <label class="radio-label"><input type="radio" name="self_registration"
+                                        value="Invite only"> Invite only</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>What information should users provide during registration? <span
+                                    class="req">*</span></label>
+                            <div class="checkbox-group" data-required-group="registration_fields">
+                                <label class="check-label"><input type="checkbox" name="registration_fields"
+                                        value="Full name"> Full name</label>
+                                <label class="check-label"><input type="checkbox" name="registration_fields"
+                                        value="Email"> Email</label>
+                                <label class="check-label"><input type="checkbox" name="registration_fields"
+                                        value="Phone number"> Phone number</label>
+                                <label class="check-label"><input type="checkbox" name="registration_fields"
+                                        value="Profile picture"> Profile picture</label>
+                                <label class="check-label"><input type="checkbox" name="registration_fields"
+                                        value="Address"> Address</label>
+                                <label class="check-label"><input type="checkbox" name="registration_fields"
+                                        value="Date of birth"> Date of birth</label>
+                                <label class="check-label"><input type="checkbox" name="registration_fields"
+                                        value="Company"> Company</label>
+                                <label class="check-label"><input type="checkbox" name="registration_fields"
+                                        value="Occupation"> Occupation</label>
+                                <label class="check-label"><input type="checkbox" name="registration_fields"
+                                        value="Other"> Other</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECTION 3 -->
+                    <fieldset class="form-section" data-section="3" aria-labelledby="sec3-title" hidden>
+                        <legend id="sec3-title">3. Authentication & Account Security</legend>
+                        <p class="section-desc">How users sign in and how accounts are protected.</p>
+
+                        <div class="field">
+                            <label>Authentication methods required <span class="req">*</span></label>
+                            <div class="checkbox-group" data-required-group="auth_methods">
+                                <label class="check-label"><input type="checkbox" name="auth_methods"
+                                        value="Email/password"> Email/password</label>
+                                <label class="check-label"><input type="checkbox" name="auth_methods"
+                                        value="Phone number"> Phone number</label>
+                                <label class="check-label"><input type="checkbox" name="auth_methods" value="OTP">
+                                    OTP</label>
+                                <label class="check-label"><input type="checkbox" name="auth_methods" value="Google">
+                                    Google</label>
+                                <label class="check-label"><input type="checkbox" name="auth_methods" value="Apple">
+                                    Apple</label>
+                                <label class="check-label"><input type="checkbox" name="auth_methods" value="Facebook">
+                                    Facebook</label>
+                                <label class="check-label"><input type="checkbox" name="auth_methods" value="Passcode">
+                                    Passcode</label>
+                                <label class="check-label"><input type="checkbox" name="auth_methods"
+                                        value="Biometrics"> Biometrics</label>
+                                <label class="check-label"><input type="checkbox" name="auth_methods" value="Other">
+                                    Other</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="forgot_password">What should happen when users forget their password? <span
+                                    class="req">*</span></label>
+                            <textarea id="forgot_password" name="forgot_password" rows="2" required
+                                placeholder="e.g. email reset link, OTP to phone, support ticket"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Should the application support biometric authentication? <span
+                                    class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="biometrics" value="Yes">
+                                    Yes</label>
+                                <label class="radio-label"><input type="radio" name="biometrics" value="No"> No</label>
+                                <label class="radio-label"><input type="radio" name="biometrics" value="Not sure"> Not
+                                    sure</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Should users be able to verify new devices? <span
+                                    class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="device_verification" value="Yes">
+                                    Yes</label>
+                                <label class="radio-label"><input type="radio" name="device_verification" value="No">
+                                    No</label>
+                                <label class="radio-label"><input type="radio" name="device_verification"
+                                        value="Not sure"> Not sure</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="special_security">Are there special security requirements? <span
+                                    class="optional">Optional</span></label>
+                            <textarea id="special_security" name="special_security" rows="3"
+                                placeholder="Compliance, encryption, 2FA policies, etc."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECTION 4 -->
+                    <fieldset class="form-section" data-section="4" aria-labelledby="sec4-title" hidden>
+                        <legend id="sec4-title">4. Core Application Features</legend>
+                        <p class="section-desc">What the product must do for users.</p>
+
+                        <div class="field">
+                            <label for="top_actions">What are the top things users must be able to do? <span
+                                    class="req">*</span></label>
+                            <textarea id="top_actions" name="top_actions" rows="3" required
+                                placeholder="List the most critical user actions"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="mvp_features">Which features are absolutely required for Version 1? <span
+                                    class="req">*</span></label>
+                            <textarea id="mvp_features" name="mvp_features" rows="3" required
+                                placeholder="Must-have features for launch"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="later_features">Which features can be added later? <span
+                                    class="optional">Optional</span></label>
+                            <textarea id="later_features" name="later_features" rows="2"
+                                placeholder="Nice-to-haves / Phase 2+"></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label for="user_journey">Describe the complete user journey. <span
+                                    class="req">*</span></label>
+                            <textarea id="user_journey" name="user_journey" rows="4" required
+                                placeholder="From first open → key actions → goal completion"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="first_screen">What should users see immediately after opening the application?
+                                <span class="req">*</span></label>
+                            <textarea id="first_screen" name="first_screen" rows="2" required
+                                placeholder="Splash, onboarding, home, login…"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="dashboard_actions">What actions should users be able to perform from the home /
+                                dashboard? <span class="req">*</span></label>
+                            <textarea id="dashboard_actions" name="dashboard_actions" rows="2" required></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the application require search? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="requires_search" value="Yes"
+                                        required data-conditional="search_details"> Yes</label>
+                                <label class="radio-label"><input type="radio" name="requires_search" value="No">
+                                    No</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+                        <div class="field conditional" id="search_details" hidden>
+                            <label for="search_targets">What should users be able to search for?</label>
+                            <input type="text" id="search_targets" name="search_targets"
+                                placeholder="e.g. jobs, products, users, transactions">
+                        </div>
+
+                        <div class="field">
+                            <label>Does the app require filtering or sorting? <span
+                                    class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="filtering_sorting" value="Yes">
+                                    Yes</label>
+                                <label class="radio-label"><input type="radio" name="filtering_sorting" value="No">
+                                    No</label>
+                                <label class="radio-label"><input type="radio" name="filtering_sorting"
+                                        value="Not sure"> Not sure</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the application contain user-generated content? <span
+                                    class="optional">Optional</span></label>
+                            <div class="checkbox-group">
+                                <label class="check-label"><input type="checkbox" name="ugc" value="Posts">
+                                    Posts</label>
+                                <label class="check-label"><input type="checkbox" name="ugc" value="Reviews">
+                                    Reviews</label>
+                                <label class="check-label"><input type="checkbox" name="ugc" value="Comments">
+                                    Comments</label>
+                                <label class="check-label"><input type="checkbox" name="ugc" value="Photos">
+                                    Photos</label>
+                                <label class="check-label"><input type="checkbox" name="ugc" value="Videos">
+                                    Videos</label>
+                                <label class="check-label"><input type="checkbox" name="ugc" value="Listings">
+                                    Listings</label>
+                                <label class="check-label"><input type="checkbox" name="ugc" value="Products">
+                                    Products</label>
+                                <label class="check-label"><input type="checkbox" name="ugc" value="Jobs"> Jobs</label>
+                                <label class="check-label"><input type="checkbox" name="ugc" value="Documents">
+                                    Documents</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the application contain transactions or workflows? <span
+                                    class="optional">Optional</span></label>
+                            <div class="checkbox-group">
+                                <label class="check-label"><input type="checkbox" name="workflows" value="Orders">
+                                    Orders</label>
+                                <label class="check-label"><input type="checkbox" name="workflows" value="Bookings">
+                                    Bookings</label>
+                                <label class="check-label"><input type="checkbox" name="workflows"
+                                        value="Job applications"> Job applications</label>
+                                <label class="check-label"><input type="checkbox" name="workflows" value="Payments">
+                                    Payments</label>
+                                <label class="check-label"><input type="checkbox" name="workflows" value="Withdrawals">
+                                    Withdrawals</label>
+                                <label class="check-label"><input type="checkbox" name="workflows" value="Approvals">
+                                    Approvals</label>
+                                <label class="check-label"><input type="checkbox" name="workflows" value="Deliveries">
+                                    Deliveries</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECTION 5 -->
+                    <fieldset class="form-section" data-section="5" aria-labelledby="sec5-title" hidden>
+                        <legend id="sec5-title">5. UI / UX & Branding</legend>
+                        <p class="section-desc">Visual direction and interaction preferences.</p>
+
+                        <div class="field">
+                            <label>Do you already have a logo? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="has_logo" value="Yes" required>
+                                    Yes</label>
+                                <label class="radio-label"><input type="radio" name="has_logo" value="No"> No</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Do you already have brand colors? <span class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="has_brand_colors" value="Yes">
+                                    Yes</label>
+                                <label class="radio-label"><input type="radio" name="has_brand_colors" value="No">
+                                    No</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="design_reference">Design / Figma / reference link <span
+                                    class="optional">Optional</span></label>
+                            <input type="url" id="design_reference" name="design_reference" placeholder="https://…">
+                            <p class="hint">Paste a link to Figma, Notion, Drive or any design reference.</p>
+                        </div>
+
+                        <div class="field">
+                            <label for="visual_style">What visual style do you prefer? <span
+                                    class="req">*</span></label>
+                            <select id="visual_style" name="visual_style" required>
+                                <option value="">Select…</option>
+                                <option value="Modern">Modern</option>
+                                <option value="Minimalist">Minimalist</option>
+                                <option value="Premium">Premium</option>
+                                <option value="Corporate">Corporate</option>
+                                <option value="Luxury">Luxury</option>
+                                <option value="Fintech">Fintech</option>
+                                <option value="Playful">Playful</option>
+                                <option value="Enterprise">Enterprise</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="sample_preference">Which sample app style do you prefer? <span
+                                    class="optional">Optional</span></label>
+                            <select id="sample_preference" name="sample_preference">
+                                <option value="">Select…</option>
+                                <option value="Sample 1 — Fintech & Wallet">Sample 1 — Fintech & Wallet</option>
+                                <option value="Sample 2 — Service & Workforce">Sample 2 — Service & Workforce</option>
+                                <option value="Something completely different">Something completely different</option>
+                                <option value="Not sure">Not sure</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="design_inspiration">Which applications inspire your desired design? <span
+                                    class="optional">Optional</span></label>
+                            <textarea id="design_inspiration" name="design_inspiration" rows="2"
+                                placeholder="App names or links"></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label>Do you require dark mode? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="dark_mode" value="Yes" required>
+                                    Yes</label>
+                                <label class="radio-label"><input type="radio" name="dark_mode" value="No"> No</label>
+                                <label class="radio-label"><input type="radio" name="dark_mode" value="System"> Follow
+                                    system</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="nav_style">What navigation style do you prefer? <span
+                                    class="optional">Optional</span></label>
+                            <select id="nav_style" name="nav_style">
+                                <option value="">Select…</option>
+                                <option value="Bottom navigation">Bottom navigation</option>
+                                <option value="Navigation drawer">Navigation drawer</option>
+                                <option value="Top tabs">Top tabs</option>
+                                <option value="Sidebar">Sidebar</option>
+                                <option value="No preference">No preference</option>
+                                <option value="Not sure">Not sure</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="animation_level">What level of animation / micro-interactions do you want? <span
+                                    class="optional">Optional</span></label>
+                            <select id="animation_level" name="animation_level">
+                                <option value="">Select…</option>
+                                <option value="Minimal">Minimal</option>
+                                <option value="Moderate">Moderate</option>
+                                <option value="Advanced">Advanced</option>
+                                <option value="Premium / Highly interactive">Premium / Highly interactive</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECTION 6 -->
+                    <fieldset class="form-section" data-section="6" aria-labelledby="sec6-title" hidden>
+                        <legend id="sec6-title">6. Data & Backend</legend>
+                        <p class="section-desc">Data needs and backend preferences.</p>
+
+                        <div class="field">
+                            <label for="data_stored">What information should the app store? <span
+                                    class="req">*</span></label>
+                            <textarea id="data_stored" name="data_stored" rows="3" required
+                                placeholder="Users, transactions, content, files…"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Do you already have a backend / API? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="has_backend" value="Yes" required
+                                        data-conditional="backend_existing"> Yes</label>
+                                <label class="radio-label"><input type="radio" name="has_backend" value="No"
+                                        data-conditional="backend_needed"> No</label>
+                                <label class="radio-label"><input type="radio" name="has_backend" value="Not sure"
+                                        data-conditional="backend_needed"> Not sure</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field conditional" id="backend_existing" hidden>
+                            <label for="backend_tech_existing">If you already have an API / backend, what technology is
+                                it using?</label>
+                            <input type="text" id="backend_tech_existing" name="backend_tech_existing"
+                                placeholder="e.g. Node, Laravel, Firebase…">
+                        </div>
+
+                        <div class="field conditional" id="backend_needed" hidden>
+                            <label>If you don't have a backend, do you need us to provide one? <span
+                                    class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="need_backend" value="Yes">
+                                    Yes</label>
+                                <label class="radio-label"><input type="radio" name="need_backend" value="No">
+                                    No</label>
+                                <label class="radio-label"><input type="radio" name="need_backend" value="Not sure"> Not
+                                    sure</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="preferred_backend">Preferred backend technology <span
+                                    class="optional">Optional</span></label>
+                            <select id="preferred_backend" name="preferred_backend">
+                                <option value="">Select…</option>
+                                <option value="Firebase">Firebase</option>
+                                <option value="Supabase">Supabase</option>
+                                <option value="Node.js">Node.js</option>
+                                <option value="Laravel">Laravel</option>
+                                <option value="Django">Django</option>
+                                <option value=".NET">.NET</option>
+                                <option value="Custom API">Custom API</option>
+                                <option value="Not sure">Not sure</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the application require real-time data? <span
+                                    class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="realtime" value="Yes"> Yes</label>
+                                <label class="radio-label"><input type="radio" name="realtime" value="No"> No</label>
+                                <label class="radio-label"><input type="radio" name="realtime" value="Not sure"> Not
+                                    sure</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the app need offline functionality? <span
+                                    class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="offline" value="Yes"> Yes</label>
+                                <label class="radio-label"><input type="radio" name="offline" value="No"> No</label>
+                                <label class="radio-label"><input type="radio" name="offline" value="Not sure"> Not
+                                    sure</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECTION 7 -->
+                    <fieldset class="form-section" data-section="7" aria-labelledby="sec7-title" hidden>
+                        <legend id="sec7-title">7. Payments & Third-Party Integrations</legend>
+                        <p class="section-desc">Payments, maps, messaging and external services.</p>
+
+                        <div class="field">
+                            <label>Does the application require payments? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="requires_payments" value="Yes"
+                                        required data-conditional="payment_methods"> Yes</label>
+                                <label class="radio-label"><input type="radio" name="requires_payments" value="No">
+                                    No</label>
+                                <label class="radio-label"><input type="radio" name="requires_payments"
+                                        value="Not sure"> Not sure</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+                        <div class="field conditional" id="payment_methods" hidden>
+                            <label>What payment methods should be supported?</label>
+                            <div class="checkbox-group">
+                                <label class="check-label"><input type="checkbox" name="payment_methods"
+                                        value="Debit/Credit Card"> Debit/Credit Card</label>
+                                <label class="check-label"><input type="checkbox" name="payment_methods"
+                                        value="Bank Transfer"> Bank Transfer</label>
+                                <label class="check-label"><input type="checkbox" name="payment_methods" value="USSD">
+                                    USSD</label>
+                                <label class="check-label"><input type="checkbox" name="payment_methods" value="Wallet">
+                                    Wallet</label>
+                                <label class="check-label"><input type="checkbox" name="payment_methods"
+                                        value="Mobile Money"> Mobile Money</label>
+                                <label class="check-label"><input type="checkbox" name="payment_methods" value="Other">
+                                    Other</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Which third-party services should the application integrate with? <span
+                                    class="optional">Optional</span></label>
+                            <div class="checkbox-group">
+                                <label class="check-label"><input type="checkbox" name="integrations"
+                                        value="Google Maps"> Google Maps</label>
+                                <label class="check-label"><input type="checkbox" name="integrations"
+                                        value="Payment gateway"> Payment gateway</label>
+                                <label class="check-label"><input type="checkbox" name="integrations"
+                                        value="SMS provider"> SMS provider</label>
+                                <label class="check-label"><input type="checkbox" name="integrations"
+                                        value="Email service"> Email service</label>
+                                <label class="check-label"><input type="checkbox" name="integrations"
+                                        value="Cloud storage"> Cloud storage</label>
+                                <label class="check-label"><input type="checkbox" name="integrations"
+                                        value="Social login"> Social login</label>
+                                <label class="check-label"><input type="checkbox" name="integrations" value="Analytics">
+                                    Analytics</label>
+                                <label class="check-label"><input type="checkbox" name="integrations"
+                                        value="AI services"> AI services</label>
+                                <label class="check-label"><input type="checkbox" name="integrations" value="CRM">
+                                    CRM</label>
+                                <label class="check-label"><input type="checkbox" name="integrations" value="Other">
+                                    Other</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the app require location / GPS? <span class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="location" value="Yes"> Yes</label>
+                                <label class="radio-label"><input type="radio" name="location" value="No"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the app require maps? <span class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="maps" value="Yes"> Yes</label>
+                                <label class="radio-label"><input type="radio" name="maps" value="No"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the app require chat or messaging? <span
+                                    class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="chat" value="Yes"> Yes</label>
+                                <label class="radio-label"><input type="radio" name="chat" value="No"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the app require push notifications? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="push_notifications" value="Yes"
+                                        required data-conditional="notification_events"> Yes</label>
+                                <label class="radio-label"><input type="radio" name="push_notifications" value="No">
+                                    No</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+                        <div class="field conditional" id="notification_events" hidden>
+                            <label for="notification_triggers">What events should trigger notifications?</label>
+                            <textarea id="notification_triggers" name="notification_triggers" rows="2"
+                                placeholder="e.g. new message, payment received, job match"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECTION 8 -->
+                    <fieldset class="form-section" data-section="8" aria-labelledby="sec8-title" hidden>
+                        <legend id="sec8-title">8. Security, Administration & Compliance</legend>
+                        <p class="section-desc">Permissions, sensitive data and governance.</p>
+
+                        <div class="field">
+                            <label for="security_requirements">What security requirements are important for your
+                                application? <span class="req">*</span></label>
+                            <textarea id="security_requirements" name="security_requirements" rows="3" required
+                                placeholder="Encryption, access control, compliance…"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Are there different permissions for different users? <span
+                                    class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="role_permissions" value="Yes"
+                                        required> Yes</label>
+                                <label class="radio-label"><input type="radio" name="role_permissions" value="No">
+                                    No</label>
+                                <label class="radio-label"><input type="radio" name="role_permissions" value="Not sure">
+                                    Not sure</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="admin_actions">What actions should administrators be able to perform? <span
+                                    class="req">*</span></label>
+                            <textarea id="admin_actions" name="admin_actions" rows="3" required
+                                placeholder="User management, content moderation, reports…"></textarea>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the application handle sensitive information? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="sensitive_data" value="Yes"
+                                        required> Yes</label>
+                                <label class="radio-label"><input type="radio" name="sensitive_data" value="No">
+                                    No</label>
+                                <label class="radio-label"><input type="radio" name="sensitive_data" value="Not sure">
+                                    Not sure</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="regulatory">Are there legal / regulatory requirements we should know about?
+                                <span class="optional">Optional</span></label>
+                            <textarea id="regulatory" name="regulatory" rows="2"
+                                placeholder="GDPR, PCI, local data laws…"></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the application need activity logs / audit trails? <span
+                                    class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="audit_logs" value="Yes">
+                                    Yes</label>
+                                <label class="radio-label"><input type="radio" name="audit_logs" value="No"> No</label>
+                                <label class="radio-label"><input type="radio" name="audit_logs" value="Not sure"> Not
+                                    sure</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECTION 9 -->
+                    <fieldset class="form-section" data-section="9" aria-labelledby="sec9-title" hidden>
+                        <legend id="sec9-title">9. Analytics & Reporting</legend>
+                        <p class="section-desc">What success looks like and how it is measured.</p>
+
+                        <div class="field">
+                            <label>What information should administrators be able to monitor? <span
+                                    class="optional">Optional</span></label>
+                            <div class="checkbox-group">
+                                <label class="check-label"><input type="checkbox" name="admin_metrics"
+                                        value="Number of users"> Number of users</label>
+                                <label class="check-label"><input type="checkbox" name="admin_metrics" value="Revenue">
+                                    Revenue</label>
+                                <label class="check-label"><input type="checkbox" name="admin_metrics"
+                                        value="Transactions"> Transactions</label>
+                                <label class="check-label"><input type="checkbox" name="admin_metrics" value="Orders">
+                                    Orders</label>
+                                <label class="check-label"><input type="checkbox" name="admin_metrics"
+                                        value="Active users"> Active users</label>
+                                <label class="check-label"><input type="checkbox" name="admin_metrics"
+                                        value="User retention"> User retention</label>
+                                <label class="check-label"><input type="checkbox" name="admin_metrics"
+                                        value="Applications"> Applications</label>
+                                <label class="check-label"><input type="checkbox" name="admin_metrics" value="Bookings">
+                                    Bookings</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the application require analytics? <span
+                                    class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="analytics" value="Yes"> Yes</label>
+                                <label class="radio-label"><input type="radio" name="analytics" value="No"> No</label>
+                                <label class="radio-label"><input type="radio" name="analytics" value="Not sure"> Not
+                                    sure</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Does the application require downloadable reports? <span
+                                    class="optional">Optional</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="downloadable_reports" value="Yes">
+                                    Yes</label>
+                                <label class="radio-label"><input type="radio" name="downloadable_reports" value="No">
+                                    No</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="kpis">What KPIs are important to your business? <span
+                                    class="optional">Optional</span></label>
+                            <textarea id="kpis" name="kpis" rows="2"
+                                placeholder="Conversion, retention, GMV…"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECTION 10 -->
+                    <fieldset class="form-section" data-section="10" aria-labelledby="sec10-title" hidden>
+                        <legend id="sec10-title">10. Project & Delivery</legend>
+                        <p class="section-desc">Timeline, budget direction and ownership.</p>
+
+                        <div class="field">
+                            <label for="launch_date">What is your expected launch date? <span
+                                    class="req">*</span></label>
+                            <input type="text" id="launch_date" name="launch_date" required
+                                placeholder="e.g. Q3 2026, June 2026, ASAP">
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="budget_range">Do you have a target budget range? <span
+                                    class="optional">Optional</span></label>
+                            <select id="budget_range" name="budget_range">
+                                <option value="">Select…</option>
+                                <option value="Under $5,000">Under $5,000</option>
+                                <option value="$5,000 – $15,000">$5,000 – $15,000</option>
+                                <option value="$15,000 – $40,000">$15,000 – $40,000</option>
+                                <option value="$40,000 – $80,000">$40,000 – $80,000</option>
+                                <option value="$80,000+">$80,000+</option>
+                                <option value="Prefer to discuss">Prefer to discuss</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="dev_priority">What is your preferred development priority? <span
+                                    class="req">*</span></label>
+                            <select id="dev_priority" name="dev_priority" required>
+                                <option value="">Select…</option>
+                                <option value="Fast MVP">Fast MVP</option>
+                                <option value="Balanced quality/speed">Balanced quality / speed</option>
+                                <option value="Premium production application">Premium production application</option>
+                                <option value="Not sure">Not sure</option>
+                            </select>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="existing_infra">Do you already have a domain / backend / server? <span
+                                    class="optional">Optional</span></label>
+                            <input type="text" id="existing_infra" name="existing_infra"
+                                placeholder="Domain, hosting, existing servers…">
+                        </div>
+
+                        <div class="field">
+                            <label>Who will provide the application content? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="content_provider" value="Client"
+                                        required> Client</label>
+                                <label class="radio-label"><input type="radio" name="content_provider"
+                                        value="Developer"> Developer</label>
+                                <label class="radio-label"><input type="radio" name="content_provider" value="Both">
+                                    Both</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Do you need App Store and Google Play Store deployment? <span
+                                    class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="store_deployment" value="Yes"
+                                        required> Yes</label>
+                                <label class="radio-label"><input type="radio" name="store_deployment" value="No">
+                                    No</label>
+                                <label class="radio-label"><input type="radio" name="store_deployment" value="Not sure">
+                                    Not sure</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label>Do you require post-launch maintenance? <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="maintenance" value="Yes" required>
+                                    Yes</label>
+                                <label class="radio-label"><input type="radio" name="maintenance" value="No"> No</label>
+                                <label class="radio-label"><input type="radio" name="maintenance" value="Not sure"> Not
+                                    sure</label>
+                            </div>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="future_features">What future features are you considering? <span
+                                    class="optional">Optional</span></label>
+                            <textarea id="future_features" name="future_features" rows="2"></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label for="additional_notes">Is there anything else we should know about your project?
+                                <span class="optional">Optional</span></label>
+                            <textarea id="additional_notes" name="additional_notes" rows="4"
+                                placeholder="Constraints, stakeholders, previous attempts…"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- SECTION 11 — Contact -->
+                    <fieldset class="form-section" data-section="11" aria-labelledby="sec11-title" hidden>
+                        <legend id="sec11-title">11. Your Contact Information</legend>
+                        <p class="section-desc">How we can reach you about this brief.</p>
+
+                        <div class="field">
+                            <label for="client_name">Full name <span class="req">*</span></label>
+                            <input type="text" id="client_name" name="client_name" required autocomplete="name">
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="client_company">Company / organization <span
+                                    class="optional">Optional</span></label>
+                            <input type="text" id="client_company" name="client_company" autocomplete="organization">
+                        </div>
+
+                        <div class="field">
+                            <label for="client_email">Email address <span class="req">*</span></label>
+                            <input type="email" id="client_email" name="client_email" required autocomplete="email">
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="client_phone">Phone number <span class="req">*</span></label>
+                            <input type="tel" id="client_phone" name="client_phone" required autocomplete="tel">
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="contact_method">Preferred contact method <span class="req">*</span></label>
+                            <select id="contact_method" name="contact_method" required>
+                                <option value="">Select…</option>
+                                <option value="Email">Email</option>
+                                <option value="WhatsApp">WhatsApp</option>
+                                <option value="Phone call">Phone call</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="field-error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="best_time">Best time to contact you <span
+                                    class="optional">Optional</span></label>
+                            <input type="text" id="best_time" name="best_time" placeholder="e.g. Weekdays 10am–4pm WAT">
+                        </div>
+                    </fieldset>
+
+                    <!-- Navigation -->
+                    <div class="form-nav">
+                        <button type="button" class="btn btn-ghost" id="prevBtn" hidden>Previous</button>
+                        <div class="form-nav-spacer"></div>
+                        <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+                        <button type="submit" class="btn btn-primary" id="submitBtn" hidden>
+                            Submit
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success / Error states -->
+                <div class="form-state success-state" id="successState" hidden>
+                    <div class="state-icon">✓</div>
+                    <h2>Project Brief Submitted Successfully</h2>
+                    <p>
+                        Thank you for sharing your project requirements. We will review your information and get back to
+                        you shortly.
+                    </p>
+                    <a href="../home.html" class="btn btn-primary">Back to Home</a>
+                </div>
+                <div class="form-state error-state" id="errorState" hidden>
+                    <div class="state-icon">!</div>
+                    <h2>Something went wrong</h2>
+                    <p id="errorMessage">We could not submit your brief. Please try again or contact us directly.</p>
+                    <button type="button" class="btn btn-primary" id="retryBtn">Try Again</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer compact">
+        <div class="container footer-bottom">
+            <p>© 2026 EarnDee Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

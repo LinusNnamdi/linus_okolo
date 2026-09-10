@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore professional website solutions — business, e-commerce, SaaS, real estate, healthcare and more. Frontend + backend architecture, features and project start." />
+  <title>Website Solutions Showcase | Professional Web Development</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="home.html" class="logo" aria-label="Home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">StudioForge</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="#samples" class="nav-link">Website Samples</a>
+        <a href="#process" class="nav-link">Development Process</a>
+        <a href="../home.html" class="btn btn-primary btn-sm">Start a Project</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile" hidden>
+      <a href="home.html" class="nav-link">Home</a>
+      <a href="#samples" class="nav-link">Website Samples</a>
+      <a href="#process" class="nav-link">Development Process</a>
+      <a href="../home.html" class="btn btn-primary">Start a Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Professional Web Development</p>
+          <h1>Explore What We Can Build for You</h1>
+          <p class="hero-lead">
+            Browse popular website solutions, understand their features and backend architecture, and start a project shaped around your business requirements.
+          </p>
+          <div class="hero-actions">
+            <a href="../home.html" class="btn btn-primary btn-lg">Start Your Project</a>
+            <a href="#samples" class="btn btn-secondary btn-lg">Explore Website Types</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card hero-card-1">
+            <div class="hero-card-header">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="hero-card-body">
+              <div class="skeleton skeleton-title"></div>
+              <div class="skeleton skeleton-line"></div>
+              <div class="skeleton skeleton-line short"></div>
+              <div class="skeleton skeleton-block"></div>
+            </div>
+          </div>
+          <div class="hero-card hero-card-2">
+            <div class="hero-metric">
+              <span class="metric-value">20+</span>
+              <span class="metric-label">Solutions</span>
+            </div>
+            <div class="hero-metric">
+              <span class="metric-value">Full</span>
+              <span class="metric-label">Stack</span>
+            </div>
+          </div>
+          <div class="hero-card hero-card-3">
+            <div class="code-line"><span class="code-kw">const</span> stack = [ <span class="code-str">'API'</span>, <span class="code-str">'Auth'</span>, <span class="code-str">'DB'</span> ];</div>
+            <div class="code-line"><span class="code-kw">deploy</span>(production);</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / Value -->
+    <section class="trust" aria-label="Value propositions">
+      <div class="container">
+        <ul class="trust-list">
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </span>
+            <span>20+ Website Solutions</span>
+          </li>
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <span>Frontend + Backend Development</span>
+          </li>
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </span>
+            <span>Responsive &amp; Accessible</span>
+          </li>
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </span>
+            <span>Scalable Architecture</span>
+          </li>
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </span>
+            <span>Production-Ready Approach</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Samples -->
+    <section class="samples" id="samples">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Catalog</p>
+          <h2>Website Types We Build</h2>
+          <p class="section-lead">
+            Explore popular solutions, review features and architecture, then start a project that matches your needs.
+          </p>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-categories" role="group" aria-label="Filter by category">
+            <button type="button" class="filter-btn active" data-category="all">All</button>
+            <button type="button" class="filter-btn" data-category="Business">Business</button>
+            <button type="button" class="filter-btn" data-category="E-commerce">E-commerce</button>
+            <button type="button" class="filter-btn" data-category="SaaS">SaaS</button>
+            <button type="button" class="filter-btn" data-category="Finance">Finance</button>
+            <button type="button" class="filter-btn" data-category="Education">Education</button>
+            <button type="button" class="filter-btn" data-category="Healthcare">Healthcare</button>
+            <button type="button" class="filter-btn" data-category="Real Estate">Real Estate</button>
+            <button type="button" class="filter-btn" data-category="Services">Services</button>
+            <button type="button" class="filter-btn" data-category="Media">Media</button>
+            <button type="button" class="filter-btn" data-category="Community">Community</button>
+          </div>
+          <div class="filter-search-wrap">
+            <label for="search-input" class="sr-only">Search website types</label>
+            <input type="search" id="search-input" class="search-input" placeholder="Search by name or keyword…" autocomplete="off" />
+            <button type="button" class="btn btn-ghost btn-sm" id="reset-filters" hidden>Reset</button>
+          </div>
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+        </div>
+
+        <div class="cards-grid" id="cards-grid" role="list"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <p>No website samples match your search.</p>
+          <button type="button" class="btn btn-secondary" id="empty-reset">Show all</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">How we work</p>
+          <h2>Development Process</h2>
+          <p class="section-lead">
+            A structured path from idea to production-ready system — including frontend, backend, security and operations.
+          </p>
+        </div>
+        <ol class="process-timeline">
+          <li class="process-step">
+            <span class="process-num">01</span>
+            <div class="process-body">
+              <h3>Discovery &amp; Requirements Gathering</h3>
+              <p>Understand business objectives, target users, workflows, features, integrations and success criteria.</p>
+              <ul class="deliverables">
+                <li>Requirements specification</li>
+                <li>Feature list</li>
+                <li>User roles</li>
+                <li>Project scope</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">02</span>
+            <div class="process-body">
+              <h3>Project Scope &amp; Technical Planning</h3>
+              <p>Define boundaries, priorities, risks and a technical approach that fits timeline and budget.</p>
+              <ul class="deliverables">
+                <li>Scope document</li>
+                <li>Tech recommendations</li>
+                <li>Milestones</li>
+                <li>Risk register</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">03</span>
+            <div class="process-body">
+              <h3>UX Research &amp; Information Architecture</h3>
+              <p>Map user journeys, content structure and navigation so the product is clear and usable.</p>
+              <ul class="deliverables">
+                <li>User flows</li>
+                <li>Sitemap</li>
+                <li>Wireframes</li>
+                <li>Content model</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">04</span>
+            <div class="process-body">
+              <h3>UI/UX Design &amp; Prototyping</h3>
+              <p>Create high-fidelity interfaces and interactive prototypes for validation before build.</p>
+              <ul class="deliverables">
+                <li>Design system</li>
+                <li>UI screens</li>
+                <li>Prototype</li>
+                <li>Design specs</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">05</span>
+            <div class="process-body">
+              <h3>Frontend Architecture</h3>
+              <p>Structure the client application for maintainability, performance and accessibility.</p>
+              <ul class="deliverables">
+                <li>Component structure</li>
+                <li>Routing</li>
+                <li>State approach</li>
+                <li>Build setup</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">06</span>
+            <div class="process-body">
+              <h3>Backend Architecture &amp; API Design</h3>
+              <p>Design services, endpoints and business logic that support the product’s operations.</p>
+              <ul class="deliverables">
+                <li>API contracts</li>
+                <li>Service boundaries</li>
+                <li>Auth model</li>
+                <li>Integration plan</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">07</span>
+            <div class="process-body">
+              <h3>Database Design</h3>
+              <p>Model data for integrity, performance and future growth.</p>
+              <ul class="deliverables">
+                <li>Schema design</li>
+                <li>Indexes</li>
+                <li>Migrations</li>
+                <li>Backup strategy</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">08</span>
+            <div class="process-body">
+              <h3>Authentication &amp; Authorization</h3>
+              <p>Secure access with appropriate identity flows and role-based permissions.</p>
+              <ul class="deliverables">
+                <li>Auth flows</li>
+                <li>Roles &amp; permissions</li>
+                <li>Session/token strategy</li>
+                <li>Account recovery</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">09</span>
+            <div class="process-body">
+              <h3>Frontend + Backend Integration</h3>
+              <p>Connect UI to APIs, handle errors and deliver a cohesive product experience.</p>
+              <ul class="deliverables">
+                <li>Integrated features</li>
+                <li>Error handling</li>
+                <li>Loading states</li>
+                <li>API client</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">10</span>
+            <div class="process-body">
+              <h3>Testing &amp; Quality Assurance</h3>
+              <p>Validate functionality, edge cases and regressions across devices and roles.</p>
+              <ul class="deliverables">
+                <li>Test plans</li>
+                <li>Automated tests</li>
+                <li>Bug reports</li>
+                <li>QA sign-off</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">11</span>
+            <div class="process-body">
+              <h3>Security Hardening</h3>
+              <p>Address common vulnerabilities and protect data in transit and at rest.</p>
+              <ul class="deliverables">
+                <li>Security checklist</li>
+                <li>HTTPS &amp; headers</li>
+                <li>Input validation</li>
+                <li>Secrets management</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">12</span>
+            <div class="process-body">
+              <h3>Deployment &amp; Infrastructure</h3>
+              <p>Ship to production with reliable hosting, domains, SSL and environments.</p>
+              <ul class="deliverables">
+                <li>CI/CD pipeline</li>
+                <li>Environments</li>
+                <li>Domain &amp; SSL</li>
+                <li>Runbooks</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">13</span>
+            <div class="process-body">
+              <h3>Performance Optimization</h3>
+              <p>Improve load times, caching and resource usage for a responsive experience.</p>
+              <ul class="deliverables">
+                <li>Performance audit</li>
+                <li>Caching strategy</li>
+                <li>Asset optimization</li>
+                <li>Monitoring baselines</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">14</span>
+            <div class="process-body">
+              <h3>Monitoring, Maintenance &amp; Future Scaling</h3>
+              <p>Keep the system healthy and ready to grow with traffic and new features.</p>
+              <ul class="deliverables">
+                <li>Logging &amp; alerts</li>
+                <li>Maintenance plan</li>
+                <li>Scaling options</li>
+                <li>Roadmap support</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="architecture" id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Under the hood</p>
+          <h2>Frontend + Backend Architecture</h2>
+          <p class="section-lead">
+            A professional website is more than the visible interface. Architecture is chosen to match your requirements — not every project needs every technology.
+          </p>
+        </div>
+        <div class="arch-grid">
+          <article class="arch-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Flutter Web where appropriate</li>
+              <li>Component-based UI</li>
+              <li>Responsive &amp; accessible layouts</li>
+              <li>Client-side routing &amp; state</li>
+            </ul>
+          </article>
+          <article class="arch-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>REST APIs</li>
+              <li>Authentication &amp; authorization</li>
+              <li>Business logic &amp; validation</li>
+              <li>Payment processing</li>
+              <li>Email &amp; notifications</li>
+            </ul>
+          </article>
+          <article class="arch-card">
+            <h3>Database</h3>
+            <ul>
+              <li>PostgreSQL / MySQL</li>
+              <li>MongoDB where document-oriented fits</li>
+              <li>Firebase for real-time needs</li>
+              <li>Migrations &amp; backups</li>
+              <li>Indexed queries</li>
+            </ul>
+          </article>
+          <article class="arch-card">
+            <h3>Infrastructure</h3>
+            <ul>
+              <li>Cloud hosting</li>
+              <li>Domain &amp; SSL/TLS</li>
+              <li>CDN &amp; object storage</li>
+              <li>Backups &amp; monitoring</li>
+              <li>CI/CD pipelines</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why it matters -->
+    <section class="why" id="why">
+      <div class="container why-inner">
+        <div class="section-header">
+          <p class="eyebrow">Quality</p>
+          <h2>Why Professional Development Matters</h2>
+          <p class="section-lead">
+            Clear requirements, solid architecture and disciplined delivery reduce risk and produce systems that are maintainable, secure and ready to scale.
+          </p>
+        </div>
+        <div class="why-points">
+          <div class="why-point">
+            <h3>Clarity before code</h3>
+            <p>Discovery and planning ensure we build the right product for your users and business goals.</p>
+          </div>
+          <div class="why-point">
+            <h3>Architecture that fits</h3>
+            <p>Frontend, backend and data choices are matched to complexity, traffic and integrations — not one-size-fits-all.</p>
+          </div>
+          <div class="why-point">
+            <h3>Production readiness</h3>
+            <p>Security, testing, deployment and monitoring are part of the process, not afterthoughts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="start">
+      <div class="container final-cta-inner">
+        <h2>Have a Different Idea?</h2>
+        <p>
+          Don’t see exactly what you need? Tell us what you’re trying to build. Your project can be designed around your business, users and technical requirements.
+        </p>
+        <a href="../home.html" class="btn btn-primary btn-lg">Start Your Project</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="home.html" class="logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-text">StudioForge</span>
+        </a>
+        <p>Professional web development focused on clear architecture, solid engineering and production-ready delivery.</p>
+      </div>
+      <div class="footer-nav">
+        <h3>Navigate</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#samples">Website Samples</a></li>
+          <li><a href="#process">Development Process</a></li>
+          <li><a href="#architecture">Architecture</a></li>
+        </ul>
+      </div>
+      <div class="footer-cats">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#samples" data-filter-cat="Business">Business</a></li>
+          <li><a href="#samples" data-filter-cat="E-commerce">E-commerce</a></li>
+          <li><a href="#samples" data-filter-cat="SaaS">SaaS</a></li>
+          <li><a href="#samples" data-filter-cat="Healthcare">Healthcare</a></li>
+          <li><a href="#samples" data-filter-cat="Real Estate">Real Estate</a></li>
+        </ul>
+      </div>
+      <div class="footer-cta">
+        <h3>Ready to build?</h3>
+        <p>Share your requirements and we’ll shape the right solution.</p>
+        <a href="../home.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="copyright">&copy; <span id="year"></span> StudioForge. All rights reserved.</p>
+      <div class="social-placeholders" aria-label="Social links">
+        <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+        <a href="#" aria-label="X" class="social-link">X</a>
+        <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Read More -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal" id="modal">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close dialog">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Lightbox: Gallery -->
+  <div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image gallery" hidden>
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close gallery">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <div class="lightbox-stage">
+      <img id="lightbox-img" src="" alt="" />
+      <p class="lightbox-counter" id="lightbox-counter"></p>
+    </div>
+    <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

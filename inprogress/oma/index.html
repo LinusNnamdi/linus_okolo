@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oma’s Thrift Hub | Luxury for Less. Confidence in Every Piece.</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Discover carefully curated thrift clothes and luxury fashion pieces in Nigeria. Look effortlessly stylish, classy, and confident without breaking the bank.">
+    <meta name="keywords" content="thrift clothes Nigeria, women's thrift clothes Nigeria, female thrift wears, affordable women's fashion Nigeria, thrift dresses Nigeria, vintage women's clothing Nigeria, affordable fashion Awka, thrift fashion Anambra, Oma’s Thrift Hub">
+    <meta name="author" content="EarnDee Limited">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Oma’s Thrift Hub | Luxury for Less">
+    <meta property="og:description" content="Curated luxury thrift pieces for the modern, confident Nigerian woman.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Notification Toast Container -->
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>✨ Affordable Luxury Delivered Nationwide Across Nigeria | Shop Latest Curated Drops ✨</p>
+    </div>
+
+    <!-- Main Header / Navigation -->
+    <header id="main-header" class="main-header">
+        <div class="header-container">
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <a href="#home" class="brand-logo">
+                <span class="logo-title">OMA’S THRIFT HUB</span>
+                <span class="logo-sub">LUXURY FOR LESS</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#shop" class="nav-link">Shop</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#styling" class="nav-link">Consultation</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="search-trigger" aria-label="Search items">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="icon-btn" id="wishlist-trigger" aria-label="View Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge" id="wishlist-count">0</span>
+                </button>
+                <button class="icon-btn" id="cart-trigger" aria-label="View Shopping Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Drawer / Overlay -->
+        <div id="search-overlay" class="search-overlay">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search gowns, crop tops, corporate shirts...">
+                <button id="search-close" class="close-btn">&times;</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-tag">Curated Thrift & Fashion</span>
+                <h1 class="hero-title">Luxury for Less.<br><em>Confidence in Every Piece.</em></h1>
+                <p class="hero-description">
+                    Discover carefully selected thrift pieces designed to help you dress beautifully, confidently, and uniquely — without breaking the bank.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#shop" class="btn btn-primary">Shop Collection</a>
+                    <a href="https://wa.me/2349067882985?text=Hello%20Oma%E2%80%99s%20Thrift%20Hub,%20I%20want%20to%20inquire%20about%20your%20latest%20collection." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust & Value Strip -->
+        <section class="trust-strip">
+            <div class="container trust-grid">
+                <div class="trust-item">
+                    <i class="fa-solid fa-gem"></i>
+                    <div>
+                        <h4>Carefully Curated</h4>
+                        <p>Hand-picked premium quality</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-tags"></i>
+                    <div>
+                        <h4>Affordable Luxury</h4>
+                        <p>High fashion on a budget</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div>
+                        <h4>Nationwide Delivery</h4>
+                        <p>Fast dispatch across Nigeria</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <h4>Seamless WhatsApp Order</h4>
+                        <p>Direct & effortless checkout</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-padding services-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">What We Offer</span>
+                    <h2 class="section-title">Designed for Your Individual Style</h2>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-shirt"></i></div>
+                        <h3>Curated Thrift Fashion</h3>
+                        <p>Unique and carefully selected pieces for women who want something different from mass-produced clothes.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-crown"></i></div>
+                        <h3>Affordable Luxury</h3>
+                        <p>Step out looking like royalty. Get high-end editorial looks without paying astronomical prices.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <h3>Quality Selection</h3>
+                        <p>Every piece is inspected for fabric integrity, elegance, color retention, and contemporary relevance.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3>Personal Style Discovery</h3>
+                        <p>We consult and match signature fashion statements tailored to your unique body type and lifestyle.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <h3>Nationwide Delivery</h3>
+                        <p>From Awka and Lagos to Abuja and Port Harcourt, we deliver prompt fashion direct to your doorstep.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <h3>WhatsApp Shopping</h3>
+                        <p>No long forms or complicated logins. Select what you love and place your order straight on WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="section-padding categories-section bg-light">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Collections</span>
+                    <h2 class="section-title">Shop by Category</h2>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <div class="categories-grid" id="categories-container">
+                    <!-- Dynamic rendering via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Shop Section -->
+        <section id="shop" class="section-padding shop-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Exclusive Catalog</span>
+                    <h2 class="section-title">Explore Our Latest Drops</h2>
+                    <p class="section-desc">Handpicked thrift and fashion pieces. Once a piece is gone, it’s gone forever!</p>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <!-- Filter and Sort Bar -->
+                <div class="shop-controls">
+                    <div class="category-tabs" id="category-tabs">
+                        <button class="tab-btn active" data-category="All">All Items</button>
+                        <button class="tab-btn" data-category="Gowns">Gowns</button>
+                        <button class="tab-btn" data-category="Crop Tops">Crop Tops</button>
+                        <button class="tab-btn" data-category="Corporate Shirts">Corporate Shirts</button>
+                        <button class="tab-btn" data-category="Jeans Jackets">Jeans Jackets</button>
+                        <button class="tab-btn" data-category="Jeans Trousers">Jeans Trousers</button>
+                    </div>
+
+                    <div class="filter-sort-wrapper">
+                        <div class="filter-dropdown">
+                            <select id="sort-select" aria-label="Sort products">
+                                <option value="featured">Sort by: Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                                <option value="newest">Newest Arrivals</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="product-grid" id="product-grid">
+                    <!-- JavaScript dynamic rendering -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Pricing Explanation Section -->
+        <section id="pricing" class="section-padding pricing-section bg-dark text-light">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Transparent Pricing</span>
+                    <h2 class="section-title">Luxury tiers designed for every budget</h2>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <span class="price-tier">Tier 01</span>
+                        <h3>Everyday Finds</h3>
+                        <div class="price-amount">From ₦8,000</div>
+                        <p>Essential stylish pieces, chic tops, and daily casuals to elevate your everyday looks.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Quality Verified</li>
+                            <li><i class="fa-solid fa-check"></i> Trendy Casual Wear</li>
+                            <li><i class="fa-solid fa-check"></i> High Re-wear Value</li>
+                        </ul>
+                        <a href="#shop" class="btn btn-outline-gold">Explore Tier</a>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">Most Loved</div>
+                        <span class="price-tier">Tier 02</span>
+                        <h3>Signature Pieces</h3>
+                        <div class="price-amount">From ₦15,000</div>
+                        <p>Statement dresses, corporate blazers, and premium denim tailored for confidence.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Superior Fabric Quality</li>
+                            <li><i class="fa-solid fa-check"></i> Unique Silhouette</li>
+                            <li><i class="fa-solid fa-check"></i> Perfect Work & Outing Wear</li>
+                        </ul>
+                        <a href="#shop" class="btn btn-primary">Explore Tier</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <span class="price-tier">Tier 03</span>
+                        <h3>Curated Luxury</h3>
+                        <div class="price-amount">From ₦25,000</div>
+                        <p>Rare vintage finds, heavy designer denim jackets, and show-stopping evening gowns.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Rare & One-of-a-Kind</li>
+                            <li><i class="fa-solid fa-check"></i> Flawless Condition</li>
+                            <li><i class="fa-solid fa-check"></i> High-End Editorial Appeal</li>
+                        </ul>
+                        <a href="#shop" class="btn btn-outline-gold">Explore Tier</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Consultation / Calendar Appointment Section -->
+        <section id="styling" class="section-padding styling-section">
+            <div class="container">
+                <div class="styling-wrapper">
+                    <div class="styling-text">
+                        <span class="section-subtitle">VIP Experience</span>
+                        <h2>Book a VIP Personal Style Consultation</h2>
+                        <p>Need help finding pieces that accentuate your body type? Or building a wardrobe for a new career phase? Reserve a 1-on-1 private consultation with Chioma Patrick.</p>
+                        <div class="styling-benefits">
+                            <div class="benefit"><i class="fa-solid fa-heart"></i> Curated wardrobe selection</div>
+                            <div class="benefit"><i class="fa-solid fa-calendar-check"></i> Direct WhatsApp styling session</div>
+                        </div>
+                    </div>
+
+                    <div class="styling-form-card">
+                        <h3>Schedule Your Session</h3>
+                        <form id="appointment-form">
+                            <div class="form-group">
+                                <label for="app-name">Full Name</label>
+                                <input type="text" id="app-name" required placeholder="e.g. Chisom Okeke">
+                            </div>
+                            <div class="form-group">
+                                <label for="app-phone">Phone / WhatsApp Number</label>
+                                <input type="tel" id="app-phone" required placeholder="e.g. 08012345678">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="app-date">Preferred Date</label>
+                                    <input type="date" id="app-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="app-time">WAT (Time)</label>
+                                    <select id="app-time" required>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="01:00 PM">01:00 PM</option>
+                                        <option value="04:00 PM">04:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">Book Consultation on WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section-padding blog-section bg-light">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Style Guides & Journal</span>
+                    <h2 class="section-title">Fashion Journal</h2>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Dynamic rendering via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials & Reviews -->
+        <section id="testimonials" class="section-padding testimonials-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Real Words From Real Women</span>
+                    <h2 class="section-title">Customer Love</h2>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-slider" id="testimonial-slider">
+                        <!-- Dynamic rendering via JS -->
+                    </div>
+                    <div class="slider-controls">
+                        <button id="prev-test" class="slider-btn" aria-label="Previous review"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button id="next-test" class="slider-btn" aria-label="Next review"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Submit Review Form -->
+                <div class="add-review-wrapper">
+                    <h3>Bought from us? Share Your Experience</h3>
+                    <form id="review-form" class="review-form">
+                        <div class="form-row">
+                            <input type="text" id="review-name" placeholder="Your Name" required>
+                            <input type="text" id="review-location" placeholder="Your City (e.g., Awka, Lagos)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-rating">Rating</label>
+                            <select id="review-rating" required>
+                                <option value="5">⭐⭐⭐⭐⭐ (5/5) Excellent</option>
+                                <option value="4">⭐⭐⭐⭐ (4/5) Very Good</option>
+                                <option value="3">⭐⭐⭐ (3/5) Average</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="review-text" rows="3" placeholder="Write your review here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding contact-section bg-light">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-subtitle">Get In Touch</span>
+                        <h2>We’d Love to Hear From You</h2>
+                        <p>Have questions about sizes, delivery, or a specific thrift piece? Reach out to us directly or drop us a message.</p>
+                        
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h5>Location</h5>
+                                    <p>Awka, Anambra State, Nigeria</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p><a href="mailto:chiomapatrick76@gmail.com">chiomapatrick76@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h5>Phone / WhatsApp</h5>
+                                    <p><a href="https://wa.me/2349067882985">09067882985</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-store"></i>
+                                <div>
+                                    <h5>Google Business</h5>
+                                    <p><a href="https://share.google/4enN4BXvEEdUtvGsq" target="_blank" rel="noopener" class="text-gold">Find Us on Google Maps</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-large">
+                            <a href="https://www.instagram.com/omathrifthub01?igsi=MTBhc3U3MDllODMyNA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@omathrifthub_ng" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.facebook.com/share/1EZixKm5Pq/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card">
+                        <h3>Send Us a Message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="contact-name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contact-email" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="contact-phone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contact-message" rows="4" placeholder="Your Message or Order Inquiry..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">Send Message via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="brand-logo light">
+                    <span class="logo-title">OMA’S THRIFT HUB</span>
+                    <span class="logo-sub">LUXURY FOR LESS</span>
+                </a>
+                <p>Helping women look effortlessly stylish, confident, and classy without breaking the bank. Quality thrift & fashion in Nigeria.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Shop</h4>
+                <ul>
+                    <li><a href="#shop">All Products</a></li>
+                    <li><a href="#shop">Gowns</a></li>
+                    <li><a href="#shop">Crop Tops</a></li>
+                    <li><a href="#shop">Corporate Shirts</a></li>
+                    <li><a href="#shop">Jeans Jackets</a></li>
+                    <li><a href="#shop">Jeans Trousers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#contact">Contact Support</a></li>
+                    <li><a href="#services">Nationwide Delivery</a></li>
+                    <li><a href="#testimonials">Customer Reviews</a></li>
+                    <li><a href="https://wa.me/2349067882985" target="_blank" rel="noopener">WhatsApp Direct</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to be notified immediately when new thrift drops arrive.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Oma’s Thrift Hub. All rights reserved.</p>
+                <p>Website by <a href="https://wa.me/2348148478414?text=Hello!%20EarnDee%0A%0AI%20want%20to%20create%20a%20website." target="_blank" rel="noopener" class="earndee-link">EarnDee Limited</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Drawer Overlay -->
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Shopping Cart (<span id="cart-drawer-count">0</span>)</h3>
+            <button id="cart-close" class="close-btn">&times;</button>
+        </div>
+        <div class="cart-body" id="cart-items">
+            <!-- Dynamic JS items -->
+        </div>
+        <div class="cart-footer">
+            <div class="coupon-section">
+                <input type="text" id="coupon-input" placeholder="Promo code (e.g. OMA10)">
+                <button id="apply-coupon-btn" class="btn btn-outline-gold">Apply</button>
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">₦0</span>
+                </div>
+                <div class="summary-row discount-row" id="discount-row" style="display: none;">
+                    <span>Discount (OMA10)</span>
+                    <span id="cart-discount">-₦0</span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span id="cart-total">₦0</span>
+                </div>
+            </div>
+            <button id="checkout-btn" class="btn btn-primary full-width">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div id="cart-backdrop" class="modal-backdrop"></div>
+
+    <!-- Wishlist Drawer Overlay -->
+    <div id="wishlist-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Wishlist (<span id="wishlist-drawer-count">0</span>)</h3>
+            <button id="wishlist-close" class="close-btn">&times;</button>
+        </div>
+        <div class="cart-body" id="wishlist-items">
+            <!-- Dynamic JS items -->
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content product-modal-content">
+            <button id="modal-close" class="modal-close">&times;</button>
+            <div class="product-modal-grid" id="modal-product-details">
+                <!-- JS dynamic render -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content checkout-modal-content">
+            <button id="checkout-close" class="modal-close">&times;</button>
+            <div class="checkout-wrapper">
+                <h2>Complete Your Order via WhatsApp</h2>
+                <p class="checkout-subtitle">Enter your delivery details below to generate your itemized WhatsApp order.</p>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="cust-name">Full Name *</label>
+                        <input type="text" id="cust-name" required placeholder="e.g. Chioma Patrick">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cust-phone">Phone / WhatsApp Number *</label>
+                            <input type="tel" id="cust-phone" required placeholder="09012345678">
+                        </div>
+                        <div class="form-group">
+                            <label for="cust-email">Email Address</label>
+                            <input type="email" id="cust-email" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cust-address">Delivery Address *</label>
+                        <input type="text" id="cust-address" required placeholder="Street Name, House Number">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cust-state">State *</label>
+                            <select id="cust-state" required>
+                                <option value="Anambra">Anambra</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Abuja">Abuja</option>
+                                <option value="Rivers">Port Harcourt / Rivers</option>
+                                <option value="Imo">Imo</option>
+                                <option value="Abia">Abia</option>
+                                <option value="Delta">Asaba / Delta</option>
+                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Edo">Benin / Edo</option>
+                                <option value="Other">Other State</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cust-city">City/Town *</label>
+                            <input type="text" id="cust-city" required placeholder="e.g. Awka, Nnewi">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cust-notes">Order Notes (Optional)</label>
+                        <textarea id="cust-notes" rows="2" placeholder="Specific size preference or delivery instructions..."></textarea>
+                    </div>
+
+                    <div class="order-summary-box">
+                        <h4>Order Total: <span id="checkout-summary-total">₦0</span></h4>
+                    </div>
+
+                    <button type="submit" class="btn btn-whatsapp full-width btn-lg">
+                        <i class="fa-brands fa-whatsapp"></i> Complete Order on WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Details Modal -->
+    <div id="blog-modal" class="modal">
+        <div class="modal-content blog-modal-content">
+            <button id="blog-modal-close" class="modal-close">&times;</button>
+            <div id="blog-modal-body">
+                <!-- JS dynamic details -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="floating-whatsapp-container">
+        <div id="whatsapp-popover" class="whatsapp-popover">
+            <div class="popover-header">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                    <h5>Chat with Oma’s Thrift Hub</h5>
+                    <p>Typically replies in minutes</p>
+                </div>
+            </div>
+            <div class="popover-body">
+                <p>Hello! 👋 How can we help you look stylish today?</p>
+                <div class="quick-options">
+                    <a href="https://wa.me/2349067882985?text=Hello,%20I%20want%20to%20shop%20your%20latest%20thrift%20collection." target="_blank" rel="noopener" class="quick-opt-btn">🛍️ Shop Collection</a>
+                    <a href="https://wa.me/2349067882985?text=Hello,%20I%20have%20a%20question%20about%20delivery%20rates." target="_blank" rel="noopener" class="quick-opt-btn">🚚 Delivery Inquiry</a>
+                    <a href="https://wa.me/2349067882985?text=Hello,%20I%20need%20help%20choosing%20my%20size." target="_blank" rel="noopener" class="quick-opt-btn">📏 Size Assistance</a>
+                </div>
+            </div>
+        </div>
+        <button id="whatsapp-float-btn" class="whatsapp-float-btn" aria-label="Open WhatsApp Chat">
+            <i class="fa-brands fa-whatsapp"></i>
+        </button>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

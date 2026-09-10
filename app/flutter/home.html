@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flutter App Development | Professional Flutter Applications</title>
+  <link rel="icon" href="../../images/earndee.png" type="image/png">
+  <meta name="description" content="Explore professional Flutter app experiences and discover how we design, develop and integrate complete Flutter applications with scalable backend systems.">
+  <meta property="og:title" content="Flutter App Development | Professional Flutter Applications">
+  <meta property="og:description" content="Explore professional Flutter app experiences and discover how we design, develop and integrate complete Flutter applications with scalable backend systems.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="../../images/earndee.png" alt="">
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">EarnDee Limited</span>
+          <span class="brand-label">Flutter Development</span>
+        </span>
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#samples" class="nav-link">App Samples</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="../../home.html" class="nav-link">All Questionnaires</a>
+      </nav>
+      <a href="../home.html" class="btn btn-primary header-cta">Questionnaire / Create Yours</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="nav-mobile" aria-label="Mobile">
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#samples" class="nav-link">App Samples</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="../../home.html" class="nav-link">All Questionnaires</a>
+        <a href="../home.html" class="btn btn-primary btn-block">Questionnaire / Create Yours</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" id="overview" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Flutter App Development</p>
+          <h1 id="hero-heading">Flutter App Experiences &amp; Samples Built for Real-World Products</h1>
+          <p class="hero-lead">
+            Explore the most requested Flutter application experiences. Each sample outlines the frontend, backend, and delivery scope so you can see exactly what we design and build for production products.
+          </p>
+          <div class="hero-actions">
+            <a href="../home.html" class="btn btn-primary btn-lg">Questionnaire / Create Yours</a>
+            <a href="#samples" class="btn btn-secondary btn-lg">View Samples</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="device-stack">
+            <div class="device device-1"></div>
+            <div class="device device-2"></div>
+            <div class="device device-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="trust-strip" aria-label="Capabilities">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <span class="trust-value">20+</span>
+            <span class="trust-label">Cross-platform App Samples</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-value">UI/UX</span>
+            <span class="trust-label">Professional production interfaces</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-value">Single Codebase</span>
+            <span class="trust-label">Andriod, IOS, Desktop, & Browsers</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-value">Backend</span>
+            <span class="trust-label">API + database integration</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-value">Cloud &amp; DevOps</span>
+            <span class="trust-label">Architecture built for growth</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Samples -->
+    <section class="samples-section" id="samples" aria-labelledby="samples-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <p class="eyebrow">Professional Samples</p>
+          <h2 id="samples-heading">20 Flutter App On-Demand Samples</h2>
+          <p class="section-lead">
+            Browse production-oriented Flutter page types. Open any sample for a full technical scope, or click an image to explore the interface gallery.
+          </p>
+        </div>
+
+        <div class="samples-controls">
+          <div class="search-wrap">
+            <label for="sample-search" class="visually-hidden">Search samples</label>
+            <input type="search" id="sample-search" class="search-input" placeholder="Search experiences (e.g. food, finance, job)…" autocomplete="off">
+          </div>
+          <div class="filter-chips" role="group" aria-label="Filter by category">
+            <button type="button" class="chip active" data-filter="all">All</button>
+            <button type="button" class="chip" data-filter="Business">Business</button>
+            <button type="button" class="chip" data-filter="Commerce">Commerce</button>
+            <button type="button" class="chip" data-filter="Finance">Finance</button>
+            <button type="button" class="chip" data-filter="Healthcare">Healthcare</button>
+            <button type="button" class="chip" data-filter="Social">Social</button>
+            <button type="button" class="chip" data-filter="Productivity">Productivity</button>
+            <button type="button" class="chip" data-filter="Lifestyle">Lifestyle</button>
+          </div>
+        </div>
+
+        <div class="samples-grid" id="samples-grid" role="list"></div>
+        <p class="empty-state" id="samples-empty" hidden>No samples match your search. Try a different keyword or category.</p>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process-section" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Delivery</p>
+          <h2 id="process-heading">How We Build Your Flutter Application</h2>
+          <p class="section-lead">
+            A structured process from discovery through deployment and ongoing improvement 
+            designed for clarity, quality, and long-term maintainability.
+          </p>
+        </div>
+
+        <ol class="process-timeline">
+          <li class="process-step">
+            <span class="process-num">01</span>
+            <div class="process-body">
+              <h3>Project discovery</h3>
+              <p>Align on business goals, users, constraints, and success metrics.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">02</span>
+            <div class="process-body">
+              <h3>Requirements gathering</h3>
+              <p>Capture functional and non-functional requirements in clear, testable form.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">03</span>
+            <div class="process-body">
+              <h3>Feature definition</h3>
+              <p>Prioritize features into MVP and roadmap phases with acceptance criteria.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">04</span>
+            <div class="process-body">
+              <h3>User-flow mapping</h3>
+              <p>Map critical journeys so every screen supports a real user outcome.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">05</span>
+            <div class="process-body">
+              <h3>UX research</h3>
+              <p>Validate assumptions with research and competitive analysis where needed.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">06</span>
+            <div class="process-body">
+              <h3>Wireframing</h3>
+              <p>Define structure and hierarchy before visual design.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">07</span>
+            <div class="process-body">
+              <h3>UI/UX design</h3>
+              <p>Craft polished, accessible interfaces aligned with your brand.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">08</span>
+            <div class="process-body">
+              <h3>Design system creation</h3>
+              <p>Establish components, tokens, and patterns for consistency at scale.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">09</span>
+            <div class="process-body">
+              <h3>Flutter architecture planning</h3>
+              <p>Choose clean architecture, state management, and module boundaries.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">10</span>
+            <div class="process-body">
+              <h3>Frontend development</h3>
+              <p>Build responsive Flutter UI with solid state handling and error states.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">11</span>
+            <div class="process-body">
+              <h3>Backend / API development</h3>
+              <p>Implement secure, documented APIs that match product needs.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">12</span>
+            <div class="process-body">
+              <h3>Database implementation</h3>
+              <p>Model data for performance, integrity, and future growth.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">13</span>
+            <div class="process-body">
+              <h3>Third-party integrations</h3>
+              <p>Connect payments, maps, notifications, analytics, and more.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">14</span>
+            <div class="process-body">
+              <h3>Authentication and security</h3>
+              <p>Harden auth, sessions, encryption, and access control.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">15</span>
+            <div class="process-body">
+              <h3>Testing and QA</h3>
+              <p>Unit, widget, integration, and device testing across platforms.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">16</span>
+            <div class="process-body">
+              <h3>Performance optimization</h3>
+              <p>Profile and improve startup, frame rates, and network efficiency.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">17</span>
+            <div class="process-body">
+              <h3>Deployment</h3>
+              <p>Ship to App Store, Play Store, and web with CI/CD pipelines.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">18</span>
+            <div class="process-body">
+              <h3>Monitoring</h3>
+              <p>Observe crashes, performance, and usage with production tooling.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">19</span>
+            <div class="process-body">
+              <h3>Maintenance</h3>
+              <p>Ongoing fixes, OS updates, and dependency hygiene.</p>
+            </div>
+          </li>
+
+          <li class="process-step">
+            <span class="process-num">20</span>
+            <div class="process-body">
+              <h3>Future improvements</h3>
+              <p>Iterate on features and scale architecture as the product grows.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Backend -->
+    <section class="backend-section" id="backend" aria-labelledby="backend-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Full stack</p>
+          <h2 id="backend-heading">Flutter Is Only the Frontend</h2>
+          <p class="section-lead">
+            Production apps almost always need a secure backend, data layer, and supporting 
+            services. We design the full system so the mobile experience stays fast and 
+            reliable.
+          </p>
+        </div>
+        <div class="architecture">
+          <div class="arch-flow">
+            <div class="arch-node">Flutter App</div>
+            <div class="arch-arrow" aria-hidden="true">↓</div>
+            <div class="arch-node">REST API / GraphQL</div>
+            <div class="arch-arrow" aria-hidden="true">↓</div>
+            <div class="arch-node">Backend Application</div>
+            <div class="arch-arrow" aria-hidden="true">↓</div>
+            <div class="arch-node">Database</div>
+          </div>
+          <div class="arch-services">
+            <h3 class="arch-services-title">Supporting services</h3>
+            <ul class="service-tags">
+              <li>Authentication</li>
+              <li>Storage</li>
+              <li>Notifications</li>
+              <li>Payments</li>
+              <li>Maps</li>
+              <li>Analytics</li>
+              <li>Email / SMS</li>
+              <li>Cloud Infrastructure</li>
+            </ul>
+            <p class="arch-note">
+              Backend technology is selected per project. Options commonly include Node.js, Laravel, Django, Firebase, Supabase, PostgreSQL, MySQL, MongoDB, REST APIs, and GraphQL—only what the product actually needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical capabilities -->
+    <section class="tech-section" id="capabilities" aria-labelledby="tech-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Stack</p>
+          <h2 id="tech-heading">Technical Capabilities</h2>
+          <p class="section-lead">Few Technologies and practices we use to deliver maintainable Flutter products.</p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-card">
+            <h3>Flutter</h3>
+            <ul>
+              <li>Dart</li>
+              <li>Flutter</li>
+              <li>Cupertino</li>
+              <li>Material 3</li>
+              <li>Providers</li>
+              <li>Responsive UI</li>
+            </ul>
+          </div>
+
+          <div class="tech-card">
+            <h3>Architecture</h3>
+            <ul>
+              <li>Clean Architecture</li>
+              <li>MVVM</li>
+              <li>Repository Pattern</li>
+              <li>Dependency Injection</li>
+              <li>State Management</li>
+            </ul>
+          </div>
+
+          <div class="tech-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>Firebase</li>
+              <li>Supabase</li>
+              <li>REST API</li>
+              <li>GraphQL</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+
+          <div class="tech-card">
+            <h3>Database</h3>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Firestore</li>
+            </ul>
+          </div>
+
+          <div class="tech-card">
+            <h3>Infrastructure</h3>
+            <ul>
+              <li>Docker</li>
+              <li>CI/CD</li>
+              <li>GitHub Actions</li>
+              <li>Cloud deployment</li>
+            </ul>
+          </div>
+
+          <div class="tech-card">
+            <h3>Integrations</h3>
+            <ul>
+              <li>Payment gateways</li>
+              <li>Maps</li>
+              <li>Push notifications</li>
+              <li>Email</li>
+              <li>SMS</li>
+              <li>Analytics</li>
+              <li>Social authentication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="final-cta-inner">
+          <h2 id="cta-heading">Have an App Idea?</h2>
+          <p>Tell us what you want to build, and we'll help turn your requirements into a clear development plan.</p>
+          <div class="final-cta-actions">
+            <a href="../home.html" class="btn btn-primary btn-lg">Questionnaire/ Create Yours</a>
+            <a href="#samples" class="btn btn-secondary btn-lg">View App Samples</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="../../images/earndee.png" alt="">
+        </span>
+        <div>
+          <strong>EarnDee Limited</strong>
+          <p>Professional Flutter Software Engineer; product engineering for teams that need reliable, scalable applications.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Development Samples</h4>
+          <a href="#samples">App Samples</a>
+          <a href="../../web/web/home.html">Web Samples</a>
+          <a href="../../cloud/dev/home.html">Cloud Samples</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacts</h4>
+          <a href="mailto:linusnnamdiokolo@gmail.com">Email</a>
+          <a href="tel:2348148478414">Phone</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <!-- <a href="#">Privacy</a>
+          <a href="#">Terms</a> -->
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> EarnDee Limited. All rights reserved.</p>
+        <div class="social" aria-label="Social links">
+          <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+          <a href="#" aria-label="X" class="social-link">𝕏</a>
+          <a href="#" aria-label="Tiktok" class="social-link">Tk</a>
+          <a href="#" aria-label="GitHub" class="social-link">GH</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Detail Modal -->
+  <div class="modal-overlay" id="detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close dialog">&times;</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Image gallery" hidden>
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close gallery">&times;</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+    <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+    <div class="lightbox-stage">
+      <img id="lightbox-image" src="" alt="">
+      <div class="lightbox-meta">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+        <p class="lightbox-counter" id="lightbox-counter"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

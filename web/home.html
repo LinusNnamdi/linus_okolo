@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium website project brief and client discovery form.">
+  <meta name="theme-color" content="#111827">
+  <title>Website Project Brief | EarnDee Limited</title>
+  <link rel="icon" href="../images/earndee.png" type="image/png">
+	<link rel="icon" href="nd.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <!-- =========================index.html
+         HEADER
+    ========================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#welcome" class="brand" aria-label="Website Project Brief home">
+          <span class="brand-mark">ND</span>
+          <span class="brand-copy">
+            <strong>Website content brief</strong>
+            <small>EarnDee Limited</small>
+          </span>
+        </a>
+
+        <div class="header-actions">
+          <div class="save-indicator" id="saveIndicator" aria-live="polite">
+            <span class="save-dot"></span>
+            <span id="saveText">Saved locally</span>
+          </div>
+
+          <button class="text-button" type="button" id="headerResetBtn">
+            Start over
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================
+         WELCOME
+    ========================== -->
+    <main>
+      <section class="welcome-section" id="welcome">
+        <div class="container welcome-grid">
+          <div class="welcome-content">
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Website project discovery
+            </div>
+
+            <h1>
+              Let's build something
+              <span>worth visiting.</span>
+            </h1>
+
+            <p class="hero-description">
+              Tell us about your business, your goals, and the website you
+              envision. This project brief helps us understand exactly what
+              you need before design and development begin.
+            </p>
+
+            <div class="welcome-meta">
+              <div class="meta-item">
+                <span class="meta-icon">◷</span>
+                <div>
+                  <strong>10–15 minutes</strong>
+                  <span>Estimated completion</span>
+                </div>
+              </div>
+
+              <div class="meta-item">
+                <span class="meta-icon">↗</span>
+                <div>
+                  <strong>Auto-saved</strong>
+                  <span>Resume whenever you want</span>
+                </div>
+              </div>
+
+              <div class="meta-item">
+                <span class="meta-icon">✓</span>
+                <div>
+                  <strong>No account required</strong>
+                  <span>Your draft stays on this device</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="primary-button hero-button" type="button" id="startButton">
+              <span>Brief Us About Website</span>
+              <span class="button-arrow">→</span>
+            </button>
+
+            <p class="security-note">
+              <span>⌁</span>
+              Your information is used only to understand and plan your project.
+            </p>
+          </div>
+
+          <div class="welcome-card" aria-hidden="true">
+            <div class="brief-preview">
+              <div class="preview-top">
+                <div>
+                  <span class="preview-kicker">PROJECT BRIEF</span>
+                  <h2>Your website,<br>properly understood.</h2>
+                </div>
+                <span class="preview-number">01</span>
+              </div>
+
+              <div class="preview-progress">
+                <span></span>
+              </div>
+
+              <div class="preview-list">
+                <div class="preview-row active">
+                  <span class="preview-check">✓</span>
+                  <span>Business & goals</span>
+                  <b>01</b>
+                </div>
+                <div class="preview-row">
+                  <span class="preview-check">○</span>
+                  <span>Audience & strategy</span>
+                  <b>02</b>
+                </div>
+                <div class="preview-row">
+                  <span class="preview-check">○</span>
+                  <span>Design & branding</span>
+                  <b>03</b>
+                </div>
+                <div class="preview-row">
+                  <span class="preview-check">○</span>
+                  <span>Features & content</span>
+                  <b>04</b>
+                </div>
+                <div class="preview-row">
+                  <span class="preview-check">○</span>
+                  <span>Technical requirements</span>
+                  <b>05</b>
+                </div>
+              </div>
+
+              <div class="preview-footer">
+                <span>12 steps</span>
+                <span>100% confidential</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           RESUME BANNER
+      ========================== -->
+      <div class="container resume-wrapper" id="resumeWrapper" hidden>
+        <div class="resume-card">
+          <div class="resume-icon">↻</div>
+          <div class="resume-content">
+            <strong>Welcome back — we've restored your saved progress.</strong>
+            <span id="resumeDescription">Your project brief is ready to continue.</span>
+          </div>
+          <div class="resume-actions">
+            <button class="secondary-button" type="button" id="resumeButton">
+              Continue where I left off
+            </button>
+            <button class="ghost-button" type="button" id="discardDraftButton">
+              Start over
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================
+           APPLICATION
+      ========================== -->
+      <section class="brief-app" id="briefApp" hidden>
+        <div class="container app-layout">
+
+          <!-- SIDEBAR -->
+          <aside class="step-sidebar">
+            <div class="sidebar-heading">
+              <span>PROJECT BRIEF</span>
+              <strong id="sidebarProgress">0%</strong>
+            </div>
+
+            <div class="progress-track">
+              <span id="progressBar"></span>
+            </div>
+
+            <nav class="step-nav" id="stepNav" aria-label="Project brief sections">
+              <button class="step-nav-item active" type="button" data-step="0">
+                <span class="step-number">01</span>
+                <span>
+                  <strong>Client</strong>
+                  <small>Your contact details</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="1">
+                <span class="step-number">02</span>
+                <span>
+                  <strong>Business</strong>
+                  <small>Your business context</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="2">
+                <span class="step-number">03</span>
+                <span>
+                  <strong>Goals</strong>
+                  <small>Purpose & objectives</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="3">
+                <span class="step-number">04</span>
+                <span>
+                  <strong>Audience</strong>
+                  <small>Who you want to reach</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="4">
+                <span class="step-number">05</span>
+                <span>
+                  <strong>Pages</strong>
+                  <small>Site structure</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="5">
+                <span class="step-number">06</span>
+                <span>
+                  <strong>Design</strong>
+                  <small>Brand & visual direction</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="6">
+                <span class="step-number">07</span>
+                <span>
+                  <strong>Features</strong>
+                  <small>Website functionality</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="7">
+                <span class="step-number">08</span>
+                <span>
+                  <strong>Content</strong>
+                  <small>Content responsibility</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="8">
+                <span class="step-number">09</span>
+                <span>
+                  <strong>Technical</strong>
+                  <small>Domain & hosting</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="9">
+                <span class="step-number">10</span>
+                <span>
+                  <strong>SEO</strong>
+                  <small>Search visibility</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="10">
+                <span class="step-number">11</span>
+                <span>
+                  <strong>Budget</strong>
+                  <small>Budget & timeline</small>
+                </span>
+              </button>
+
+              <button class="step-nav-item" type="button" data-step="11">
+                <span class="step-number">12</span>
+                <span>
+                  <strong>Review</strong>
+                  <small>Confirm & submit</small>
+                </span>
+              </button>
+            </nav>
+
+            <div class="sidebar-security">
+              <span>⌁</span>
+              <div>
+                <strong>Private by design</strong>
+                <p>Never enter passwords, API keys or payment credentials.</p>
+              </div>
+            </div>
+          </aside>
+
+          <!-- FORM CONTENT -->
+          <div class="form-area">
+            <div class="mobile-step-header">
+              <div>
+                <span id="mobileStepKicker">STEP 01 OF 12</span>
+                <strong id="mobileStepTitle">Client information</strong>
+              </div>
+              <span id="mobileStepPercent">0%</span>
+            </div>
+
+            <form id="projectForm" novalidate>
+
+              <!-- STEP 1 -->
+              <section class="form-step active" data-step="0">
+                <div class="step-heading">
+                  <span class="step-kicker">01 / CLIENT</span>
+                  <h2>Let's start with you.</h2>
+                  <p>
+                    Tell us who we'll be working with and how you'd prefer
+                    to communicate during the project.
+                  </p>
+                </div>
+
+                <div class="form-grid two-columns">
+                  <div class="field">
+                    <label for="fullName">Full name <span>*</span></label>
+                    <input id="fullName" name="fullName" type="text"
+                      placeholder="e.g. Linus Okolo" autocomplete="name"
+                      data-required="true">
+                    <small>Enter the name we should use when communicating with you.</small>
+                    <div class="field-error" data-error-for="fullName"></div>
+                  </div>
+
+                  <div class="field">
+                    <label for="businessName">Business / company name <span>*</span></label>
+                    <input id="businessName" name="businessName" type="text"
+                      placeholder="e.g. Okolo Creative Studio" autocomplete="organization"
+                      data-required="true">
+                    <small>Use your public-facing business or brand name.</small>
+                    <div class="field-error" data-error-for="businessName"></div>
+                  </div>
+
+                  <div class="field">
+                    <label for="email">Email address <span>*</span></label>
+                    <input id="email" name="email" type="email"
+                      placeholder="you@example.com" autocomplete="email"
+                      data-required="true">
+                    <small>We'll use this address for project communication.</small>
+                    <div class="field-error" data-error-for="email"></div>
+                  </div>
+
+                  <div class="field">
+                    <label for="phone">Phone number <span>*</span></label>
+                    <input id="phone" name="phone" type="tel"
+                      placeholder="+234 801 234 5678" autocomplete="tel"
+                      data-required="true">
+                    <small>Include your country code where possible.</small>
+                    <div class="field-error" data-error-for="phone"></div>
+                  </div>
+
+                  <div class="field">
+                    <label for="country">Country <span>*</span></label>
+                    <input id="country" name="country" type="text"
+                      placeholder="e.g. Nigeria" autocomplete="country-name"
+                      data-required="true">
+                    <small>Where is your business or primary market based?</small>
+                    <div class="field-error" data-error-for="country"></div>
+                  </div>
+
+                  <div class="field">
+                    <label for="city">City</label>
+                    <input id="city" name="city" type="text"
+                      placeholder="e.g. Lagos" autocomplete="address-level2">
+                    <small>Optional — useful for local businesses and SEO planning.</small>
+                  </div>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Preferred contact method <span>*</span></legend>
+                  <p class="fieldset-hint">Choose the channel you check most reliably.</p>
+
+                  <div class="choice-grid compact">
+                    <label class="choice-card">
+                      <input type="radio" name="contactMethod" value="Email" required>
+                      <span class="choice-content">
+                        <b>Email</b>
+                        <small>Written project communication</small>
+                      </span>
+                    </label>
+
+                    <label class="choice-card">
+                      <input type="radio" name="contactMethod" value="Phone">
+                      <span class="choice-content">
+                        <b>Phone</b>
+                        <small>Voice calls</small>
+                      </span>
+                    </label>
+
+                    <label class="choice-card">
+                      <input type="radio" name="contactMethod" value="WhatsApp">
+                      <span class="choice-content">
+                        <b>WhatsApp</b>
+                        <small>Quick messaging</small>
+                      </span>
+                    </label>
+
+                    <label class="choice-card">
+                      <input type="radio" name="contactMethod" value="Video call">
+                      <span class="choice-content">
+                        <b>Video call</b>
+                        <small>Meetings and walkthroughs</small>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="field-error" data-error-for="contactMethod"></div>
+                </fieldset>
+              </section>
+
+              <!-- STEP 2 -->
+              <section class="form-step" data-step="1">
+                <div class="step-heading">
+                  <span class="step-kicker">02 / BUSINESS</span>
+                  <h2>Tell us about the business.</h2>
+                  <p>
+                    Context about your business helps us make better strategic,
+                    content and design decisions.
+                  </p>
+                </div>
+
+                <div class="form-stack">
+                  <div class="field">
+                    <label for="businessDescription">Business description <span>*</span></label>
+                    <textarea id="businessDescription" name="businessDescription"
+                      rows="5" data-required="true"
+                      placeholder="Example: We are a fashion brand specializing in premium African-inspired clothing for young professionals..."></textarea>
+                    <small>Briefly explain what your business does, who you serve, and what makes you different.</small>
+                    <div class="field-error" data-error-for="businessDescription"></div>
+                  </div>
+
+                  <div class="field">
+                    <label for="productsServices">Products / services <span>*</span></label>
+                    <textarea id="productsServices" name="productsServices"
+                      rows="4" data-required="true"
+                      placeholder="Example: Custom tailoring, ready-to-wear clothing, corporate styling and fashion consultations."></textarea>
+                    <small>List your main products or services and briefly describe them.</small>
+                    <div class="field-error" data-error-for="productsServices"></div>
+                  </div>
+
+                  <div class="form-grid two-columns">
+                    <div class="field">
+                      <label for="businessAge">How long has the business operated?</label>
+                      <select id="businessAge" name="businessAge">
+                        <option value="">Select an option</option>
+                        <option>Less than 1 year</option>
+                        <option>1–3 years</option>
+                        <option>4–7 years</option>
+                        <option>8–15 years</option>
+                        <option>15+ years</option>
+                      </select>
+                      <small>This helps establish how established the brand is.</small>
+                    </div>
+
+                    <div class="field">
+                      <label for="currentWebsite">Current website URL</label>
+                      <input id="currentWebsite" name="currentWebsite" type="url"
+                        placeholder="https://example.com">
+                      <small>Leave blank if you do not currently have a website.</small>
+                      <div class="field-error" data-error-for="currentWebsite"></div>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label for="onlinePresence">Existing online presence</label>
+                    <textarea id="onlinePresence" name="onlinePresence"
+                      rows="3"
+                      placeholder="Example: Instagram, Facebook, TikTok, Google Business Profile, LinkedIn..."></textarea>
+                    <small>Tell us where your business is currently active online.</small>
+                  </div>
+
+                  <div class="field">
+                    <label for="socialLinks">Social media links</label>
+                    <textarea id="socialLinks" name="socialLinks"
+                      rows="4"
+                      placeholder="Instagram: https://instagram.com/...
+Facebook: https://facebook.com/...
+LinkedIn: https://linkedin.com/..."></textarea>
+                    <small>One profile per line is easiest to review.</small>
+                  </div>
+                </div>
+              </section>
+
+              <!-- STEP 3 -->
+              <section class="form-step" data-step="2">
+                <div class="step-heading">
+                  <span class="step-kicker">03 / GOALS</span>
+                  <h2>What should the website accomplish?</h2>
+                  <p>
+                    Choose the outcomes that matter most. You can select more
+                    than one.
+                  </p>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Primary website purpose <span>*</span></legend>
+                  <p class="fieldset-hint">Select every purpose that applies.</p>
+
+                  <div class="selection-grid">
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Business / Company Website">
+                      <span class="selection-icon">◆</span>
+                      <span><b>Business / Company</b><small>Professional company presence</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Portfolio">
+                      <span class="selection-icon">▦</span>
+                      <span><b>Portfolio</b><small>Showcase work and projects</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Personal Brand">
+                      <span class="selection-icon">◉</span>
+                      <span><b>Personal Brand</b><small>Build authority and presence</small></span>
+                    </label>
+
+                    <label class="selection-card ecommerce-trigger">
+                      <input type="checkbox" name="websitePurpose" value="E-commerce Store">
+                      <span class="selection-icon">◇</span>
+                      <span><b>E-commerce Store</b><small>Sell products online</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Blog">
+                      <span class="selection-icon">≡</span>
+                      <span><b>Blog</b><small>Publish articles and resources</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Landing Page">
+                      <span class="selection-icon">↗</span>
+                      <span><b>Landing Page</b><small>Focused campaign page</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Booking Website">
+                      <span class="selection-icon">□</span>
+                      <span><b>Booking Website</b><small>Appointments and reservations</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Restaurant Website">
+                      <span class="selection-icon">◇</span>
+                      <span><b>Restaurant</b><small>Menus, location and bookings</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Real Estate Website">
+                      <span class="selection-icon">⌂</span>
+                      <span><b>Real Estate</b><small>Property listings and leads</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Educational Website">
+                      <span class="selection-icon">△</span>
+                      <span><b>Educational</b><small>Courses and learning</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Nonprofit / Organization">
+                      <span class="selection-icon">○</span>
+                      <span><b>Nonprofit / Organization</b><small>Community and mission</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Membership Website">
+                      <span class="selection-icon">◎</span>
+                      <span><b>Membership</b><small>Private member content</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Web Application">
+                      <span class="selection-icon">⌘</span>
+                      <span><b>Web Application</b><small>Interactive application</small></span>
+                    </label>
+
+                    <label class="selection-card">
+                      <input type="checkbox" name="websitePurpose" value="Other">
+                      <span class="selection-icon">+</span>
+                      <span><b>Other</b><small>A different project type</small></span>
+                    </label>
+                  </div>
+
+                  <div class="field conditional-field" id="purposeOtherWrap" hidden>
+                    <label for="purposeOther">Other website purpose</label>
+                    <input id="purposeOther" name="purposeOther" type="text"
+                      placeholder="Describe the type of website you need">
+                  </div>
+
+                  <div class="field-error" data-error-for="websitePurpose"></div>
+                </fieldset>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Main website goals <span>*</span></legend>
+                  <p class="fieldset-hint">Select the outcomes you want the website to support.</p>
+
+                  <div class="selection-grid">
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Generate leads">
+                      <span class="selection-icon">↗</span>
+                      <span><b>Generate leads</b><small>Turn visitors into prospects</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Sell products">
+                      <span class="selection-icon">◇</span>
+                      <span><b>Sell products</b><small>Generate online sales</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Increase brand awareness">
+                      <span class="selection-icon">✦</span>
+                      <span><b>Brand awareness</b><small>Increase visibility</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Get more customers">
+                      <span class="selection-icon">+</span>
+                      <span><b>Get more customers</b><small>Grow your customer base</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Receive bookings">
+                      <span class="selection-icon">□</span>
+                      <span><b>Receive bookings</b><small>Appointments and reservations</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Showcase services">
+                      <span class="selection-icon">▦</span>
+                      <span><b>Showcase services</b><small>Explain your offering</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Showcase portfolio">
+                      <span class="selection-icon">◫</span>
+                      <span><b>Showcase portfolio</b><small>Present your work</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Provide information">
+                      <span class="selection-icon">i</span>
+                      <span><b>Provide information</b><small>Educate visitors</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Build an online community">
+                      <span class="selection-icon">◎</span>
+                      <span><b>Build community</b><small>Connect your audience</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Improve credibility">
+                      <span class="selection-icon">✓</span>
+                      <span><b>Improve credibility</b><small>Build trust</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="websiteGoals" value="Other">
+                      <span class="selection-icon">+</span>
+                      <span><b>Other</b><small>Another important outcome</small></span>
+                    </label>
+                  </div>
+
+                  <div class="field conditional-field" id="goalOtherWrap" hidden>
+                    <label for="goalOther">Other website goal</label>
+                    <input id="goalOther" name="goalOther" type="text"
+                      placeholder="Describe another goal">
+                  </div>
+
+                  <div class="field-error" data-error-for="websiteGoals"></div>
+                </fieldset>
+              </section>
+
+              <!-- STEP 4 -->
+              <section class="form-step" data-step="3">
+                <div class="step-heading">
+                  <span class="step-kicker">04 / AUDIENCE</span>
+                  <h2>Who are we designing for?</h2>
+                  <p>
+                    Understanding your audience helps determine messaging,
+                    layout, content hierarchy and conversion strategy.
+                  </p>
+                </div>
+
+                <div class="form-stack">
+                  <div class="field">
+                    <label for="idealCustomer">Who is your ideal customer? <span>*</span></label>
+                    <textarea id="idealCustomer" name="idealCustomer"
+                      rows="4" data-required="true"
+                      placeholder="Example: Young professionals aged 25–40 who value premium, culturally inspired fashion."></textarea>
+                    <small>Describe the person most likely to buy from or engage with your business.</small>
+                    <div class="field-error" data-error-for="idealCustomer"></div>
+                  </div>
+
+                  <div class="form-grid two-columns">
+                    <div class="field">
+                      <label for="ageRange">Typical age range</label>
+                      <select id="ageRange" name="ageRange">
+                        <option value="">Select an option</option>
+                        <option>Under 18</option>
+                        <option>18–24</option>
+                        <option>25–34</option>
+                        <option>35–44</option>
+                        <option>45–54</option>
+                        <option>55+</option>
+                        <option>Mixed / All ages</option>
+                      </select>
+                      <small>Choose the closest audience range.</small>
+                    </div>
+
+                    <div class="field">
+                      <label for="audienceGender">Gender, if relevant</label>
+                      <select id="audienceGender" name="audienceGender">
+                        <option value="">Not relevant / Prefer not to say</option>
+                        <option>Primarily women</option>
+                        <option>Primarily men</option>
+                        <option>Mixed audience</option>
+                      </select>
+                      <small>Only answer this if it matters to your offering.</small>
+                    </div>
+
+                    <div class="field">
+                      <label for="audienceLocation">Location / market <span>*</span></label>
+                      <input id="audienceLocation" name="audienceLocation" type="text"
+                        placeholder="e.g. Nigeria, UK and US"
+                        data-required="true">
+                      <small>Where are most of your customers located?</small>
+                      <div class="field-error" data-error-for="audienceLocation"></div>
+                    </div>
+
+                    <div class="field">
+                      <label for="customerType">Profession / customer type</label>
+                      <input id="customerType" name="customerType" type="text"
+                        placeholder="e.g. Executives, students, homeowners">
+                      <small>Describe their role, lifestyle or customer category.</small>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label for="audienceProblems">What problems do your customers have?</label>
+                    <textarea id="audienceProblems" name="audienceProblems"
+                      rows="4"
+                      placeholder="Example: They struggle to find premium clothing that combines modern cuts with African-inspired design."></textarea>
+                    <small>Understanding the problem helps us position your website around customer needs.</small>
+                  </div>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>What should visitors do? <span>*</span></legend>
+                  <p class="fieldset-hint">Select all important actions.</p>
+
+                  <div class="selection-grid compact-grid">
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Contact me">
+                      <span class="selection-icon">✉</span>
+                      <span><b>Contact me</b><small>Send an enquiry</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Call my business">
+                      <span class="selection-icon">⌕</span>
+                      <span><b>Call my business</b><small>Make a phone enquiry</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Send a WhatsApp message">
+                      <span class="selection-icon">◌</span>
+                      <span><b>WhatsApp</b><small>Start a conversation</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Book an appointment">
+                      <span class="selection-icon">□</span>
+                      <span><b>Book appointment</b><small>Schedule a service</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Purchase a product">
+                      <span class="selection-icon">◇</span>
+                      <span><b>Purchase</b><small>Complete a transaction</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Request a quote">
+                      <span class="selection-icon">≋</span>
+                      <span><b>Request a quote</b><small>Ask for pricing</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Subscribe to newsletter">
+                      <span class="selection-icon">✉</span>
+                      <span><b>Subscribe</b><small>Join an email list</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Create an account">
+                      <span class="selection-icon">◎</span>
+                      <span><b>Create account</b><small>Register with the site</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Download something">
+                      <span class="selection-icon">↓</span>
+                      <span><b>Download</b><small>Access a resource</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Visit physical location">
+                      <span class="selection-icon">⌂</span>
+                      <span><b>Visit location</b><small>Find your premises</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="visitorActions" value="Other">
+                      <span class="selection-icon">+</span>
+                      <span><b>Other</b><small>Another action</small></span>
+                    </label>
+                  </div>
+
+                  <div class="field conditional-field" id="actionOtherWrap" hidden>
+                    <label for="actionOther">Other visitor action</label>
+                    <input id="actionOther" name="actionOther" type="text"
+                      placeholder="Describe the action">
+                  </div>
+
+                  <div class="field-error" data-error-for="visitorActions"></div>
+                </fieldset>
+              </section>
+
+              <!-- STEP 5 -->
+              <section class="form-step" data-step="4">
+                <div class="step-heading">
+                  <span class="step-kicker">05 / PAGES</span>
+                  <h2>Let's map out your website.</h2>
+                  <p>
+                    Select the pages you believe you need. This is not final —
+                    we can refine the sitemap during planning.
+                  </p>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Pages you need <span>*</span></legend>
+                  <p class="fieldset-hint">Select all pages that apply.</p>
+
+                  <div class="selection-grid compact-grid">
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Home">
+                      <span class="selection-icon">⌂</span><span><b>Home</b><small>Primary landing page</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="About">
+                      <span class="selection-icon">i</span><span><b>About</b><small>Company or brand story</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Services">
+                      <span class="selection-icon">▦</span><span><b>Services</b><small>Service offerings</small></span>
+                    </label>
+                    <label class="selection-card ecommerce-trigger">
+                      <input type="checkbox" name="pages" value="Products">
+                      <span class="selection-icon">◇</span><span><b>Products</b><small>Product catalogue</small></span>
+                    </label>
+                    <label class="selection-card ecommerce-trigger">
+                      <input type="checkbox" name="pages" value="Shop">
+                      <span class="selection-icon">▱</span><span><b>Shop</b><small>Online store</small></span>
+                    </label>
+                    <label class="selection-card ecommerce-trigger">
+                      <input type="checkbox" name="pages" value="Product Details">
+                      <span class="selection-icon">□</span><span><b>Product Details</b><small>Individual product pages</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Portfolio">
+                      <span class="selection-icon">▦</span><span><b>Portfolio</b><small>Selected work</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Projects">
+                      <span class="selection-icon">◫</span><span><b>Projects</b><small>Detailed projects</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Blog">
+                      <span class="selection-icon">≡</span><span><b>Blog</b><small>Articles and insights</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Contact">
+                      <span class="selection-icon">✉</span><span><b>Contact</b><small>Contact information</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="FAQ">
+                      <span class="selection-icon">?</span><span><b>FAQ</b><small>Common questions</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Testimonials">
+                      <span class="selection-icon">“</span><span><b>Testimonials</b><small>Customer proof</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Pricing">
+                      <span class="selection-icon">₦</span><span><b>Pricing</b><small>Packages and pricing</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Team">
+                      <span class="selection-icon">◎</span><span><b>Team</b><small>People behind the brand</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Careers">
+                      <span class="selection-icon">↗</span><span><b>Careers</b><small>Job opportunities</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Gallery">
+                      <span class="selection-icon">▧</span><span><b>Gallery</b><small>Visual showcase</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Booking">
+                      <span class="selection-icon">□</span><span><b>Booking</b><small>Appointments</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Events">
+                      <span class="selection-icon">◇</span><span><b>Events</b><small>Upcoming events</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Privacy Policy">
+                      <span class="selection-icon">⌁</span><span><b>Privacy Policy</b><small>Privacy information</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Terms & Conditions">
+                      <span class="selection-icon">§</span><span><b>Terms</b><small>Terms & conditions</small></span>
+                    </label>
+                    <label class="selection-card">
+                      <input type="checkbox" name="pages" value="Other">
+                      <span class="selection-icon">+</span><span><b>Other</b><small>Another page</small></span>
+                    </label>
+                  </div>
+
+                  <div class="field conditional-field" id="pageOtherWrap" hidden>
+                    <label for="pageOther">Other page(s)</label>
+                    <input id="pageOther" name="pageOther" type="text"
+                      placeholder="e.g. Resources, Locations, Press">
+                  </div>
+
+                  <div class="field-error" data-error-for="pages"></div>
+                </fieldset>
+
+                <div class="field">
+                  <label for="importantPages">Which pages are most important?</label>
+                  <textarea id="importantPages" name="importantPages"
+                    rows="3"
+                    placeholder="Example: Home, Services and Contact are the most important because we want to generate enquiries."></textarea>
+                  <small>Tell us which pages deserve the strongest strategic attention.</small>
+                </div>
+              </section>
+
+              <!-- STEP 6 -->
+              <section class="form-step" data-step="5">
+                <div class="step-heading">
+                  <span class="step-kicker">06 / DESIGN</span>
+                  <h2>How should it look and feel?</h2>
+                  <p>
+                    Give us a sense of your visual identity and the impression
+                    you want visitors to have.
+                  </p>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Brand assets</legend>
+
+                  <div class="choice-grid">
+                    <label class="choice-card">
+                      <input type="radio" name="hasLogo" value="Yes">
+                      <span class="choice-content">
+                        <b>I have a logo</b><small>Existing logo files are available</small>
+                      </span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="hasLogo" value="No">
+                      <span class="choice-content">
+                        <b>No logo yet</b><small>Logo may need to be created separately</small>
+                      </span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="hasLogo" value="In progress">
+                      <span class="choice-content">
+                        <b>Logo in progress</b><small>Brand assets are being developed</small>
+                      </span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Brand colors</legend>
+
+                  <div class="choice-grid">
+                    <label class="choice-card">
+                      <input type="radio" name="hasBrandColors" value="Yes">
+                      <span class="choice-content">
+                        <b>Yes</b><small>We already have defined colors</small>
+                      </span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="hasBrandColors" value="No">
+                      <span class="choice-content">
+                        <b>No</b><small>Designer should explore the palette</small>
+                      </span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="hasBrandColors" value="Not sure">
+                      <span class="choice-content">
+                        <b>Not sure</b><small>We need recommendations</small>
+                      </span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Brand guidelines</legend>
+
+                  <div class="choice-grid">
+                    <label class="choice-card">
+                      <input type="radio" name="brandGuidelines" value="Yes">
+                      <span class="choice-content">
+                        <b>Yes</b><small>We have formal brand guidelines</small>
+                      </span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="brandGuidelines" value="No">
+                      <span class="choice-content">
+                        <b>No</b><small>No formal guide exists</small>
+                      </span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="brandGuidelines" value="Somewhat">
+                      <span class="choice-content">
+                        <b>Somewhat</b><small>We have informal guidelines</small>
+                      </span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="form-grid two-columns">
+                  <div class="field">
+                    <label for="primaryColor">Preferred primary color</label>
+                    <div class="color-input-row">
+                      <input id="primaryColor" name="primaryColor" type="color" value="#0f766e">
+                      <input id="primaryColorText" type="text" placeholder="#0F766E" aria-label="Primary color hex value">
+                    </div>
+                    <small>Optional. Leave the default if you want us to recommend a color.</small>
+                  </div>
+
+                  <div class="field">
+                    <label for="secondaryColor">Preferred secondary color</label>
+                    <div class="color-input-row">
+                      <input id="secondaryColor" name="secondaryColor" type="color" value="#111827">
+                      <input id="secondaryColorText" type="text" placeholder="#111827" aria-label="Secondary color hex value">
+                    </div>
+                    <small>Optional supporting brand color.</small>
+                  </div>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Preferred website style <span>*</span></legend>
+                  <p class="fieldset-hint">Choose the visual directions that feel closest to your brand.</p>
+
+                  <div class="selection-grid compact-grid">
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Minimal"><span class="selection-icon">—</span><span><b>Minimal</b><small>Clean and restrained</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Luxury"><span class="selection-icon">✦</span><span><b>Luxury</b><small>Refined and premium</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Corporate"><span class="selection-icon">▦</span><span><b>Corporate</b><small>Structured and trustworthy</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Modern"><span class="selection-icon">◆</span><span><b>Modern</b><small>Contemporary and clean</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Creative"><span class="selection-icon">✳</span><span><b>Creative</b><small>Expressive and distinctive</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Elegant"><span class="selection-icon">◇</span><span><b>Elegant</b><small>Graceful and polished</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Bold"><span class="selection-icon">!</span><span><b>Bold</b><small>Strong visual presence</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Dark"><span class="selection-icon">◐</span><span><b>Dark</b><small>Dark visual system</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Light"><span class="selection-icon">○</span><span><b>Light</b><small>Bright and airy</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Professional"><span class="selection-icon">✓</span><span><b>Professional</b><small>Business focused</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Playful"><span class="selection-icon">●</span><span><b>Playful</b><small>Friendly and energetic</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Editorial"><span class="selection-icon">≡</span><span><b>Editorial</b><small>Magazine-inspired</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Tech"><span class="selection-icon">⌘</span><span><b>Tech</b><small>Digital and futuristic</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Fashion"><span class="selection-icon">◇</span><span><b>Fashion</b><small>Style-led presentation</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="designStyle" value="Other"><span class="selection-icon">+</span><span><b>Other</b><small>Different direction</small></span></label>
+                  </div>
+
+                  <div class="field conditional-field" id="styleOtherWrap" hidden>
+                    <label for="styleOther">Other visual style</label>
+                    <input id="styleOther" name="styleOther" type="text"
+                      placeholder="Describe the style">
+                  </div>
+
+                  <div class="field-error" data-error-for="designStyle"></div>
+                </fieldset>
+
+                <div class="field">
+                  <label for="visualStyle">Describe the visual style you want</label>
+                  <textarea id="visualStyle" name="visualStyle"
+                    rows="5"
+                    placeholder="Example: I want a premium, editorial feel with lots of whitespace, sophisticated typography and subtle animation. It should feel established rather than trendy."></textarea>
+                  <small>Describe the mood, visual character, typography, layout or interaction style you have in mind.</small>
+                </div>
+
+                <div class="field">
+                  <label for="referenceWebsites">Reference websites</label>
+                  <textarea id="referenceWebsites" name="referenceWebsites"
+                    rows="5"
+                    placeholder="https://example-one.com
+https://example-two.com
+https://example-three.com"></textarea>
+                  <small>Share websites whose design, structure or functionality you admire. One URL per line.</small>
+                  <div class="field-error" data-error-for="referenceWebsites"></div>
+                </div>
+              </section>
+
+              <!-- STEP 7 -->
+              <section class="form-step" data-step="6">
+                <div class="step-heading">
+                  <span class="step-kicker">07 / FEATURES</span>
+                  <h2>What should the website be able to do?</h2>
+                  <p>
+                    Select the functionality you expect. We'll use this to
+                    estimate complexity and implementation requirements.
+                  </p>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Website features</legend>
+                  <p class="fieldset-hint">Select everything you may need.</p>
+
+                  <div class="selection-grid compact-grid">
+                    <label class="selection-card"><input type="checkbox" name="features" value="Contact form"><span class="selection-icon">✉</span><span><b>Contact form</b><small>Website enquiries</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="WhatsApp integration"><span class="selection-icon">◌</span><span><b>WhatsApp</b><small>Direct messaging</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Newsletter signup"><span class="selection-icon">✉</span><span><b>Newsletter signup</b><small>Email collection</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Search"><span class="selection-icon">⌕</span><span><b>Search</b><small>Site-wide search</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="User accounts"><span class="selection-icon">◎</span><span><b>User accounts</b><small>Customer profiles</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Login"><span class="selection-icon">→</span><span><b>Login</b><small>Member authentication</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Registration"><span class="selection-icon">+</span><span><b>Registration</b><small>New account creation</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Password reset"><span class="selection-icon">⌁</span><span><b>Password reset</b><small>Account recovery</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Appointment booking"><span class="selection-icon">□</span><span><b>Appointment booking</b><small>Schedule appointments</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Calendar"><span class="selection-icon">□</span><span><b>Calendar</b><small>Availability and events</small></span></label>
+                    <label class="selection-card ecommerce-feature"><input type="checkbox" name="features" value="Online payments"><span class="selection-icon">₦</span><span><b>Online payments</b><small>Accept payments</small></span></label>
+                    <label class="selection-card ecommerce-feature"><input type="checkbox" name="features" value="Shopping cart"><span class="selection-icon">◇</span><span><b>Shopping cart</b><small>Cart functionality</small></span></label>
+                    <label class="selection-card ecommerce-feature"><input type="checkbox" name="features" value="Checkout"><span class="selection-icon">→</span><span><b>Checkout</b><small>Order completion</small></span></label>
+                    <label class="selection-card ecommerce-feature"><input type="checkbox" name="features" value="Product reviews"><span class="selection-icon">★</span><span><b>Product reviews</b><small>Customer ratings</small></span></label>
+                    <label class="selection-card ecommerce-feature"><input type="checkbox" name="features" value="Product filtering"><span class="selection-icon">≡</span><span><b>Product filtering</b><small>Filter products</small></span></label>
+                    <label class="selection-card ecommerce-feature"><input type="checkbox" name="features" value="Product search"><span class="selection-icon">⌕</span><span><b>Product search</b><small>Find products</small></span></label>
+                    <label class="selection-card ecommerce-feature"><input type="checkbox" name="features" value="Wishlist"><span class="selection-icon">♡</span><span><b>Wishlist</b><small>Save products</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Blog"><span class="selection-icon">≡</span><span><b>Blog</b><small>Publish content</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Comments"><span class="selection-icon">“</span><span><b>Comments</b><small>Reader discussion</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Testimonials"><span class="selection-icon">“</span><span><b>Testimonials</b><small>Social proof</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Google Maps"><span class="selection-icon">⌖</span><span><b>Google Maps</b><small>Location display</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Social media integration"><span class="selection-icon">◎</span><span><b>Social integration</b><small>Connect social profiles</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Live chat"><span class="selection-icon">◌</span><span><b>Live chat</b><small>Real-time support</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="FAQ accordion"><span class="selection-icon">?</span><span><b>FAQ accordion</b><small>Expandable questions</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="File upload"><span class="selection-icon">↑</span><span><b>File upload</b><small>Visitor submissions</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Downloadable documents"><span class="selection-icon">↓</span><span><b>Downloads</b><small>Documents and resources</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Admin dashboard"><span class="selection-icon">▦</span><span><b>Admin dashboard</b><small>Manage website data</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Notifications"><span class="selection-icon">!</span><span><b>Notifications</b><small>Email or in-app alerts</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Multi-language support"><span class="selection-icon">文</span><span><b>Multi-language</b><small>Multiple languages</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Dark mode"><span class="selection-icon">◐</span><span><b>Dark mode</b><small>Theme switching</small></span></label>
+                    <label class="selection-card"><input type="checkbox" name="features" value="Other"><span class="selection-icon">+</span><span><b>Other</b><small>Custom functionality</small></span></label>
+                  </div>
+
+                  <div class="field conditional-field" id="featureOtherWrap" hidden>
+                    <label for="featureOther">Other feature requirements</label>
+                    <textarea id="featureOther" name="featureOther"
+                      rows="3"
+                      placeholder="Describe any functionality not listed above."></textarea>
+                  </div>
+                </fieldset>
+
+                <div class="field">
+                  <label for="featureDetails">Feature details / integrations</label>
+                  <textarea id="featureDetails" name="featureDetails"
+                    rows="4"
+                    placeholder="Example: We need a booking calendar connected to our existing scheduling process."></textarea>
+                  <small>Describe anything about the selected features that requires special consideration.</small>
+                </div>
+              </section>
+
+              <!-- STEP 8 -->
+              <section class="form-step" data-step="7">
+                <div class="step-heading">
+                  <span class="step-kicker">08 / CONTENT</span>
+                  <h2>Who is responsible for the content?</h2>
+                  <p>
+                    Content quality has a major impact on design, SEO and
+                    conversion. Tell us what already exists.
+                  </p>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Content responsibility <span>*</span></legend>
+
+                  <div class="choice-grid">
+                    <label class="choice-card">
+                      <input type="radio" name="contentResponsibility" value="I will provide all content" required>
+                      <span class="choice-content">
+                        <b>I will provide all content</b>
+                        <small>Text and content will be supplied by me.</small>
+                      </span>
+                    </label>
+
+                    <label class="choice-card">
+                      <input type="radio" name="contentResponsibility" value="I will provide some content">
+                      <span class="choice-content">
+                        <b>I will provide some content</b>
+                        <small>I need help filling the gaps.</small>
+                      </span>
+                    </label>
+
+                    <label class="choice-card">
+                      <input type="radio" name="contentResponsibility" value="I need help creating content">
+                      <span class="choice-content">
+                        <b>I need help creating content</b>
+                        <small>Planning and writing support is needed.</small>
+                      </span>
+                    </label>
+
+                    <label class="choice-card">
+                      <input type="radio" name="contentResponsibility" value="Professional copywriting">
+                      <span class="choice-content">
+                        <b>Professional copywriting</b>
+                        <small>I want professionally written website copy.</small>
+                      </span>
+                    </label>
+
+                    <label class="choice-card">
+                      <input type="radio" name="contentResponsibility" value="Not sure yet">
+                      <span class="choice-content">
+                        <b>Not sure yet</b>
+                        <small>I need advice before deciding.</small>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="field-error" data-error-for="contentResponsibility"></div>
+                </fieldset>
+
+                <div class="form-stack">
+                  <div class="field">
+                    <label for="existingContent">Existing text / content</label>
+                    <textarea id="existingContent" name="existingContent"
+                      rows="4"
+                      placeholder="Describe or list any existing website copy, documents, brochures or content that can be reused."></textarea>
+                    <small>Tell us what content already exists and where it currently lives.</small>
+                  </div>
+
+                  <div class="field">
+                    <label for="productDescriptions">Product descriptions</label>
+                    <textarea id="productDescriptions" name="productDescriptions"
+                      rows="3"
+                      placeholder="Example: We have descriptions for approximately 80 products in a spreadsheet."></textarea>
+                    <small>Relevant for stores or businesses with many products.</small>
+                  </div>
+
+                  <div class="field">
+                    <label for="aboutContent">About-us content</label>
+                    <textarea id="aboutContent" name="aboutContent"
+                      rows="3"
+                      placeholder="Tell us whether your company story/about content already exists."></textarea>
+                  </div>
+
+                  <div class="field">
+                    <label for="testimonialsContent">Testimonials</label>
+                    <textarea id="testimonialsContent" name="testimonialsContent"
+                      rows="3"
+                      placeholder="Tell us whether customer testimonials are available."></textarea>
+                  </div>
+
+                  <div class="field">
+                    <label for="faqContent">Frequently asked questions</label>
+                    <textarea id="faqContent" name="faqContent"
+                      rows="3"
+                      placeholder="List common questions customers ask, if available."></textarea>
+                  </div>
+
+                  <div class="field">
+                    <label for="otherContent">Other content requirements</label>
+                    <textarea id="otherContent" name="otherContent"
+                      rows="3"
+                      placeholder="Anything else the website needs to contain?"></textarea>
+                  </div>
+                </div>
+              </section>
+
+              <!-- STEP 9 -->
+              <section class="form-step" data-step="8">
+                <div class="step-heading">
+                  <span class="step-kicker">09 / TECHNICAL</span>
+                  <h2>Let's cover the technical basics.</h2>
+                  <p>
+                    No technical expertise is required. Only provide information
+                    you already know.
+                  </p>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Do you already have a domain?</legend>
+
+                  <div class="choice-grid compact">
+                    <label class="choice-card">
+                      <input type="radio" name="hasDomain" value="Yes">
+                      <span class="choice-content"><b>Yes</b><small>I own a domain.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="hasDomain" value="No">
+                      <span class="choice-content"><b>No</b><small>I need to register one.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="hasDomain" value="Not sure">
+                      <span class="choice-content"><b>Not sure</b><small>I need guidance.</small></span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="field conditional-field" id="domainWrap" hidden>
+                  <label for="domainName">Domain name</label>
+                  <input id="domainName" name="domainName" type="text"
+                    placeholder="mybusiness.com">
+                  <small>Do not enter domain registrar passwords or authentication codes.</small>
+                  <div class="field-error" data-error-for="domainName"></div>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Do you already have hosting?</legend>
+
+                  <div class="choice-grid compact">
+                    <label class="choice-card">
+                      <input type="radio" name="hasHosting" value="Yes">
+                      <span class="choice-content"><b>Yes</b><small>I already have hosting.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="hasHosting" value="No">
+                      <span class="choice-content"><b>No</b><small>I need hosting.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="hasHosting" value="Not sure">
+                      <span class="choice-content"><b>Not sure</b><small>I need guidance.</small></span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="field conditional-field" id="hostingWrap" hidden>
+                  <label for="hostingProvider">Hosting provider</label>
+                  <input id="hostingProvider" name="hostingProvider" type="text"
+                    placeholder="e.g. Hostinger, GoDaddy, AWS, SiteGround">
+                  <small>Only provide the provider name — never provide your password.</small>
+                </div>
+
+                <div class="security-callout">
+                  <span class="callout-icon">!</span>
+                  <div>
+                    <strong>Security reminder</strong>
+                    <p>
+                      Never enter passwords, API keys, credit card numbers,
+                      banking credentials, hosting passwords, authentication
+                      tokens or other sensitive credentials in this form.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="technicalRequirements">Other technical requirements</label>
+                  <textarea id="technicalRequirements" name="technicalRequirements"
+                    rows="5"
+                    placeholder="Example: We have an existing CRM and would eventually like website leads to be connected to it."></textarea>
+                  <small>Tell us about systems, platforms, integrations or technical constraints you already know about.</small>
+                </div>
+              </section>
+
+              <!-- STEP 10 -->
+              <section class="form-step" data-step="9">
+                <div class="step-heading">
+                  <span class="step-kicker">10 / SEO</span>
+                  <h2>How should people find you?</h2>
+                  <p>
+                    SEO means Search Engine Optimization — improving how your
+                    website appears in search engines such as Google.
+                  </p>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>SEO requirements <span>*</span></legend>
+
+                  <div class="choice-grid">
+                    <label class="choice-card">
+                      <input type="radio" name="seoLevel" value="Basic SEO" required>
+                      <span class="choice-content"><b>Basic SEO</b><small>Technical foundations and page optimization.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="seoLevel" value="Advanced SEO">
+                      <span class="choice-content"><b>Advanced SEO</b><small>Deeper strategy and ongoing optimization.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="seoLevel" value="Local SEO">
+                      <span class="choice-content"><b>Local SEO</b><small>Improve visibility in local searches.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="seoLevel" value="E-commerce SEO">
+                      <span class="choice-content"><b>E-commerce SEO</b><small>Optimize product and category pages.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="seoLevel" value="Not sure">
+                      <span class="choice-content"><b>Not sure</b><small>Recommend what would be appropriate.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="seoLevel" value="No SEO required">
+                      <span class="choice-content"><b>No SEO required</b><small>SEO is not part of this project.</small></span>
+                    </label>
+                  </div>
+
+                  <div class="field-error" data-error-for="seoLevel"></div>
+                </fieldset>
+
+                <div class="form-stack">
+                  <div class="field">
+                    <label for="seoKeywords">Main keywords</label>
+                    <textarea id="seoKeywords" name="seoKeywords"
+                      rows="3"
+                      placeholder="Example: luxury fashion Lagos, African fashion designer, bespoke suits Nigeria"></textarea>
+                    <small>Words or phrases potential customers might type into Google.</small>
+                  </div>
+
+                  <div class="field">
+                    <label for="seoLocations">Target locations</label>
+                    <input id="seoLocations" name="seoLocations" type="text"
+                      placeholder="e.g. Lagos, Abuja, Nigeria, United Kingdom">
+                    <small>Important for local or regional search visibility.</small>
+                  </div>
+
+                  <div class="field">
+                    <label for="seoCompetitors">Competitor websites</label>
+                    <textarea id="seoCompetitors" name="seoCompetitors"
+                      rows="4"
+                      placeholder="https://competitor-one.com
+https://competitor-two.com"></textarea>
+                    <small>Websites competing for the same customers or search terms.</small>
+                    <div class="field-error" data-error-for="seoCompetitors"></div>
+                  </div>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Google Business Profile</legend>
+
+                  <div class="choice-grid compact">
+                    <label class="choice-card">
+                      <input type="radio" name="googleBusiness" value="Yes">
+                      <span class="choice-content"><b>Yes</b><small>We already have one.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="googleBusiness" value="No">
+                      <span class="choice-content"><b>No</b><small>We don't have one.</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="googleBusiness" value="Not sure">
+                      <span class="choice-content"><b>Not sure</b><small>I don't know what this is.</small></span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="field">
+                  <label for="existingSeo">Existing SEO information</label>
+                  <textarea id="existingSeo" name="existingSeo"
+                    rows="4"
+                    placeholder="Tell us about existing rankings, analytics, SEO work, Search Console or other relevant information."></textarea>
+                    <small>Only share non-sensitive information. Never provide account passwords or private access tokens.</small>
+                </div>
+              </section>
+
+              <!-- STEP 11 -->
+              <section class="form-step" data-step="10">
+                <div class="step-heading">
+                  <span class="step-kicker">11 / BUDGET & TIMELINE</span>
+                  <h2>Let's understand the project scope.</h2>
+                  <p>
+                    Budget and timing help us recommend a realistic scope,
+                    technology approach and delivery plan.
+                  </p>
+                </div>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Estimated project budget <span>*</span></legend>
+                  <p class="fieldset-hint">Choose the range closest to your current expectation.</p>
+
+                  <div class="budget-grid">
+                    <label class="budget-card">
+                      <input type="radio" name="budget" value="Under $500" required>
+                      <span>Under $500</span>
+                    </label>
+                    <label class="budget-card">
+                      <input type="radio" name="budget" value="$500–$1,000">
+                      <span>$500–$1,000</span>
+                    </label>
+                    <label class="budget-card">
+                      <input type="radio" name="budget" value="$1,000–$2,500">
+                      <span>$1,000–$2,500</span>
+                    </label>
+                    <label class="budget-card">
+                      <input type="radio" name="budget" value="$2,500–$5,000">
+                      <span>$2,500–$5,000</span>
+                    </label>
+                    <label class="budget-card">
+                      <input type="radio" name="budget" value="$5,000+">
+                      <span>$5,000+</span>
+                    </label>
+                    <label class="budget-card">
+                      <input type="radio" name="budget" value="I am not sure yet">
+                      <span>Not sure yet</span>
+                    </label>
+                    <label class="budget-card">
+                      <input type="radio" name="budget" value="Prefer to discuss">
+                      <span>Prefer to discuss</span>
+                    </label>
+                  </div>
+
+                  <div class="field-error" data-error-for="budget"></div>
+                </fieldset>
+
+                <fieldset class="choice-fieldset">
+                  <legend>Desired completion timeframe <span>*</span></legend>
+
+                  <div class="choice-grid">
+                    <label class="choice-card">
+                      <input type="radio" name="timeline" value="As soon as possible" required>
+                      <span class="choice-content"><b>ASAP</b><small>As soon as practical</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="timeline" value="Within 2 weeks">
+                      <span class="choice-content"><b>Within 2 weeks</b><small>Fast turnaround</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="timeline" value="Within 1 month">
+                      <span class="choice-content"><b>Within 1 month</b><small>Approximately four weeks</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="timeline" value="1–2 months">
+                      <span class="choice-content"><b>1–2 months</b><small>Standard project window</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="timeline" value="2–3 months">
+                      <span class="choice-content"><b>2–3 months</b><small>More flexible scope</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="timeline" value="Flexible">
+                      <span class="choice-content"><b>Flexible</b><small>No fixed deadline</small></span>
+                    </label>
+                    <label class="choice-card">
+                      <input type="radio" name="timeline" value="Specific date">
+                      <span class="choice-content"><b>Specific date</b><small>I have a target date</small></span>
+                    </label>
+                  </div>
+
+                  <div class="field conditional-field" id="specificDateWrap" hidden>
+                    <label for="specificDate">Target completion date</label>
+                    <input id="specificDate" name="specificDate" type="date">
+                    <small>Select the date you ideally want the project completed by.</small>
+                  </div>
+
+                  <div class="field-error" data-error-for="timeline"></div>
+                </fieldset>
+              </section>
+
+              <!-- STEP 12 -->
+              <section class="form-step" data-step="11">
+                <div class="step-heading">
+                  <span class="step-kicker">12 / REVIEW</span>
+                  <h2>Everything looks good?</h2>
+                  <p>
+                    Review your project brief before submitting it. You can edit
+                    any section without losing your progress.
+                  </p>
+                </div>
+
+                <div class="review-container" id="reviewContainer"></div>
+
+                <div class="consent-card">
+                  <label class="consent-label">
+                    <input type="checkbox" id="consent" name="consent">
+                    <span>
+                      <b>I confirm that the information I provided is accurate to the best of my knowledge.</b>
+                      <small>
+                        I understand this brief is used for project discovery,
+                        planning and communication.
+                      </small>
+                    </span>
+                  </label>
+                  <div class="field-error" data-error-for="consent"></div>
+                </div>
+
+                <div class="security-callout final-security">
+                  <span class="callout-icon">⌁</span>
+                  <div>
+                    <strong>One last security reminder</strong>
+                    <p>
+                      Never submit passwords, API keys, payment card numbers,
+                      banking credentials or private authentication tokens.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="submit-error" id="submitError" role="alert" hidden></div>
+              </section>
+
+              <!-- NAVIGATION -->
+              <div class="form-navigation">
+                <button class="secondary-button" type="button" id="backButton">
+                  <span>←</span> Back
+                </button>
+
+                <div class="navigation-status">
+                  <span id="stepStatus">Step 1 of 12</span>
+                  <span class="status-separator">•</span>
+                  <span id="stepPercentage">0% complete</span>
+                </div>
+
+                <button class="primary-button" type="button" id="nextButton">
+                  <span id="nextButtonText">Continue</span>
+                  <span>→</span>
+                </button>
+
+                <button class="primary-button submit-button" type="submit" id="submitButton" hidden>
+                  <span class="button-spinner" id="submitSpinner"></span>
+                  <span id="submitButtonText">Submit Project Brief</span>
+                  <span>→</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           SUCCESS
+      ========================== -->
+      <section class="success-section" id="successSection" hidden>
+        <div class="container">
+          <div class="success-card">
+            <div class="success-icon">
+              <span>✓</span>
+            </div>
+
+            <span class="success-kicker">PROJECT BRIEF RECEIVED</span>
+
+            <h2>Project Brief Submitted</h2>
+
+            <p>
+              Thank you. Your project information has been successfully
+              received. We'll review your requirements and get back to you.
+            </p>
+
+            <div class="success-details">
+              <div>
+                <span>Submitted by</span>
+                <strong id="successName">—</strong>
+              </div>
+              <div>
+                <span>Business</span>
+                <strong id="successBusiness">—</strong>
+              </div>
+              <div>
+                <span>Submitted</span>
+                <strong id="successDate">—</strong>
+              </div>
+            </div>
+
+            <div class="success-footer">
+              <span class="success-check">✓</span>
+              <span>Your local draft has been cleared after successful submission.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>EarnDee Limited</strong>
+          <span>Professional website project discovery.</span>
+        </div>
+
+        <div class="footer-security">
+          <span>⌁</span>
+          Secure client discovery
+        </div>
+        
+        <div>
+          © <span id="footerYear"></span> EarnDee Limited
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================
+         CONFIRMATION MODAL
+    ========================== -->
+    <div class="modal-backdrop" id="resetModal" hidden>
+      <div class="modal" role="dialog" aria-modal="true"
+        aria-labelledby="resetModalTitle">
+        <button class="modal-close" type="button" id="closeResetModal"
+          aria-label="Close dialog">×</button>
+
+        <span class="modal-icon">↻</span>
+        <h2 id="resetModalTitle">Start over?</h2>
+        <p>
+          This will permanently remove the saved project brief from this
+          browser. Your submitted information is not affected.
+        </p>
+
+        <div class="modal-actions">
+          <button class="secondary-button" type="button" id="cancelReset">
+            Keep my progress
+          </button>
+          <button class="danger-button" type="button" id="confirmReset">
+            Start over
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      <span class="toast-icon">✓</span>
+      <span id="toastText">Saved locally</span>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

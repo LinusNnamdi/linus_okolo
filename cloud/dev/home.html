@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="EarnDee Limited Professional Cloud & DevOps Engineering Resources - 50 production-ready architectures across AWS, Azure, GCP, Docker, Kubernetes, and AWS Lambda.">
+    <title>EarnDee Limited Cloud & DevOps Resources | Engineering Portfolio</title>
+    <link rel="icon" href="../../images/earndee.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="home.html" class="brand" aria-label="Cloud & DevOps Home">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="../../images/earndee.png" alt="">
+                </span>
+                <span class="brand-text">
+                    <strong>EarnDee Limited</strong>
+                    <span class="brand-sub">Cloud &amp; DevOps Engineering Resources</span>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="main-nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="#resources" class="nav-link">Samples Projects</a></li>
+                    <li><a href="#platforms" class="nav-link" data-filter="AWS">AWS</a></li>
+                    <li><a href="#platforms" class="nav-link" data-filter="Azure">Azure</a></li>
+                    <li><a href="#platforms" class="nav-link" data-filter="GCP">GCP</a></li>
+                    <li><a href="#platforms" class="nav-link" data-filter="Docker">Docker</a></li>
+                    <li><a href="#platforms" class="nav-link" data-filter="Kubernetes">Kubernetes</a></li>
+                    <li><a href="#platforms" class="nav-link" data-filter="AWS Lambda">Lambda</a></li>
+                    <li><a href="../home.html#questionnaire" class="nav-link" data-filter="AWS Lambda">Questionnaire/plan yours</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="../home.html#questionnaire" class="btn btn-primary btn-sm">Start a Project Planning</a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"
+                    aria-expanded="false" aria-controls="main-nav">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Cloud Architecture · DevOps · Automation . Samples</p>
+                    <h1 class="hero-title">Cloud &amp; DevOps Engineering Resources</h1>
+                    
+                    <p class="hero-lead">
+                        Explore 50 real production cloud infrastructure, DevOps,
+                        containerization, orchestration, automation, GitHub Action 
+                        CI/CD pipeline and serverless engineering solutions built 
+                        around today's most demanded technologies.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="../home.html#questionnaire" class="btn btn-primary">Start a Project Planning</a>
+                        <a href="#resources" class="btn btn-secondary">Explore Samples</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-diagram">
+                        <div class="diagram-node diagram-node--cloud">Cloud</div>
+                        <div class="diagram-node diagram-node--compute">Compute</div>
+                        <div class="diagram-node diagram-node--network">Network</div>
+                        <div class="diagram-node diagram-node--data">Data</div>
+                        <div class="diagram-node diagram-node--security">Security</div>
+                        <div class="diagram-lines"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Summary -->
+        <section class="platforms" id="platforms" aria-labelledby="platforms-heading">
+            <div class="container">
+                <h2 id="platforms-heading" class="section-title visually-hidden">Platforms</h2>
+                <div class="platform-grid" id="platform-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Mid-page CTA -->
+        <section class="cta-band" aria-labelledby="cta-mid-heading">
+            <div class="container cta-band-inner">
+                <div class="cta-band-text">
+                    <h2 id="cta-mid-heading">Need a Cloud & DevOps Services?</h2>
+                    <p>
+                        Tell us what you want to build. Complete the project questionnaire 
+                        and provide the necessary requirements for us to know more and make 
+                        right plans.
+                    </p>
+                </div>
+                <a href="../home.html#questionnaire" class="btn btn-primary">Start Your Project Planning</a>
+            </div>
+        </section>
+
+        <!-- Resources Discovery -->
+        <section class="resources-section" id="resources" aria-labelledby="resources-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="resources-heading" class="section-title">
+                        50 Cloud &amp; DevOps Resources Project Samples
+                    </h2>
+                    <p class="section-lead">
+                        Explore practical cloud architecture and DevOps engineering
+                        solutions across the industry’s most widely used platforms. 
+                        It can inspire you to give more accurate response.
+                    </p>
+                </header>
+
+                <!-- Filters -->
+                <div class="filters-bar" role="search" aria-label="Filter resources">
+                    <div class="filter-group filter-group--platforms">
+                        <button type="button" class="filter-btn is-active" data-platform="All"
+                            aria-pressed="true">All</button>
+                        <button type="button" class="filter-btn" data-platform="AWS" aria-pressed="false">AWS</button>
+                        <button type="button" class="filter-btn" data-platform="Azure"
+                            aria-pressed="false">Azure</button>
+                        <button type="button" class="filter-btn" data-platform="GCP" aria-pressed="false">GCP</button>
+                        <button type="button" class="filter-btn" data-platform="Docker"
+                            aria-pressed="false">Docker</button>
+                        <button type="button" class="filter-btn" data-platform="Kubernetes"
+                            aria-pressed="false">Kubernetes</button>
+                        <button type="button" class="filter-btn" data-platform="AWS Lambda" aria-pressed="false">AWS
+                            Lambda</button>
+                    </div>
+
+                    <div class="filter-group filter-group--difficulty">
+                        <button type="button" class="filter-btn" data-difficulty="All" aria-pressed="false">All
+                            Levels</button>
+                        <button type="button" class="filter-btn" data-difficulty="Beginner"
+                            aria-pressed="false">Beginner</button>
+                        <button type="button" class="filter-btn" data-difficulty="Intermediate"
+                            aria-pressed="false">Intermediate</button>
+                        <button type="button" class="filter-btn" data-difficulty="Advanced"
+                            aria-pressed="false">Advanced</button>
+                    </div>
+
+                    <div class="filter-controls">
+                        <div class="search-wrap">
+                            <label for="resource-search" class="visually-hidden">Search resources</label>
+                            <input type="search" id="resource-search" class="search-input"
+                                placeholder="Search resources..." autocomplete="off">
+                        </div>
+                        <div class="sort-wrap">
+                            <label for="resource-sort" class="visually-hidden">Sort by</label>
+                            <select id="resource-sort" class="sort-select" aria-label="Sort resources">
+                                <option value="featured">Featured</option>
+                                <option value="name-asc">Name A–Z</option>
+                                <option value="name-desc">Name Z–A</option>
+                                <option value="difficulty">Difficulty</option>
+                                <option value="platform">Platform</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resources-meta">
+                    <p class="resources-count" id="resources-count" aria-live="polite">50 Resources</p>
+                    <button type="button" class="btn-text" id="reset-filters" hidden>Reset Filters</button>
+                </div>
+
+                <!-- Resource Grid -->
+                <div class="resource-grid" id="resource-grid" role="list">
+                    <!-- Populated by JS -->
+                </div>
+
+                <!-- Empty State -->
+                <div class="empty-state" id="empty-state" hidden>
+                    <h3>No resources found</h3>
+                    <p>Try another search term or reset your filters.</p>
+                    <button type="button" class="btn btn-secondary" id="empty-reset">Reset Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="final-cta" aria-labelledby="final-cta-heading">
+            <div class="container final-cta-inner">
+                <h2 id="final-cta-heading">Ready to Build Your Next Cloud-Powered Product?</h2>
+                <p>
+                    Whether you need cloud infrastructure, DevOps automation,
+                    serverless architecture, container orchestration, or a
+                    custom Flutter application, let’s define the right solution.
+                </p>
+                <div class="final-cta-actions">
+                    <a href="../home.html#questionnaire" class="btn btn-primary">Start a Project Planning</a>
+                    <a href="#resources" class="btn btn-secondary">Explore Resources</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <a href="home.html" class="brand" aria-label="Cloud & DevOps Home">
+                    <span class="brand-mark" aria-hidden="true">
+                        <img src="../../images/earndee.png" alt="">
+                    </span>
+                    <span class="brand-text">
+                        <strong>EarnDee Limited</strong>
+                    </span>
+                </a>
+                <p>
+                    Production-grade cloud architecture, DevOps automation, and serverless engineering resources for
+                    modern engineering teams.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>Platforms</h3>
+                <ul>
+                    <li><a href="#platforms" data-filter="AWS">AWS</a></li>
+                    <li><a href="#platforms" data-filter="Azure">Azure</a></li>
+                    <li><a href="#platforms" data-filter="GCP">GCP</a></li>
+                    <li><a href="#platforms" data-filter="Docker">Docker</a></li>
+                    <li><a href="#platforms" data-filter="Kubernetes">Kubernetes</a></li>
+                    <li><a href="#platforms" data-filter="AWS Lambda">AWS Lambda</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#resources">All Resources</a></li>
+                    <li><a href="#resources">Cloud Architecture</a></li>
+                    <li><a href="#resources">DevOps</a></li>
+                    <li><a href="#resources">Containers</a></li>
+                    <li><a href="#resources">Serverless</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="../home.html#questionnaire">Start a Project Planning</a></li>
+                    <li><a href="../home.html#questionnaire">Project Questionnaire</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">X</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> EarnDee Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resource Modal -->
+    <div class="modal" id="resource-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-panel" role="document">
+            <button type="button" class="modal-close" data-close-modal aria-label="Close dialog">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div class="gallery" id="gallery" role="dialog" aria-modal="true" aria-label="Image gallery" hidden>
+        <div class="gallery-backdrop" data-close-gallery></div>
+        <button type="button" class="gallery-close" data-close-gallery aria-label="Close gallery">&times;</button>
+        <button type="button" class="gallery-nav gallery-prev" id="gallery-prev" aria-label="Previous image">‹</button>
+        <button type="button" class="gallery-nav gallery-next" id="gallery-next" aria-label="Next image">›</button>
+        <div class="gallery-content">
+            <img id="gallery-main" src="" alt="" class="gallery-main-img">
+            <div class="gallery-thumbs" id="gallery-thumbs"></div>
+            <p class="gallery-counter" id="gallery-counter" aria-live="polite"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

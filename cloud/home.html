@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Cloud & DevOps project assessment. Share your infrastructure, CI/CD, container, and monitoring requirements so we can design a solution that scales with your business.">
+  <title>Cloud & DevOps Project Questionnaire | EarnDee Limited Design Guide</title>
+  <link rel="icon" href="../images/earndee.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="EarnDee Limited Consulting home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="../images/earndee.png" alt="ND">
+        </span>
+        <span class="brand-text">EarnDee Limited</span>
+        <span class="brand-tag">Cloud &amp; DevOps Questionnaire</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Few Samples</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#questionnaire" class="nav-link">Questionnaire / Create Yours</a></li>
+        </ul>
+        <a href="../home.html" class="btn btn-primary btn-nav">All Questionnaire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Cloud &amp; DevOps Consulting Guide</p>
+          <h1 class="hero-title">Let's Build Cloud Infrastructure That Scales With Your Business.</h1>
+          <p class="hero-lead">
+            This focused assessment helps me understand your application, current infrastructure,
+            deployment process, containerization needs, monitoring requirements, and production goals—
+            so we can design the right architecture together.
+          </p>
+          <div class="hero-actions">
+            <a href="#questionnaire" class="btn btn-primary btn-lg">Questionnaire / Create Yours</a>
+            <a href="dev/home.html#resources" class="btn btn-secondary btn-lg">All Samples</a>
+          </div>
+          <ul class="hero-meta" aria-label="Assessment highlights">
+            <li>~5 - 8 minutes</li>
+            <li>No cloud expertise required</li>
+            <li>Secure · No credentials collected</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="arch-preview">
+            <div class="arch-node arch-node--cloud">Cloud</div>
+            <div class="arch-line"></div>
+            <div class="arch-row">
+              <div class="arch-node">CI/CD</div>
+              <div class="arch-node">Containers</div>
+              <div class="arch-node">K8s</div>
+            </div>
+            <div class="arch-line"></div>
+            <div class="arch-row">
+              <div class="arch-node arch-node--accent">Monitor</div>
+              <div class="arch-node arch-node--accent">Scale</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TWO SAMPLE PROJECT CARDS -->
+    <section class="samples" id="samples">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Sample scenarios</p>
+          <h2 class="section-title">The kind of outcomes we design for</h2>
+          <p class="section-lead">Illustrative examples only - not claims about real clients. Use them to see how we approach common Cloud &amp; DevOps challenges.</p>
+        </div>
+
+        <div class="samples-grid">
+          <!-- SAMPLE 1 -->
+          <article class="sample-card">
+            <div class="sample-card-badge">Sample · E-commerce</div>
+            <h3 class="sample-card-title">Scalable E-Commerce Platform</h3>
+            <p class="sample-card-desc">A growing storefront facing traffic spikes, manual releases, and limited visibility into production.</p>
+
+            <div class="sample-block">
+              <h4>Challenge</h4>
+              <ul>
+                <li>Traffic spikes during campaigns</li>
+                <li>Manual, error-prone deployments</li>
+                <li>Application downtime risk</li>
+                <li>Poor infrastructure visibility</li>
+              </ul>
+            </div>
+
+            <div class="sample-block">
+              <h4>Proposed solution</h4>
+              <ul>
+                <li>AWS foundation with auto-scaling</li>
+                <li>Dockerized services on Kubernetes</li>
+                <li>GitHub Actions CI/CD pipelines</li>
+                <li>Datadog monitoring &amp; Slack alerting</li>
+              </ul>
+            </div>
+
+            <div class="sample-arch" aria-hidden="true">
+              <div class="arch-chip">AWS</div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-chip">Docker</div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-chip">Kubernetes</div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-chip">GitHub Actions CI/CD</div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-chip">Datadog &amp; Slack</div>
+            </div>
+
+            <div class="sample-block sample-block--outcome">
+              <h4>Target outcome</h4>
+              <ul>
+                <li>Automated, repeatable deployments</li>
+                <li>Elastic capacity for peak traffic</li>
+                <li>Clear Monitoring &amp; observability</li>
+                <li>Lower operational risk</li>
+              </ul>
+            </div>
+
+            <a href="#questionnaire" class="btn btn-primary btn-block">Build Something Like This</a>
+          </article>
+
+          <!-- SAMPLE 2 -->
+          <article class="sample-card">
+            <div class="sample-card-badge">Sample · Serverless</div>
+            <h3 class="sample-card-title">Serverless API &amp; Automation</h3>
+            <p class="sample-card-desc">A startup that needs a scalable API without the overhead of servers being always on.</p>
+
+            <div class="sample-block">
+              <h4>Challenge</h4>
+              <ul>
+                <li>Unpredictable request volume</li>
+                <li>Cost of running infrastructure steadily</li>
+                <li>Manual deployment steps</li>
+                <li>Limited monitoring coverage</li>
+              </ul>
+            </div>
+
+            <div class="sample-block">
+              <h4>Proposed solution</h4>
+              <ul>
+                <li>AWS Lambda + API layer</li>
+                <li>Event-driven automation</li>
+                <li>GitHub Actions for releases</li>
+                <li>Datadog and Slack channel for metrics &amp; logs</li>
+              </ul>
+            </div>
+
+            <div class="sample-arch" aria-hidden="true">
+              <div class="arch-chip">API</div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-chip">Lambda</div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-chip">Events</div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-chip">GitHub Actions</div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-chip">Datadog</div>
+            </div>
+
+            <div class="sample-block sample-block--outcome">
+              <h4>Target outcome</h4>
+              <ul>
+                <li>Pay-per-use scalability</li>
+                <li>Fully automated deployments</li>
+                <li>Actionable monitoring</li>
+                <li>Minimal server management</li>
+              </ul>
+            </div>
+
+            <a href="#questionnaire" class="btn btn-primary btn-block">Plan a Solution Like This</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS (supports nav) -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Process</p>
+          <h2 class="section-title">How the assessment works</h2>
+        </div>
+        <ol class="steps-list">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <h3>Share your context</h3>
+              <p>Answer what you know about goals, stack, and constraints. Skip anything that doesn’t apply.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <h3>Review &amp; submit</h3>
+              <p>Check a clear summary of your answers, then send the assessment securely.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <h3>Architecture conversation</h3>
+              <p>I’ll review your inputs and follow up with targeted questions and a recommended path forward.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">NB:</span>
+            <div>
+              <h3>More info | Best Suggestions</h3>
+              <p>
+                The informations you give helps our final decision and budget minimalization for best output.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SERVICES (supports nav) -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Focus areas</p>
+          <h2 class="section-title">Cloud &amp; DevOps services</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-pill">AWS · GCP · Azure</div>
+          <div class="service-pill">Docker &amp; Kubernetes</div>
+          <div class="service-pill">GitHub Actions CI/CD</div>
+          <div class="service-pill">AWS Lambda</div>
+          <div class="service-pill">Datadog Observability</div>
+          <div class="service-pill">Cloud Migration</div>
+          <div class="service-pill">Infrastructure Optimization</div>
+          <div class="service-pill">Production Readiness</div>
+          <div class="service-pill">Security &amp; Operations</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTIONNAIRE INTRODUCTION + FORM -->
+    <section class="questionnaire-section" id="questionnaire">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Project assessment</p>
+          <h2 class="section-title">Client Cloud &amp; DevOps Project Planning questionnaire</h2>
+          <p class="section-lead">
+            This short assessment helps me understand your project before we discuss architecture, implementation, and pricing.
+            You don’t need to be a cloud expert just answer what you know and skip anything that doesn’t apply.
+          </p>
+          <p class="est-time">Estimated completion time: <strong>5–8 minutes</strong></p>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-wrap" id="progress-wrap" hidden>
+          <div class="progress-meta">
+            <span id="progress-label">Step 1 of 7</span>
+            <span id="progress-section-name">Contact</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-labelledby="progress-label">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <div class="progress-dots" id="progress-dots" aria-hidden="true"></div>
+        </div>
+
+        <!-- Form -->
+        <form
+          id="assessment-form"
+          class="assessment-form"
+          method="POST"
+          action="https://api.web3forms.com/submit"
+          novalidate
+        >
+          <!-- Web3Forms access key — REPLACE WITH YOUR KEY -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New Cloud & DevOps Project Assessment">
+          <input type="hidden" name="from_name" value="EarnDee Limited Assessment Form">
+          <input type="hidden" name="form_source" value="Cloud & DevOps Client Cloud &amp; DevOps Project Planning Questionnaire">
+          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
+
+          <!-- Hidden aggregate payload fields (filled by JS before submit) -->
+          <input type="hidden" name="full_assessment_summary" id="field-summary" value="">
+          <input type="hidden" name="questionnaire_metadata" id="field-metadata" value="">
+
+          <!-- ========== STEP 0: CONTACT ========== -->
+          <fieldset class="form-step is-active" data-step="0" id="step-0" aria-labelledby="step-0-title">
+            <legend id="step-0-title" class="step-title">Your contact details</legend>
+            <p class="step-desc">So I can follow up on your assessment. Required fields are marked with <span class="req" aria-hidden="true">*</span>.</p>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="full_name">Full name <span class="req">*</span></label>
+                <input type="text" id="full_name" name="full_name" autocomplete="name" required aria-required="true">
+                <p class="field-error" id="err-full_name" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="company">Company / organization <span class="optional">(Optional)</span></label>
+                <input type="text" id="company" name="company" autocomplete="organization">
+              </div>
+
+              <div class="field">
+                <label for="email">Email address <span class="req">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required aria-required="true">
+                <p class="field-error" id="err-email" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone number <span class="optional">(Optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+
+              <div class="field field-full">
+                <label for="website_url">Website / application URL <span class="optional">(Optional)</span></label>
+                <input type="url" id="website_url" name="website_url" placeholder="https://">
+              </div>
+
+              <div class="field field-full">
+                <fieldset class="nested-fieldset">
+                  <legend>Preferred contact method <span class="req">*</span></legend>
+                  <div class="choice-group" role="radiogroup" aria-required="true">
+                    <label class="choice"><input type="radio" name="preferred_contact" value="Email" required> Email</label>
+                    <label class="choice"><input type="radio" name="preferred_contact" value="Phone"> Phone</label>
+                    <label class="choice"><input type="radio" name="preferred_contact" value="Either"> Either</label>
+                  </div>
+                  <p class="field-error" id="err-preferred_contact" role="alert"></p>
+                </fieldset>
+              </div>
+
+              <div class="field field-full">
+                <label for="project_description">Project description / additional information <span class="optional">(Optional)</span></label>
+                <textarea id="project_description" name="project_description" rows="4" placeholder="Anything else that would help me understand the engagement…"></textarea>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-primary" data-action="next">Continue</button>
+            </div>
+          </fieldset>
+
+          <!-- ========== STEP 1: PROJECT & BUSINESS ========== -->
+          <fieldset class="form-step" data-step="1" id="step-1" aria-labelledby="step-1-title" hidden>
+            <legend id="step-1-title" class="step-title">Project &amp; business requirements</legend>
+            <p class="step-desc">Goals, users, and what success looks like for this engagement.</p>
+
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="main_objective">What is the main objective of the project? <span class="req">*</span></label>
+                <textarea id="main_objective" name="main_objective" rows="3" required aria-required="true" placeholder="e.g. Migrate to AWS, improve deployment reliability, reduce cloud cost…"></textarea>
+                <p class="field-error" id="err-main_objective" role="alert"></p>
+              </div>
+
+              <div class="field field-full">
+                <label for="application_type">What type of application are you deploying? <span class="req">*</span></label>
+                <select id="application_type" name="application_type" required aria-required="true">
+                  <option value="">Select…</option>
+                  <option value="Web application">Web application</option>
+                  <option value="Mobile backend / API">Mobile backend / API</option>
+                  <option value="E-commerce">E-commerce</option>
+                  <option value="SaaS platform">SaaS platform</option>
+                  <option value="Internal tools">Internal tools</option>
+                  <option value="Data / analytics pipeline">Data / analytics pipeline</option>
+                  <option value="Other">Other</option>
+                </select>
+                <p class="field-error" id="err-application_type" role="alert"></p>
+              </div>
+
+              <div class="field field-full">
+                <label for="critical_functions">What are the critical business functions? <span class="optional">(Optional)</span></label>
+                <textarea id="critical_functions" name="critical_functions" rows="2" placeholder="e.g. Checkout, user auth, reporting…"></textarea>
+              </div>
+
+              <div class="field field-full">
+                <label for="application_users">Who are the application's users? <span class="optional">(Optional)</span></label>
+                <input type="text" id="application_users" name="application_users" placeholder="e.g. Customers, internal staff, partners…">
+              </div>
+
+              <div class="field">
+                <label for="expected_traffic">What are your expected traffic levels? <span class="optional">(Optional)</span></label>
+                <select id="expected_traffic" name="expected_traffic">
+                  <option value="">Select…</option>
+                  <option value="Low (&lt; 1k daily users)">Low (&lt; 1k daily users)</option>
+                  <option value="Moderate (1k–50k daily)">Moderate (1k–50k daily)</option>
+                  <option value="High (50k–500k daily)">High (50k–500k daily)</option>
+                  <option value="Very high / spiky">Very high / spiky</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="project_timeline">What is your expected project timeline? <span class="req">*</span></label>
+                <select id="project_timeline" name="project_timeline" required aria-required="true">
+                  <option value="">Select…</option>
+                  <option value="ASAP / under 4 weeks">ASAP / under 4 weeks</option>
+                  <option value="1–3 months">1–3 months</option>
+                  <option value="3–6 months">3–6 months</option>
+                  <option value="6+ months">6+ months</option>
+                  <option value="Flexible / exploratory">Flexible / exploratory</option>
+                </select>
+                <p class="field-error" id="err-project_timeline" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="project_budget">Approximate cloud / project budget <span class="optional">(Optional)</span></label>
+                <select id="project_budget" name="project_budget">
+                  <option value="">Select…</option>
+                  <option value="Under $5k">Under $5k</option>
+                  <option value="$5k–$15k">$5k–$15k</option>
+                  <option value="$15k–$50k">$15k–$50k</option>
+                  <option value="$50k+">$50k+</option>
+                  <option value="Prefer to discuss">Prefer to discuss</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="availability_level">Required availability level <span class="optional">(Optional)</span></label>
+                <select id="availability_level" name="availability_level">
+                  <option value="">Select…</option>
+                  <option value="Best effort">Best effort</option>
+                  <option value="99% (business hours critical)">99% (business hours critical)</option>
+                  <option value="99.9%">99.9%</option>
+                  <option value="99.99% or higher">99.99% or higher</option>
+                  <option value="Not sure">Not sure</option>
+                </select>
+              </div>
+
+              <div class="field field-full">
+                <label for="disaster_recovery">Disaster-recovery expectations <span class="optional">(Optional)</span></label>
+                <textarea id="disaster_recovery" name="disaster_recovery" rows="2" placeholder="e.g. RTO/RPO targets, multi-region, backups…"></textarea>
+              </div>
+
+              <div class="field field-full">
+                <label for="success_criteria">What would make this project successful for you? <span class="req">*</span></label>
+                <textarea id="success_criteria" name="success_criteria" rows="3" required aria-required="true" placeholder="e.g. Zero-downtime deploys, 40% cost reduction, full observability…"></textarea>
+                <p class="field-error" id="err-success_criteria" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-secondary" data-action="prev">Back</button>
+              <button type="button" class="btn btn-primary" data-action="next">Continue</button>
+            </div>
+          </fieldset>
+
+          <!-- ========== STEP 2: CURRENT INFRASTRUCTURE ========== -->
+          <fieldset class="form-step" data-step="2" id="step-2" aria-labelledby="step-2-title" hidden>
+            <legend id="step-2-title" class="step-title">Current infrastructure</legend>
+            <p class="step-desc">Where things run today and any pain points you already know about.</p>
+
+            <div class="form-grid">
+              <div class="field field-full">
+                <fieldset class="nested-fieldset">
+                  <legend>Do you already have a cloud environment? <span class="req">*</span></legend>
+                  <div class="choice-group" role="radiogroup" data-conditional-trigger="has_cloud">
+                    <label class="choice"><input type="radio" name="has_cloud" value="Yes" required> Yes</label>
+                    <label class="choice"><input type="radio" name="has_cloud" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="has_cloud" value="Partial / in progress"> Partial / in progress</label>
+                    <label class="choice"><input type="radio" name="has_cloud" value="Not sure"> Not sure</label>
+                  </div>
+                  <p class="field-error" id="err-has_cloud" role="alert"></p>
+                </fieldset>
+              </div>
+
+              <div class="field field-full conditional" data-show-when="has_cloud:Yes,Partial / in progress" hidden>
+                <fieldset class="nested-fieldset">
+                  <legend>Which cloud provider(s) are currently being used? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group choice-group--wrap" data-conditional-trigger="cloud_providers">
+                    <label class="choice"><input type="checkbox" name="cloud_providers" value="AWS"> AWS</label>
+                    <label class="choice"><input type="checkbox" name="cloud_providers" value="Google Cloud"> Google Cloud</label>
+                    <label class="choice"><input type="checkbox" name="cloud_providers" value="Microsoft Azure"> Microsoft Azure</label>
+                    <label class="choice"><input type="checkbox" name="cloud_providers" value="Other"> Other</label>
+                    <label class="choice"><input type="checkbox" name="cloud_providers" value="None"> None</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field field-full conditional" data-show-when="cloud_providers:AWS" hidden>
+                <label for="aws_services">AWS services in use <span class="optional">(Optional)</span></label>
+                <input type="text" id="aws_services" name="aws_services" placeholder="e.g. EC2, ECS, RDS, S3, Lambda…">
+              </div>
+
+              <div class="field field-full conditional" data-show-when="cloud_providers:Google Cloud" hidden>
+                <label for="gcp_services">GCP services in use <span class="optional">(Optional)</span></label>
+                <input type="text" id="gcp_services" name="gcp_services" placeholder="e.g. GKE, Cloud Run, Cloud SQL…">
+              </div>
+
+              <div class="field field-full conditional" data-show-when="cloud_providers:Microsoft Azure" hidden>
+                <label for="azure_services">Azure services in use <span class="optional">(Optional)</span></label>
+                <input type="text" id="azure_services" name="azure_services" placeholder="e.g. AKS, App Service, Azure SQL…">
+              </div>
+
+              <div class="field field-full">
+                <label for="current_cloud_services">Which cloud services are currently being used? <span class="optional">(Optional)</span></label>
+                <textarea id="current_cloud_services" name="current_cloud_services" rows="2" placeholder="List any compute, storage, networking, or managed services…"></textarea>
+              </div>
+
+              <div class="field field-full">
+                <fieldset class="nested-fieldset">
+                  <legend>Is infrastructure managed manually or via Infrastructure as Code? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="iac_status" value="Mostly manual"> Mostly manual</label>
+                    <label class="choice"><input type="radio" name="iac_status" value="Infrastructure as Code"> Infrastructure as Code</label>
+                    <label class="choice"><input type="radio" name="iac_status" value="Combination of both"> Combination of both</label>
+                    <label class="choice"><input type="radio" name="iac_status" value="Not sure"> Not sure</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field field-full">
+                <fieldset class="nested-fieldset">
+                  <legend>Do you have separate development, staging, and production environments? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="env_separation" value="Yes — full separation"> Yes — full separation</label>
+                    <label class="choice"><input type="radio" name="env_separation" value="Partial"> Partial</label>
+                    <label class="choice"><input type="radio" name="env_separation" value="No — single environment"> No — single environment</label>
+                    <label class="choice"><input type="radio" name="env_separation" value="Not sure"> Not sure</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field field-full">
+                <label for="current_hosting">Where is the application currently hosted? <span class="req">*</span></label>
+                <input type="text" id="current_hosting" name="current_hosting" required aria-required="true" placeholder="e.g. On-prem VMs, single cloud account, Heroku, bare metal…">
+                <p class="field-error" id="err-current_hosting" role="alert"></p>
+              </div>
+
+              <div class="field field-full">
+                <fieldset class="nested-fieldset">
+                  <legend>Do you already have an infrastructure / architecture diagram? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="has_diagram" value="Yes"> Yes</label>
+                    <label class="choice"><input type="radio" name="has_diagram" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="has_diagram" value="Partial / outdated"> Partial / outdated</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field field-full">
+                <label for="infra_problems">What infrastructure problems are you currently experiencing? <span class="optional">(Optional)</span></label>
+                <textarea id="infra_problems" name="infra_problems" rows="3" placeholder="Downtime, cost, scaling limits, slow deploys…"></textarea>
+              </div>
+
+              <div class="field">
+                <fieldset class="nested-fieldset">
+                  <legend>Are you planning to migrate to the cloud? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="planning_migration" value="Yes"> Yes</label>
+                    <label class="choice"><input type="radio" name="planning_migration" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="planning_migration" value="Already in cloud"> Already in cloud</label>
+                    <label class="choice"><input type="radio" name="planning_migration" value="Exploring"> Exploring</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field">
+                <fieldset class="nested-fieldset">
+                  <legend>Are multiple cloud providers required? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="multi_cloud" value="Yes"> Yes</label>
+                    <label class="choice"><input type="radio" name="multi_cloud" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="multi_cloud" value="Maybe"> Maybe</label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-secondary" data-action="prev">Back</button>
+              <button type="button" class="btn btn-primary" data-action="next">Continue</button>
+            </div>
+          </fieldset>
+
+          <!-- ========== STEP 3: APPLICATION & ARCHITECTURE ========== -->
+          <fieldset class="form-step" data-step="3" id="step-3" aria-labelledby="step-3-title" hidden>
+            <legend id="step-3-title" class="step-title">Application &amp; architecture</legend>
+            <p class="step-desc">Stack, structure, and how the application behaves under load.</p>
+
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="languages_frameworks">What programming languages / frameworks does the application use? <span class="req">*</span></label>
+                <input type="text" id="languages_frameworks" name="languages_frameworks" required aria-required="true" placeholder="e.g. Node.js, Python/Django, Java/Spring, Go, React…">
+                <p class="field-error" id="err-languages_frameworks" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="database_tech">Database technology <span class="optional">(Optional)</span></label>
+                <input type="text" id="database_tech" name="database_tech" placeholder="e.g. PostgreSQL, MySQL, MongoDB, DynamoDB…">
+              </div>
+
+              <div class="field">
+                <fieldset class="nested-fieldset">
+                  <legend>Is the application monolithic or microservices-based? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="architecture_style" value="Monolithic"> Monolithic</label>
+                    <label class="choice"><input type="radio" name="architecture_style" value="Microservices"> Microservices</label>
+                    <label class="choice"><input type="radio" name="architecture_style" value="Modular monolith"> Modular monolith</label>
+                    <label class="choice"><input type="radio" name="architecture_style" value="Not sure"> Not sure</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field">
+                <fieldset class="nested-fieldset">
+                  <legend>Background jobs or asynchronous processing? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="async_jobs" value="Yes"> Yes</label>
+                    <label class="choice"><input type="radio" name="async_jobs" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="async_jobs" value="Not sure"> Not sure</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field">
+                <fieldset class="nested-fieldset">
+                  <legend>Does the application require serverless workloads? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="serverless_needed" value="Yes"> Yes</label>
+                    <label class="choice"><input type="radio" name="serverless_needed" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="serverless_needed" value="Maybe / exploring"> Maybe / exploring</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field field-full">
+                <label for="external_apis">External APIs or third-party services the app depends on <span class="optional">(Optional)</span></label>
+                <textarea id="external_apis" name="external_apis" rows="2" placeholder="Payment gateways, auth providers, messaging, analytics…"></textarea>
+              </div>
+
+              <div class="field">
+                <fieldset class="nested-fieldset">
+                  <legend>Does the application store files, images, videos, or other media? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="stores_media" value="Yes"> Yes</label>
+                    <label class="choice"><input type="radio" name="stores_media" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="stores_media" value="Not sure"> Not sure</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field">
+                <label for="resource_requirements">Application resource requirements <span class="optional">(Optional)</span></label>
+                <input type="text" id="resource_requirements" name="resource_requirements" placeholder="e.g. CPU/memory heavy, memory-bound, I/O heavy…">
+              </div>
+
+              <div class="field">
+                <fieldset class="nested-fieldset">
+                  <legend>Does the application need automatic scaling? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="auto_scaling" value="Yes — critical"> Yes — critical</label>
+                    <label class="choice"><input type="radio" name="auto_scaling" value="Nice to have"> Nice to have</label>
+                    <label class="choice"><input type="radio" name="auto_scaling" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="auto_scaling" value="Not sure"> Not sure</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field field-full">
+                <label for="performance_sensitive">Which parts of the application are most performance-sensitive? <span class="optional">(Optional)</span></label>
+                <textarea id="performance_sensitive" name="performance_sensitive" rows="2" placeholder="Checkout, search, real-time features…"></textarea>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-secondary" data-action="prev">Back</button>
+              <button type="button" class="btn btn-primary" data-action="next">Continue</button>
+            </div>
+          </fieldset>
+
+          <!-- ========== STEP 4: DOCKER & KUBERNETES ========== -->
+          <fieldset class="form-step" data-step="4" id="step-4" aria-labelledby="step-4-title" hidden>
+            <legend id="step-4-title" class="step-title">Containers &amp; Kubernetes</legend>
+            <p class="step-desc">Containerization status and whether Kubernetes is part of the plan.</p>
+
+            <div class="form-grid">
+              <div class="field field-full">
+                <fieldset class="nested-fieldset">
+                  <legend>Is the application already containerized with Docker? <span class="req">*</span></legend>
+                  <div class="choice-group" role="radiogroup" data-conditional-trigger="docker_usage">
+                    <label class="choice"><input type="radio" name="docker_usage" value="Yes — fully" required> Yes — fully</label>
+                    <label class="choice"><input type="radio" name="docker_usage" value="Partially"> Partially</label>
+                    <label class="choice"><input type="radio" name="docker_usage" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="docker_usage" value="Not sure"> Not sure</label>
+                  </div>
+                  <p class="field-error" id="err-docker_usage" role="alert"></p>
+                </fieldset>
+              </div>
+
+              <div class="field field-full conditional" data-show-when="docker_usage:Yes — fully,Partially" hidden>
+                <fieldset class="nested-fieldset">
+                  <legend>Do you already have Dockerfiles or Docker Compose configurations? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="has_dockerfiles" value="Yes — Dockerfiles"> Yes — Dockerfiles</label>
+                    <label class="choice"><input type="radio" name="has_dockerfiles" value="Yes — Compose"> Yes — Compose</label>
+                    <label class="choice"><input type="radio" name="has_dockerfiles" value="Both"> Both</label>
+                    <label class="choice"><input type="radio" name="has_dockerfiles" value="No"> No</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field field-full">
+                <label for="image_registry">Where should container images be stored? <span class="optional">(Optional)</span></label>
+                <select id="image_registry" name="image_registry">
+                  <option value="">Select…</option>
+                  <option value="Amazon ECR">Amazon ECR</option>
+                  <option value="Google Artifact Registry">Google Artifact Registry</option>
+                  <option value="Azure Container Registry">Azure Container Registry</option>
+                  <option value="Docker Hub">Docker Hub</option>
+                  <option value="GitHub Container Registry">GitHub Container Registry</option>
+                  <option value="Other / undecided">Other / undecided</option>
+                </select>
+              </div>
+
+              <div class="field field-full">
+                <fieldset class="nested-fieldset">
+                  <legend>Do you specifically require Kubernetes? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group" data-conditional-trigger="kubernetes_required">
+                    <label class="choice"><input type="radio" name="kubernetes_required" value="Yes"> Yes</label>
+                    <label class="choice"><input type="radio" name="kubernetes_required" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="kubernetes_required" value="Maybe / exploring"> Maybe / exploring</label>
+                    <label class="choice"><input type="radio" name="kubernetes_required" value="Not sure"> Not sure</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field field-full conditional" data-show-when="kubernetes_required:Yes,Maybe / exploring" hidden>
+                <label for="k8s_platform">If Kubernetes is required, which platform do you prefer? <span class="optional">(Optional)</span></label>
+                <select id="k8s_platform" name="k8s_platform">
+                  <option value="">Select…</option>
+                  <option value="Amazon EKS">Amazon EKS</option>
+                  <option value="Google GKE">Google GKE</option>
+                  <option value="Azure AKS">Azure AKS</option>
+                  <option value="Self-managed">Self-managed</option>
+                  <option value="Undecided">Undecided</option>
+                </select>
+              </div>
+
+              <div class="field conditional" data-show-when="kubernetes_required:Yes,Maybe / exploring" hidden>
+                <label for="workload_count">Approximately how many services / workloads need to run? <span class="optional">(Optional)</span></label>
+                <input type="text" id="workload_count" name="workload_count" placeholder="e.g. 5–10 microservices">
+              </div>
+
+              <div class="field field-full conditional" data-show-when="kubernetes_required:Yes,Maybe / exploring" hidden>
+                <label for="k8s_scaling">What Kubernetes scaling requirements do you have? <span class="optional">(Optional)</span></label>
+                <textarea id="k8s_scaling" name="k8s_scaling" rows="2" placeholder="HPA, cluster autoscaler, scheduled scale, etc."></textarea>
+              </div>
+
+              <div class="field field-full conditional" data-show-when="kubernetes_required:Yes,Maybe / exploring" hidden>
+                <label for="service_communication">How should services communicate with each other? <span class="optional">(Optional)</span></label>
+                <input type="text" id="service_communication" name="service_communication" placeholder="e.g. REST, gRPC, message queue, service mesh…">
+              </div>
+
+              <div class="field field-full">
+                <label for="deployment_strategy">What deployment strategy would you prefer? <span class="optional">(Optional)</span></label>
+                <select id="deployment_strategy" name="deployment_strategy">
+                  <option value="">Select…</option>
+                  <option value="Rolling updates">Rolling updates</option>
+                  <option value="Blue / green">Blue / green</option>
+                  <option value="Canary">Canary</option>
+                  <option value="Recreate">Recreate</option>
+                  <option value="Undecided / recommend">Undecided / recommend</option>
+                </select>
+              </div>
+
+              <div class="field field-full">
+                <fieldset class="nested-fieldset">
+                  <legend>Who will maintain the Kubernetes environment after deployment? <span class="req">*</span></legend>
+                  <div class="choice-group" role="radiogroup">
+                    <label class="choice"><input type="radio" name="k8s_maintenance" value="Our internal team" required> Our internal team</label>
+                    <label class="choice"><input type="radio" name="k8s_maintenance" value="Managed service / external partner"> Managed service / external partner</label>
+                    <label class="choice"><input type="radio" name="k8s_maintenance" value="Looking for ongoing support"> Looking for ongoing support</label>
+                    <label class="choice"><input type="radio" name="k8s_maintenance" value="Not applicable (no K8s)"> Not applicable (no K8s)</label>
+                    <label class="choice"><input type="radio" name="k8s_maintenance" value="Not sure yet"> Not sure yet</label>
+                  </div>
+                  <p class="field-error" id="err-k8s_maintenance" role="alert"></p>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-secondary" data-action="prev">Back</button>
+              <button type="button" class="btn btn-primary" data-action="next">Continue</button>
+            </div>
+          </fieldset>
+
+          <!-- ========== STEP 5: CI/CD & GITHUB ACTIONS ========== -->
+          <fieldset class="form-step" data-step="5" id="step-5" aria-labelledby="step-5-title" hidden>
+            <legend id="step-5-title" class="step-title">CI/CD &amp; GitHub Actions</legend>
+            <p class="step-desc">Source control, automation triggers, and how releases should flow.</p>
+
+            <div class="security-note" role="note">
+              <strong>Security note:</strong> Never enter passwords, API keys, access tokens, private keys, or other credentials into this form. We only need process and preference details.
+            </div>
+
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="source_hosting">Where is your source code currently hosted? <span class="req">*</span></label>
+                <select id="source_hosting" name="source_hosting" required aria-required="true">
+                  <option value="">Select…</option>
+                  <option value="GitHub">GitHub</option>
+                  <option value="GitLab">GitLab</option>
+                  <option value="Bitbucket">Bitbucket</option>
+                  <option value="Azure DevOps">Azure DevOps</option>
+                  <option value="Self-hosted Git">Self-hosted Git</option>
+                  <option value="Other">Other</option>
+                </select>
+                <p class="field-error" id="err-source_hosting" role="alert"></p>
+              </div>
+
+              <div class="field field-full">
+                <label for="on_push_behavior">What should happen automatically when code is pushed? <span class="req">*</span></label>
+                <textarea id="on_push_behavior" name="on_push_behavior" rows="2" required aria-required="true" placeholder="e.g. Run tests, build images, deploy to staging…"></textarea>
+                <p class="field-error" id="err-on_push_behavior" role="alert"></p>
+              </div>
+
+              <div class="field field-full">
+                <label for="deploy_branches">Which branches should trigger deployments? <span class="optional">(Optional)</span></label>
+                <input type="text" id="deploy_branches" name="deploy_branches" placeholder="e.g. main → production, develop → staging">
+              </div>
+
+              <div class="field field-full">
+                <label for="existing_tests">What automated tests currently exist? <span class="optional">(Optional)</span></label>
+                <textarea id="existing_tests" name="existing_tests" rows="2" placeholder="Unit, integration, e2e, none yet…"></textarea>
+              </div>
+
+              <div class="field field-full">
+                <fieldset class="nested-fieldset">
+                  <legend>Which environments should the CI/CD pipeline manage? <span class="req">*</span></legend>
+                  <div class="choice-group choice-group--wrap">
+                    <label class="choice"><input type="checkbox" name="cicd_environments" value="Development"> Development</label>
+                    <label class="choice"><input type="checkbox" name="cicd_environments" value="Staging"> Staging</label>
+                    <label class="choice"><input type="checkbox" name="cicd_environments" value="Production"> Production</label>
+                    <label class="choice"><input type="checkbox" name="cicd_environments" value="Preview / PR environments"> Preview / PR environments</label>
+                  </div>
+                  <p class="field-error" id="err-cicd_environments" role="alert"></p>
+                </fieldset>
+              </div>
+
+              <div class="field">
+                <fieldset class="nested-fieldset">
+                  <legend>Should production deployments require approval? <span class="optional">(Optional)</span></legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="prod_approval" value="Yes"> Yes</label>
+                    <label class="choice"><input type="radio" name="prod_approval" value="No"> No</label>
+                    <label class="choice"><input type="radio" name="prod_approval" value="Depends on change type"> Depends on change type</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="field field-full">
+                <label for="secrets_management">How are secrets and environment variables currently managed? <span class="optional">(Optional)</span></label>
+                <textarea id="secrets_management" name="secrets_management" rows="2" placeholder="e.g. GitHub Secrets, cloud secret manager, .env files (no values please)…"></textarea>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-secondary" data-action="prev">Back</button>
+              <button type="button" class="btn btn-primary" data-action="next">Continue</button>
+            </div>
+          </fieldset>
+
+          <!-- ========== STEP 6: MONITORING, SECURITY & OPERATIONS ========== -->
+          <fieldset class="form-step" data-step="6" id="step-6" aria-labelledby="step-6-title" hidden>
+            <legend id="step-6-title" class="step-title">Monitoring, security &amp; operations</legend>
+            <p class="step-desc">Visibility, alerting, compliance, and day-2 operational needs.</p>
+
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="monitoring_components">What infrastructure / application components should be monitored? <span class="req">*</span></label>
+                <textarea id="monitoring_components" name="monitoring_components" rows="3" required aria-required="true" placeholder="e.g. API latency, error rates, CPU/memory, database, queues, uptime…"></textarea>
+                <p class="field-error" id="err-monitoring_components" role="alert"></p>
+              </div>
+
+              <div class="field field-full">
+                <label for="alert_events">What events should trigger alerts and who should receive them? <span class="optional">(Optional)</span></label>
+                <textarea id="alert_events" name="alert_events" rows="3" placeholder="e.g. 5xx spikes → on-call Slack; disk full → ops email…"></textarea>
+              </div>
+
+              <div class="field field-full">
+                <label for="security_ops_requirements">What security, compliance, backup, and operational requirements must the infrastructure satisfy? <span class="req">*</span></label>
+                <textarea id="security_ops_requirements" name="security_ops_requirements" rows="4" required aria-required="true" placeholder="e.g. SOC2, GDPR, encryption at rest, daily backups, audit logging, network isolation…"></textarea>
+                <p class="field-error" id="err-security_ops_requirements" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-secondary" data-action="prev">Back</button>
+              <button type="button" class="btn btn-primary" data-action="next">Review answers</button>
+            </div>
+          </fieldset>
+
+          <!-- ========== STEP 7: REVIEW ========== -->
+          <div class="form-step review-step" data-step="7" id="step-7" hidden>
+            <h2 class="step-title" id="step-7-title">Review your assessment</h2>
+            <p class="step-desc">Please confirm the details below. You can edit any section before submitting.</p>
+
+            <div id="review-content" class="review-content" aria-live="polite"></div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-secondary" data-action="prev">Back</button>
+              <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">
+                <span class="btn-text">Submit Project Assessment</span>
+                <span class="btn-loading" hidden>
+                  <span class="spinner" aria-hidden="true"></span>
+                  Submitting your assessment…
+                </span>
+              </button>
+            </div>
+            <p class="submit-error" id="submit-error" role="alert" hidden></p>
+          </div>
+        </form>
+
+        <!-- SUCCESS STATE -->
+        <div class="success-screen" id="success-screen" hidden>
+          <div class="success-icon" aria-hidden="true">✓</div>
+          <h2>Assessment Submitted Successfully</h2>
+          <p>Thank you for providing your project details. I’ll review your requirements and get back to you shortly.</p>
+          <button type="button" class="btn btn-primary" id="reset-form-btn">Submit Another Assessment</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="../images/earndee.png" alt="">
+        </span>
+        <span>EarnDee Limited Consulting</span>
+      </div>
+      <p class="footer-note">
+        Cloud &amp; DevOps project assessment · No credentials collected · 
+        Responses used only to prepare a tailored engagement.
+      </p>
+      <p class="footer-copy">&copy; <span id="year"></span> EarnDee Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
