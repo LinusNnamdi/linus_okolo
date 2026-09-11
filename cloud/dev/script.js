@@ -1052,8 +1052,11 @@ const resources = [
         image: "../../images/cloud/31_40/1_1.jpg",
         gallery: [
             "../../images/cloud/31_40/1_1.jpg",
-            // "../../images/cloud/31_40/1_2.jpg",
-            // "../../images/cloud/31_40/1_3.jpg"
+            "../../images/cloud/31_40/1_2.jpg",
+            "../../images/cloud/31_40/1_3.jpg",
+            "../../images/cloud/31_40/1_4.jpg",
+            "../../images/cloud/31_40/1_5.jpg",
+            "../../images/cloud/31_40/1_6.jpg",
         ],
         overview: "Declarative multi-container application definition using Docker Compose for development parity and simple staging environments.",
         architecture: "Services, networks, named volumes. Depends_on with health conditions. Env files. Profiles for optional services.",
@@ -1086,8 +1089,12 @@ const resources = [
         image: "../../images/cloud/31_40/2_1.jpg",
         gallery: [
             "../../images/cloud/31_40/2_1.jpg",
-            // "../../images/cloud/31_40/2_2.jpg",
-            // "../../images/cloud/31_40/2_3.jpg"
+            "../../images/cloud/31_40/2_2.jpg",
+            "../../images/cloud/31_40/2_3.jpg",
+            "../../images/cloud/31_40/2_4.jpg",
+            "../../images/cloud/31_40/2_5.jpg",
+            "../../images/cloud/31_40/2_6.jpg",
+            "../../images/cloud/31_40/2_7.jpg",
         ],
         overview: "Systematic approach to producing minimal, secure, and efficient container images suitable for production.",
         architecture: "Multi-stage builds. Distroless or scratch final stages. BuildKit cache mounts. SBOM generation.",
@@ -1188,8 +1195,11 @@ const resources = [
         image: "../../images/cloud/31_40/5_1.jpg",
         gallery: [
             "../../images/cloud/31_40/5_1.jpg",
-            // "../../images/cloud/31_40/5_2.jpg",
-            // "../../images/cloud/31_40/5_3.jpg"
+            "../../images/cloud/31_40/5_2.jpg",
+            "../../images/cloud/31_40/5_3.jpg",
+            "../../images/cloud/31_40/5_4.jpg",
+            "../../images/cloud/31_40/5_5.jpg",
+            "../../images/cloud/31_40/5_6.jpg",
         ],
         overview: "Automated container image pipeline that builds, scans, optionally signs, and publishes images with environment promotion.",
         architecture: "CI runners with Docker Buildx. Multi-stage builds. Scan step. Optional Cosign signing. Push to registry with immutable tags.",
@@ -1291,8 +1301,11 @@ const resources = [
         image: "../../images/cloud/31_40/8_1.jpg",
         gallery: [
             "../../images/cloud/31_40/8_1.jpg",
-            // "../../images/cloud/31_40/8_2.jpg",
-            // "../../images/cloud/31_40/8_3.jpg"
+            "../../images/cloud/31_40/8_2.jpg",
+            "../../images/cloud/31_40/8_3.jpg",
+            "../../images/cloud/31_40/8_4.jpg",
+            "../../images/cloud/31_40/8_5.jpg",
+            "../../images/cloud/31_40/8_6.jpg",
         ],
         overview: "North-south traffic management using Ingress controllers or Gateway API for host/path-based routing and TLS.",
         architecture: "Ingress controller (NGINX, Traefik, cloud LB). Ingress or HTTPRoute resources. cert-manager for certificates. Optional WAF.",
@@ -1427,8 +1440,11 @@ const resources = [
         image: "../../images/cloud/41_50/2_1.jpg",
         gallery: [
             "../../images/cloud/41_50/2_1.jpg",
-            // "../../images/cloud/41_50/2_2.jpg",
-            // "../../images/cloud/41_50/2_3.jpg"
+            "../../images/cloud/41_50/2_2.jpg",
+            "../../images/cloud/41_50/2_3.jpg",
+            "../../images/cloud/41_50/2_4.jpg",
+            "../../images/cloud/41_50/2_5.jpg",
+            "../../images/cloud/41_50/2_6.jpg",
         ],
         overview: "Complete observability stack for Kubernetes using the Prometheus ecosystem for metrics, alerting, and visualisation.",
         architecture: "Prometheus Operator. ServiceMonitors and PodMonitors. Grafana dashboards. Alertmanager routing. Optional Thanos for long-term storage.",
