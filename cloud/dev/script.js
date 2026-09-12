@@ -1512,8 +1512,10 @@ const resources = [
         image: "../../images/cloud/41_50/4_1.jpg",
         gallery: [
             "../../images/cloud/41_50/4_1.jpg",
-            // "../../images/cloud/41_50/4_2.jpg",
-            // "../../images/cloud/41_50/4_3.jpg"
+            "../../images/cloud/41_50/4_2.jpg",
+            "../../images/cloud/41_50/4_3.jpg",
+            "../../images/cloud/41_50/4_4.jpg",
+            "../../images/cloud/41_50/4_5.jpg",
         ],
         overview: "Fully serverless REST API using Amazon API Gateway and AWS Lambda with least-privilege IAM and observability.",
         architecture: "HTTP API or REST API. Lambda handlers per route or shared router. JWT or IAM authorizers. Structured JSON logs to CloudWatch.",
@@ -1580,8 +1582,10 @@ const resources = [
         image: "../../images/cloud/41_50/6_1.jpg",
         gallery: [
             "../../images/cloud/41_50/6_1.jpg",
-            // "../../images/cloud/41_50/6_2.jpg",
-            // "../../images/cloud/41_50/6_3.jpg"
+            "../../images/cloud/41_50/6_2.jpg",
+            "../../images/cloud/41_50/6_3.jpg",
+            "../../images/cloud/41_50/6_4.jpg",
+            "../../images/cloud/41_50/6_5.jpg",
         ],
         overview: "Serverless application pattern combining Lambda compute with DynamoDB for low-latency, scalable data storage and optional stream processing.",
         architecture: "Single-table or multi-table design. Lambda for CRUD and stream processors. On-demand or provisioned capacity. IAM fine-grained access.",
@@ -1614,8 +1618,11 @@ const resources = [
         image: "../../images/cloud/41_50/7_1.jpg",
         gallery: [
             "../../images/cloud/41_50/7_1.jpg",
-            // "../../images/cloud/41_50/7_2.jpg",
-            // "../../images/cloud/41_50/7_3.jpg"
+            "../../images/cloud/41_50/7_2.jpg",
+            "../../images/cloud/41_50/7_3.jpg",
+            "../../images/cloud/41_50/7_4.jpg",
+            "../../images/cloud/41_50/7_5.jpg",
+            "../../images/cloud/41_50/7_6.jpg",
         ],
         overview: "Decoupled event processing architecture leveraging SQS for buffering, SNS/EventBridge for fan-out, and Lambda for compute.",
         architecture: "Producers publish to SNS or EventBridge. SQS queues for durable buffering. Lambda event source mappings with batching and partial failure handling.",
@@ -1648,8 +1655,11 @@ const resources = [
         image: "../../images/cloud/41_50/8_1.jpg",
         gallery: [
             "../../images/cloud/41_50/8_1.jpg",
-            // "../../images/cloud/41_50/8_2.jpg",
-            // "../../images/cloud/41_50/8_3.jpg"
+            "../../images/cloud/41_50/8_2.jpg",
+            "../../images/cloud/41_50/8_3.jpg",
+            "../../images/cloud/41_50/8_4.jpg",
+            "../../images/cloud/41_50/8_5.jpg",
+            "../../images/cloud/41_50/8_6.jpg",
         ],
         overview: "Serverless scheduled jobs for maintenance, reporting, and automation without managing servers or cron hosts.",
         architecture: "EventBridge rule or Scheduler schedule targets Lambda. Optional Step Functions for multi-step workflows. CloudWatch Logs for audit.",
@@ -1751,8 +1761,8 @@ const resources = [
         image: "../../images/cloud/51_60/1_1.jpg",
         gallery: [
             "../../images/cloud/51_60/1_1.jpg",
-            "../../images/cloud/51_60/1_2.jpg",
-            "../../images/cloud/51_60/1_3.jpg"
+            // "../../images/cloud/51_60/1_2.jpg",
+            // "../../images/cloud/51_60/1_3.jpg"
         ],
         overview: "A production-ready continuous integration workflow that runs on every push and pull request, validating code quality, running tests, and publishing coverage results.",
         architecture: "Triggered on push and pull_request. Jobs run on ubuntu-latest with a matrix of Node.js versions. Steps include checkout, setup-node with cache, install, lint, test, and coverage upload.",
@@ -1787,7 +1797,9 @@ const resources = [
             "../../images/cloud/51_60/2_1.jpg",
             "../../images/cloud/51_60/2_2.jpg",
             "../../images/cloud/51_60/2_3.jpg",
-            "../../images/cloud/51_60/2_4.jpg"
+            "../../images/cloud/51_60/2_4.jpg",
+            "../../images/cloud/51_60/2_5.jpg",
+            "../../images/cloud/51_60/2_6.jpg"
         ],
         overview: "End-to-end container delivery pipeline that builds multi-platform images, runs vulnerability scans, optionally signs them, and publishes to GitHub Container Registry or Docker Hub.",
         architecture: "Uses docker/setup-buildx-action and docker/build-push-action. Multi-platform targets (linux/amd64, linux/arm64). Trivy scan step and optional Cosign signing before push.",
@@ -1820,8 +1832,8 @@ const resources = [
         image: "../../images/cloud/51_60/3_1.jpg",
         gallery: [
             "../../images/cloud/51_60/3_1.jpg",
-            "../../images/cloud/51_60/3_2.jpg",
-            "../../images/cloud/51_60/3_3.jpg"
+            // "../../images/cloud/51_60/3_2.jpg",
+            // "../../images/cloud/51_60/3_3.jpg"
         ],
         overview: "Continuous delivery workflow that promotes artifacts through protected environments using GitHub Environments, required reviewers, and deployment protection rules.",
         architecture: "Build once, deploy many. Separate jobs or reusable workflows per environment. Environment secrets and variables. Manual approval for production. OIDC for cloud credentials.",
@@ -1854,9 +1866,9 @@ const resources = [
         image: "../../images/cloud/51_60/4_1.jpg",
         gallery: [
             "../../images/cloud/51_60/4_1.jpg",
-            "../../images/cloud/51_60/4_2.jpg",
-            "../../images/cloud/51_60/4_3.jpg",
-            "../../images/cloud/51_60/4_4.jpg"
+            // "../../images/cloud/51_60/4_2.jpg",
+            // "../../images/cloud/51_60/4_3.jpg",
+            // "../../images/cloud/51_60/4_4.jpg"
         ],
         overview: "Secure and auditable infrastructure delivery pipeline that runs terraform plan on pull requests (with comment feedback) and applies only after merge to the main branch.",
         architecture: "Separate plan and apply jobs. Remote state backend with locking. OIDC for cloud authentication. Static analysis with TFLint and Checkov. Plan output posted as PR comment.",
@@ -1889,8 +1901,8 @@ const resources = [
         image: "../../images/cloud/51_60/5_1.jpg",
         gallery: [
             "../../images/cloud/51_60/5_1.jpg",
-            "../../images/cloud/51_60/5_2.jpg",
-            "../../images/cloud/51_60/5_3.jpg"
+            // "../../images/cloud/51_60/5_2.jpg",
+            // "../../images/cloud/51_60/5_3.jpg"
         ],
         overview: "Comprehensive security pipeline that surfaces vulnerabilities early by combining dependency review, static analysis, secret detection, and container image scanning.",
         architecture: "Multiple parallel jobs: dependency-review-action, CodeQL analysis, Gitleaks, Trivy filesystem and image scans. Results uploaded as SARIF to GitHub Advanced Security.",
