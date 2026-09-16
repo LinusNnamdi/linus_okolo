@@ -1935,9 +1935,9 @@ const resources = [
         image: "../../images/cloud/51_60/6_1.jpg",
         gallery: [
             "../../images/cloud/51_60/6_1.jpg",
-            "../../images/cloud/51_60/6_2.jpg",
-            "../../images/cloud/51_60/6_3.jpg",
-            "../../images/cloud/51_60/6_4.jpg"
+            // "../../images/cloud/51_60/6_2.jpg",
+            // "../../images/cloud/51_60/6_3.jpg",
+            // "../../images/cloud/51_60/6_4.jpg"
         ],
         overview: "Efficient continuous integration for monorepos that only builds and tests packages affected by a change, using path filters and tooling such as Nx or Turborepo.",
         architecture: "Workflow uses paths and paths-ignore. Dynamic matrix generation based on changed packages. Shared caching across jobs. Optional remote caching for build systems.",
@@ -1970,8 +1970,8 @@ const resources = [
         image: "../../images/cloud/51_60/7_1.jpg",
         gallery: [
             "../../images/cloud/51_60/7_1.jpg",
-            "../../images/cloud/51_60/7_2.jpg",
-            "../../images/cloud/51_60/7_3.jpg"
+            // "../../images/cloud/51_60/7_2.jpg",
+            // "../../images/cloud/51_60/7_3.jpg"
         ],
         overview: "Architecture for running GitHub Actions jobs on self-hosted infrastructure when data residency, custom hardware, or private network access is required.",
         architecture: "Runner groups with labels. Ephemeral runners preferred. Autoscaling via Actions Runner Controller (ARC) on Kubernetes or custom VM scaling. Network policies and just-in-time registration.",
@@ -2004,9 +2004,9 @@ const resources = [
         image: "../../images/cloud/51_60/8_1.jpg",
         gallery: [
             "../../images/cloud/51_60/8_1.jpg",
-            "../../images/cloud/51_60/8_2.jpg",
-            "../../images/cloud/51_60/8_3.jpg",
-            "../../images/cloud/51_60/8_4.jpg"
+            // "../../images/cloud/51_60/8_2.jpg",
+            // "../../images/cloud/51_60/8_3.jpg",
+            // "../../images/cloud/51_60/8_4.jpg"
         ],
         overview: "Complete delivery pipeline that builds container images, updates Kubernetes manifests or Helm charts, and deploys to one or more clusters with optional canary or blue/green strategies.",
         architecture: "Build and push image, then update image tag in manifests (via sed, Kustomize, or Helm). Authenticate to cluster with OIDC or short-lived kubeconfig. Deploy with kubectl/Helm and verify rollout status.",
@@ -2039,8 +2039,8 @@ const resources = [
         image: "../../images/cloud/51_60/9_1.jpg",
         gallery: [
             "../../images/cloud/51_60/9_1.jpg",
-            "../../images/cloud/51_60/9_2.jpg",
-            "../../images/cloud/51_60/9_3.jpg"
+            // "../../images/cloud/51_60/9_2.jpg",
+            // "../../images/cloud/51_60/9_3.jpg"
         ],
         overview: "Centralised CI/CD building blocks that teams call from their repositories, enforcing standards for testing, security scanning, and deployment while allowing customisation through inputs.",
         architecture: "Reusable workflows live in a central repository and are called with workflow_call. Composite actions encapsulate common step sequences. Inputs, outputs, and secrets are explicitly declared.",
@@ -2073,9 +2073,9 @@ const resources = [
         image: "../../images/cloud/51_60/0_1.jpg",
         gallery: [
             "../../images/cloud/51_60/0_1.jpg",
-            "../../images/cloud/51_60/0_2.jpg",
-            "../../images/cloud/51_60/0_3.jpg",
-            "../../images/cloud/51_60/0_4.jpg"
+            // "../../images/cloud/51_60/0_2.jpg",
+            // "../../images/cloud/51_60/0_3.jpg",
+            // "../../images/cloud/51_60/0_4.jpg"
         ],
         overview: "Fully automated release pipeline that determines the next version from conventional commits, generates a changelog, creates a GitHub Release, and publishes packages to the appropriate registry.",
         architecture: "Triggered on push to main. semantic-release (or similar) analyses commits, bumps version, updates changelog, creates tag and GitHub Release, then publishes artifacts. Optional dry-run on pull requests.",
@@ -2109,9 +2109,9 @@ const resources = [
         image: "../../images/cloud/61_70/1_1.jpg",
         gallery: [
             "../../images/cloud/61_70/1_1.jpg",
-            "../../images/cloud/61_70/1_2.jpg",
-            "../../images/cloud/61_70/1_3.jpg",
-            "../../images/cloud/61_70/1_4.jpg"
+            // "../../images/cloud/61_70/1_2.jpg",
+            // "../../images/cloud/61_70/1_3.jpg",
+            // "../../images/cloud/61_70/1_4.jpg"
         ],
         overview: "A foundational Terraform module that creates a highly available, multi-AZ VPC following AWS Well-Architected networking practices, suitable as a base for any workload.",
         architecture: "Custom VPC with configurable CIDR. Public and private subnets across multiple AZs. NAT Gateways (single or per-AZ). Internet Gateway, route tables, network ACLs, and optional VPC Flow Logs.",
@@ -2144,8 +2144,8 @@ const resources = [
         image: "../../images/cloud/61_70/2_1.jpg",
         gallery: [
             "../../images/cloud/61_70/2_1.jpg",
-            "../../images/cloud/61_70/2_2.jpg",
-            "../../images/cloud/61_70/2_3.jpg"
+            // "../../images/cloud/61_70/2_2.jpg",
+            // "../../images/cloud/61_70/2_3.jpg"
         ],
         overview: "A complete Azure enterprise landing zone built with Terraform that establishes the hierarchical structure, hub-and-spoke networking, identity, and policy foundation for multiple workloads.",
         architecture: "Management group hierarchy. Subscription vending. Hub VNet with Azure Firewall or NVA. Spoke VNets with peering. Azure AD integration, role assignments, and Azure Policy assignments.",
@@ -2178,9 +2178,9 @@ const resources = [
         image: "../../images/cloud/61_70/3_1.jpg",
         gallery: [
             "../../images/cloud/61_70/3_1.jpg",
-            "../../images/cloud/61_70/3_2.jpg",
-            "../../images/cloud/61_70/3_3.jpg",
-            "../../images/cloud/61_70/3_4.jpg"
+            // "../../images/cloud/61_70/3_2.jpg",
+            // "../../images/cloud/61_70/3_3.jpg",
+            // "../../images/cloud/61_70/3_4.jpg"
         ],
         overview: "A Terraform-based project factory that provisions new Google Cloud projects with consistent APIs, IAM bindings, Shared VPC attachment, and billing budgets.",
         architecture: "Uses google-project factory or custom modules. Enables required APIs. Binds IAM roles to groups/service accounts. Attaches to Shared VPC. Creates budget and alert policies.",
@@ -2213,8 +2213,8 @@ const resources = [
         image: "../../images/cloud/61_70/4_1.jpg",
         gallery: [
             "../../images/cloud/61_70/4_1.jpg",
-            "../../images/cloud/61_70/4_2.jpg",
-            "../../images/cloud/61_70/4_3.jpg"
+            // "../../images/cloud/61_70/4_2.jpg",
+            // "../../images/cloud/61_70/4_3.jpg"
         ],
         overview: "A reusable Terraform module that deploys a secure, multi-AZ Amazon EKS cluster with managed node groups, IAM Roles for Service Accounts, and essential cluster add-ons.",
         architecture: "EKS control plane in private subnets. Managed node groups with launch templates. OIDC provider for IRSA. VPC CNI, CoreDNS, kube-proxy, and optional Cluster Autoscaler or Karpenter.",
@@ -2247,8 +2247,8 @@ const resources = [
         image: "../../images/cloud/61_70/5_1.jpg",
         gallery: [
             "../../images/cloud/61_70/5_1.jpg",
-            "../../images/cloud/61_70/5_2.jpg",
-            "../../images/cloud/61_70/5_3.jpg"
+            // "../../images/cloud/61_70/5_2.jpg",
+            // "../../images/cloud/61_70/5_3.jpg"
         ],
         overview: "A production pattern for storing Terraform state remotely with locking, encryption, versioning, and clear separation of environments using workspaces or separate state files.",
         architecture: "S3 bucket with versioning and SSE-KMS (or equivalent on Azure/GCP). DynamoDB table for state locking. Optional state encryption with customer-managed keys. Workspace or directory-based environment isolation.",
@@ -2281,9 +2281,9 @@ const resources = [
         image: "../../images/cloud/61_70/6_1.jpg",
         gallery: [
             "../../images/cloud/61_70/6_1.jpg",
-            "../../images/cloud/61_70/6_2.jpg",
-            "../../images/cloud/61_70/6_3.jpg",
-            "../../images/cloud/61_70/6_4.jpg"
+            // "../../images/cloud/61_70/6_2.jpg",
+            // "../../images/cloud/61_70/6_3.jpg",
+            // "../../images/cloud/61_70/6_4.jpg"
         ],
         overview: "A structured approach to designing, testing, versioning, and publishing reusable Terraform modules that teams can consume safely across projects.",
         architecture: "Standard module layout (main.tf, variables.tf, outputs.tf, versions.tf, README). Input validation with variable validation blocks. Semantic versioning. Private registry or Git source with ref tags.",
@@ -2316,8 +2316,8 @@ const resources = [
         image: "../../images/cloud/61_70/7_1.jpg",
         gallery: [
             "../../images/cloud/61_70/7_1.jpg",
-            "../../images/cloud/61_70/7_2.jpg",
-            "../../images/cloud/61_70/7_3.jpg"
+            // "../../images/cloud/61_70/7_2.jpg",
+            // "../../images/cloud/61_70/7_3.jpg"
         ],
         overview: "A scalable multi-environment architecture that uses Terragrunt to keep Terraform code DRY, manage remote state automatically, and express dependencies between infrastructure components.",
         architecture: "Terragrunt configuration hierarchy (root → environment → component). Automatic remote state generation. Dependency blocks for ordering. Environment-specific variable files.",
@@ -2350,9 +2350,9 @@ const resources = [
         image: "../../images/cloud/61_70/8_1.jpg",
         gallery: [
             "../../images/cloud/61_70/8_1.jpg",
-            "../../images/cloud/61_70/8_2.jpg",
-            "../../images/cloud/61_70/8_3.jpg",
-            "../../images/cloud/61_70/8_4.jpg"
+            // "../../images/cloud/61_70/8_2.jpg",
+            // "../../images/cloud/61_70/8_3.jpg",
+            // "../../images/cloud/61_70/8_4.jpg"
         ],
         overview: "A policy-as-code framework that evaluates Terraform plans against organisational rules (tagging, encryption, public access, cost limits) and blocks non-compliant changes.",
         architecture: "Terraform plan output converted to JSON. OPA/Rego or Sentinel policies evaluate the plan. Integrated into CI pipeline or Terraform Cloud/Enterprise policy sets. Results returned as pass/fail with details.",
@@ -2385,8 +2385,8 @@ const resources = [
         image: "../../images/cloud/61_70/9_1.jpg",
         gallery: [
             "../../images/cloud/61_70/9_1.jpg",
-            "../../images/cloud/61_70/9_2.jpg",
-            "../../images/cloud/61_70/9_3.jpg"
+            // "../../images/cloud/61_70/9_2.jpg",
+            // "../../images/cloud/61_70/9_3.jpg"
         ],
         overview: "A multi-cloud networking foundation built with Terraform that provisions equivalent network topologies on AWS, Azure, and Google Cloud and optionally interconnects them.",
         architecture: "Provider-specific modules for VPC/VNet creation. Consistent CIDR planning. Optional site-to-site VPN or partner interconnect. Shared tagging and naming conventions. Centralised route and firewall management where possible.",
@@ -2419,9 +2419,9 @@ const resources = [
         image: "../../images/cloud/71_80/1_1.jpg",
         gallery: [
             "../../images/cloud/71_80/1_1.jpg",
-            "../../images/cloud/71_80/1_2.jpg",
-            "../../images/cloud/71_80/1_3.jpg",
-            "../../images/cloud/71_80/1_4.jpg"
+            // "../../images/cloud/71_80/1_2.jpg",
+            // "../../images/cloud/71_80/1_3.jpg",
+            // "../../images/cloud/71_80/1_4.jpg"
         ],
         overview: "A production-oriented multi-agent architecture built with LangGraph that supports cyclical workflows, persistent state, tool calling, and human approval gates for high-stakes decisions.",
         architecture: "Graph-based orchestration with nodes as agents or tools. Shared state schema. Conditional edges for routing. Checkpointing for durability. Optional human-in-the-loop interrupts.",
