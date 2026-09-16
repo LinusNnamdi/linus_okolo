@@ -2408,7 +2408,9 @@ const resources = [
         scalability: "Modular design allows independent scaling of each cloud network.",
         monitoring: "Per-cloud flow logs, cross-cloud latency, Terraform drift across providers.",
         complexity: "Advanced."
-    },// ---------- Agentic AI (9) ----------
+    },
+    
+    // ---------- Agentic AI (9) ----------
     {
         id: 70,
         platform: "Agentic AI",
@@ -2416,12 +2418,12 @@ const resources = [
         description: "Stateful multi-agent system using LangGraph for complex workflows with planning, tool use, human-in-the-loop, and conditional routing.",
         difficulty: "Advanced",
         technologies: ["LangGraph", "LangChain", "Python", "OpenAI / Anthropic", "State Management"],
-        image: "../../images/cloud/71_80/1_1.jpg",
+        image: "../../images/cloud/61_70/0_1.jpg",
         gallery: [
-            "../../images/cloud/71_80/1_1.jpg",
-            // "../../images/cloud/71_80/1_2.jpg",
-            // "../../images/cloud/71_80/1_3.jpg",
-            // "../../images/cloud/71_80/1_4.jpg"
+            "../../images/cloud/61_70/0_1.jpg",
+            // "../../images/cloud/61_70/0_2.jpg",
+            // "../../images/cloud/61_70/0_3.jpg",
+            // "../../images/cloud/61_70/0_4.jpg"
         ],
         overview: "A production-oriented multi-agent architecture built with LangGraph that supports cyclical workflows, persistent state, tool calling, and human approval gates for high-stakes decisions.",
         architecture: "Graph-based orchestration with nodes as agents or tools. Shared state schema. Conditional edges for routing. Checkpointing for durability. Optional human-in-the-loop interrupts.",
@@ -2451,11 +2453,11 @@ const resources = [
         description: "Retrieval-augmented generation elevated with agentic behavior: query rewriting, multi-hop retrieval, self-reflection, and source citation.",
         difficulty: "Intermediate",
         technologies: ["LangChain", "LlamaIndex", "Vector DB", "Embeddings", "ReAct"],
-        image: "../../images/cloud/71_80/2_1.jpg",
+        image: "../../images/cloud/71_80/1_1.jpg",
         gallery: [
-            "../../images/cloud/71_80/2_1.jpg",
-            "../../images/cloud/71_80/2_2.jpg",
-            "../../images/cloud/71_80/2_3.jpg"
+            "../../images/cloud/71_80/1_1.jpg",
+            "../../images/cloud/71_80/1_2.jpg",
+            "../../images/cloud/71_80/1_3.jpg"
         ],
         overview: "An agentic retrieval system that goes beyond simple RAG by allowing the agent to decide when and how to retrieve, rewrite queries, perform multi-hop searches, and critique its own answers.",
         architecture: "ReAct-style agent loop. Query rewriting node. Hybrid retriever (vector + keyword). Reflection/critique step. Citation and grounding enforcement. Optional web search fallback.",
@@ -2485,12 +2487,12 @@ const resources = [
         description: "Production agent that safely calls external tools and APIs via function calling, with validation, retries, and side-effect control.",
         difficulty: "Intermediate",
         technologies: ["OpenAI Tools", "Anthropic Tool Use", "Function Calling", "Pydantic", "API Integration"],
-        image: "../../images/cloud/71_80/3_1.jpg",
+        image: "../../images/cloud/71_80/2_1.jpg",
         gallery: [
-            "../../images/cloud/71_80/3_1.jpg",
-            "../../images/cloud/71_80/3_2.jpg",
-            "../../images/cloud/71_80/3_3.jpg",
-            "../../images/cloud/71_80/3_4.jpg"
+            "../../images/cloud/71_80/2_1.jpg",
+            "../../images/cloud/71_80/2_2.jpg",
+            "../../images/cloud/71_80/2_3.jpg",
+            "../../images/cloud/71_80/2_4.jpg"
         ],
         overview: "A reliable tool-using agent architecture that selects, validates, and executes external functions while handling errors, retries, and authorization boundaries.",
         architecture: "LLM with native tool/function calling. Strict Pydantic schemas for tool inputs. Tool execution sandbox or permissioned runtime. Observation feedback loop. Retry and fallback strategies.",
@@ -2520,11 +2522,11 @@ const resources = [
         description: "Code-generation and repair agent that can read repositories, plan changes, write code, run tests, and iterate until tasks are complete.",
         difficulty: "Advanced",
         technologies: ["SWE-agent patterns", "Tree-sitter", "Docker Sandbox", "Git", "Test Runners"],
-        image: "../../images/cloud/71_80/4_1.jpg",
+        image: "../../images/cloud/71_80/3_1.jpg",
         gallery: [
-            "../../images/cloud/71_80/4_1.jpg",
-            "../../images/cloud/71_80/4_2.jpg",
-            "../../images/cloud/71_80/4_3.jpg"
+            "../../images/cloud/71_80/3_1.jpg",
+            // "../../images/cloud/71_80/3_2.jpg",
+            // "../../images/cloud/71_80/3_3.jpg"
         ],
         overview: "An agentic system inspired by SWE-agent and similar projects that autonomously works on software tasks inside a sandboxed environment with file system and terminal access.",
         architecture: "Planning agent + coding agent. Repository understanding via embeddings or structure analysis. Sandboxed Docker execution. Test-driven iteration loop. Git commit and PR creation at the end.",
@@ -2554,12 +2556,12 @@ const resources = [
         description: "Autonomous or semi-autonomous agent that triages alerts, queries observability systems, suggests remediations, and can execute runbooks.",
         difficulty: "Advanced",
         technologies: ["LangGraph", "Prometheus / Grafana API", "PagerDuty", "Runbooks", "Slack"],
-        image: "../../images/cloud/71_80/5_1.jpg",
+        image: "../../images/cloud/71_80/4_1.jpg",
         gallery: [
-            "../../images/cloud/71_80/5_1.jpg",
-            "../../images/cloud/71_80/5_2.jpg",
-            "../../images/cloud/71_80/5_3.jpg",
-            "../../images/cloud/71_80/5_4.jpg"
+            "../../images/cloud/71_80/4_1.jpg",
+            "../../images/cloud/71_80/4_2.jpg",
+            "../../images/cloud/71_80/4_3.jpg",
+            "../../images/cloud/71_80/4_4.jpg"
         ],
         overview: "An agentic on-call assistant that receives alerts, gathers context from monitoring and logging systems, correlates events, and either suggests or executes approved remediation steps.",
         architecture: "Alert ingestion → triage agent → investigation agents (metrics, logs, traces) → root-cause hypothesis → remediation planner → optional execution with approval. Integration with Slack/Teams and ticketing.",
@@ -2589,11 +2591,11 @@ const resources = [
         description: "Specialized agents for intent classification, knowledge retrieval, escalation, and ticket updates working together to resolve customer issues.",
         difficulty: "Intermediate",
         technologies: ["CrewAI / AutoGen", "RAG", "Ticketing APIs", "CRM Integration"],
-        image: "../../images/cloud/71_80/6_1.jpg",
+        image: "../../images/cloud/71_80/5_1.jpg",
         gallery: [
-            "../../images/cloud/71_80/6_1.jpg",
-            "../../images/cloud/71_80/6_2.jpg",
-            "../../images/cloud/71_80/6_3.jpg"
+            "../../images/cloud/71_80/5_1.jpg",
+            "../../images/cloud/71_80/5_2.jpg",
+            "../../images/cloud/71_80/5_3.jpg"
         ],
         overview: "A collaborative multi-agent support system where specialized agents handle classification, knowledge lookup, response drafting, and escalation while maintaining conversation context.",
         architecture: "Router/classifier agent. Knowledge agent with RAG. Response drafting agent. Escalation agent. Shared memory of the conversation. Integration with Zendesk/Salesforce/HubSpot.",
@@ -2623,12 +2625,12 @@ const resources = [
         description: "Agent architecture with persistent memory, goal tracking, hierarchical planning, and reflection for multi-session tasks.",
         difficulty: "Advanced",
         technologies: ["Vector Memory", "Graph Memory", "Hierarchical Planning", "Reflection", "LangGraph"],
-        image: "../../images/cloud/71_80/7_1.jpg",
+        image: "../../images/cloud/71_80/6_1.jpg",
         gallery: [
-            "../../images/cloud/71_80/7_1.jpg",
-            "../../images/cloud/71_80/7_2.jpg",
-            "../../images/cloud/71_80/7_3.jpg",
-            "../../images/cloud/71_80/7_4.jpg"
+            "../../images/cloud/71_80/6_1.jpg",
+            "../../images/cloud/71_80/6_2.jpg",
+            "../../images/cloud/71_80/6_3.jpg",
+            "../../images/cloud/71_80/6_4.jpg"
         ],
         overview: "An agent that maintains long-term memory across sessions, decomposes high-level goals into sub-tasks, tracks progress, and reflects on outcomes to improve future performance.",
         architecture: "Short-term context + long-term vector/graph memory. Goal store and progress tracker. Planner that produces hierarchical task trees. Reflection node after major steps. Periodic memory consolidation.",
@@ -2658,11 +2660,11 @@ const resources = [
         description: "Hardened deployment pattern for agents covering sandboxing, output filtering, prompt injection defense, and runtime policy enforcement.",
         difficulty: "Advanced",
         technologies: ["Guardrails AI", "NeMo Guardrails", "Sandboxing", "OPA", "LLM Firewalls"],
-        image: "../../images/cloud/71_80/8_1.jpg",
+        image: "../../images/cloud/71_80/7_1.jpg",
         gallery: [
-            "../../images/cloud/71_80/8_1.jpg",
-            "../../images/cloud/71_80/8_2.jpg",
-            "../../images/cloud/71_80/8_3.jpg"
+            "../../images/cloud/71_80/7_1.jpg",
+            "../../images/cloud/71_80/7_2.jpg",
+            "../../images/cloud/71_80/7_3.jpg"
         ],
         overview: "A security-first architecture for running agents in production with multiple layers of defense against prompt injection, data leakage, unauthorized tool use, and harmful outputs.",
         architecture: "Input sanitization and injection detection. Tool permission matrix. Output guardrails and content filtering. Sandboxed tool execution. Runtime policy engine. Full audit logging.",
@@ -2692,12 +2694,12 @@ const resources = [
         description: "End-to-end observability, tracing, evaluation, and continuous improvement system for agentic applications.",
         difficulty: "Intermediate",
         technologies: ["LangSmith", "OpenTelemetry", "RAGAS", "Phoenix", "Custom Metrics"],
-        image: "../../images/cloud/71_80/9_1.jpg",
+        image: "../../images/cloud/71_80/8_1.jpg",
         gallery: [
-            "../../images/cloud/71_80/9_1.jpg",
-            "../../images/cloud/71_80/9_2.jpg",
-            "../../images/cloud/71_80/9_3.jpg",
-            "../../images/cloud/71_80/9_4.jpg"
+            "../../images/cloud/71_80/8_1.jpg",
+            "../../images/cloud/71_80/8_2.jpg",
+            "../../images/cloud/71_80/8_3.jpg",
+            "../../images/cloud/71_80/8_4.jpg"
         ],
         overview: "A complete observability and evaluation stack that captures traces of agent reasoning, tool calls, and outcomes, then systematically evaluates quality and drives improvement.",
         architecture: "Distributed tracing of every agent step. Structured logging of thoughts, actions, and observations. Offline and online evaluation suites. Feedback collection and dataset curation. Dashboards for quality and cost.",
