@@ -2525,8 +2525,10 @@ const resources = [
         image: "../../images/cloud/71_80/3_1.jpg",
         gallery: [
             "../../images/cloud/71_80/3_1.jpg",
-            // "../../images/cloud/71_80/3_2.jpg",
-            // "../../images/cloud/71_80/3_3.jpg"
+            "../../images/cloud/71_80/3_2.jpg",
+            "../../images/cloud/71_80/3_3.jpg",
+            "../../images/cloud/71_80/3_4.jpg",
+            "../../images/cloud/71_80/3_5.jpg",
         ],
         overview: "An agentic system inspired by SWE-agent and similar projects that autonomously works on software tasks inside a sandboxed environment with file system and terminal access.",
         architecture: "Planning agent + coding agent. Repository understanding via embeddings or structure analysis. Sandboxed Docker execution. Test-driven iteration loop. Git commit and PR creation at the end.",

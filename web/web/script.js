@@ -29,10 +29,10 @@
       technologyStack: ["HTML5", "CSS3", "JavaScript", "Node/Express or CMS", "PostgreSQL", "Cloud hosting"],
       developmentSteps: ["Discovery", "IA & design", "Frontend build", "CMS/backend", "Content migration", "QA & launch"],
       images: [
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
+        "../../images/web/1_10/1_1.jpg",
+        // "../../images/web/1_10/1_2.jpg",
+        // "../../images/web/1_10/1_3.jpg",
+        // "../../images/web/1_10/1_4.jpg"
       ]
     },
     {
@@ -50,14 +50,14 @@
       integrations: "Stripe/PayPal, shipping APIs, email, tax services, inventory sync.",
       security: "PCI-aware payment flow, HTTPS, secure tokens, input validation, rate limiting on checkout.",
       deployment: "Scalable cloud (AWS/GCP); CDN for assets; separate staging; monitoring on payment failures.",
-      complexity: "Medium–High",
+      complexity: "Medium-High",
       technologyStack: ["HTML/CSS/JS or SPA", "Node/Laravel/Django", "PostgreSQL", "Stripe", "Redis", "CDN"],
       developmentSteps: ["Requirements", "Catalog design", "Checkout flows", "Payments", "Admin", "Security QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
-        "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&q=80",
-        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
-        "https://images.unsplash.com/photo-1556740758-90de374c12ad?w=800&q=80"
+        "../../images/web/1_10/2_1.jpg",
+        // "../../images/web/1_10/2_2.jpg",
+        // "../../images/web/1_10/2_3.jpg",
+        // "../../images/web/1_10/2_4.jpg"
       ]
     },
     {
@@ -79,10 +79,10 @@
       technologyStack: ["React/Vue or Flutter Web", "Node/Go/Python", "PostgreSQL", "Stripe", "Redis", "Docker"],
       developmentSteps: ["Product discovery", "Architecture", "Auth & tenancy", "Core features", "Billing", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-        "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
-        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80"
+        "../../images/web/1_10/3_1.jpg",
+        // "../../images/web/1_10/3_12jpg",
+        // "../../images/web/1_10/3_13jpg",
+        // "../../images/web/1_10/3_14jpg"
       ]
     },
     {
@@ -104,10 +104,10 @@
       technologyStack: ["HTML/JS or SPA", "Node/Laravel", "PostgreSQL + PostGIS", "S3", "Mapbox", "CDN"],
       developmentSteps: ["Requirements", "Search UX", "Listings model", "Maps", "Agent tools", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80"
+        "../../images/web/1_10/4_1.jpg",
+        // "../../images/web/1_10/4_12jpg",
+        // "../../images/web/1_10/4_13jpg",
+        // "../../images/web/1_10/4_14jpg"
       ]
     },
     {
@@ -129,10 +129,10 @@
       technologyStack: ["HTML/CSS/JS", "Node/PHP", "MySQL", "Stripe", "SMS API", "Cloud host"],
       developmentSteps: ["Menu model", "Order flow", "Payments", "Reservations", "Admin", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
-        "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
-        "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80",
-        "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+        "../../images/web/1_10/5_1.jpg",
+        // "../../images/web/1_10/5_12jpg",
+        // "../../images/web/1_10/5_13jpg",
+        // "../../images/web/1_10/5_14jpg"
       ]
     },
     {
@@ -154,10 +154,10 @@
       technologyStack: ["HTML/JS or CMS", "Laravel/Django", "PostgreSQL", "S3", "Email", "SSL"],
       developmentSteps: ["IA", "Public pages", "Admissions", "Portal auth", "CMS", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
-        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
-        "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80",
-        "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80"
+        "../../images/web/1_10/6_1.jpg",
+        // "../../images/web/1_10/6_12jpg",
+        // "../../images/web/1_10/6_13jpg",
+        // "../../images/web/1_10/6_14jpg"
       ]
     },
     {
@@ -179,10 +179,10 @@
       technologyStack: ["Accessible frontend", "Node/Python", "PostgreSQL", "Twilio/email", "Secure cloud"],
       developmentSteps: ["Compliance review", "Services IA", "Booking", "Providers", "Security QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
-        "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80",
-        "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80"
+        "../../images/web/1_10/7_1.jpg",
+        // "../../images/web/1_10/7_12jpg",
+        // "../../images/web/1_10/7_13jpg",
+        // "../../images/web/1_10/7_14jpg"
       ]
     },
     {
@@ -204,10 +204,10 @@
       technologyStack: ["SPA or server-rendered", "Node/Rails", "PostgreSQL", "Redis", "Email", "Search index"],
       developmentSteps: ["Roles & flows", "Listings", "Applications", "Dashboards", "Moderation", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80",
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-        "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80",
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"
+        "../../images/web/1_10/8_1.jpg",
+        // "../../images/web/1_10/8_12jpg",
+        // "../../images/web/1_10/8_13jpg",
+        // "../../images/web/1_10/8_14jpg"
       ]
     },
     {
@@ -229,10 +229,10 @@
       technologyStack: ["Secure SPA", "Node/Go/Java", "PostgreSQL", "Redis", "KYC API", "HSM/secrets"],
       developmentSteps: ["Compliance design", "Ledger model", "Auth & MFA", "Transfers", "Risk tools", "Security audit", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
-        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
-        "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80"
+        "../../images/web/1_10/9_1.jpg",
+        // "../../images/web/1_10/9_12jpg",
+        // "../../images/web/1_10/9_13jpg", 
+        // "../../images/web/1_10/9_14jpg"
       ]
     },
     {
@@ -254,12 +254,13 @@
       technologyStack: ["HTML/JS or SPA", "Node/Laravel", "PostgreSQL", "Stripe", "Email", "CDN"],
       developmentSteps: ["Inventory model", "Availability", "Checkout", "Admin", "Integrations", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-        "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
-        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80"
+        "../../images/web/1_10/0_1.jpg",
+        // "../../images/web/1_10/0_12jpg",
+        // "../../images/web/1_10/0_13jpg",
+        // "../../images/web/1_10/0_14jpg"
       ]
     },
+    // 11
     {
       id: 11,
       title: "News / Magazine Website",
@@ -279,10 +280,10 @@
       technologyStack: ["Next-style or CMS", "Headless CMS or custom", "PostgreSQL", "CDN", "Newsletter API"],
       developmentSteps: ["Content model", "Templates", "CMS", "Search", "Performance", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1504711434869-fe1a838ae84f?w=800&q=80",
-        "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=800&q=80",
-        "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=800&q=80",
-        "https://images.unsplash.com/photo-1456324504489-2e69d5e6a4f1?w=800&q=80"
+        "../../images/web/11_20/1_1.jpg",
+        // "../../images/web/11_20/1_2.jpg",
+        // "../../images/web/11_20/1_3.jpg",
+        // "../../images/web/11_20/1_4.jpg"
       ]
     },
     {
@@ -304,10 +305,10 @@
       technologyStack: ["HTML/CSS/JS", "Optional CMS", "Form API", "CDN", "Analytics"],
       developmentSteps: ["Content & IA", "Design", "Build", "Forms", "Polish", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1467232004584-a241cdc8eece?w=800&q=80",
-        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&q=80",
-        "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&q=80",
-        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80"
+        "../../images/web/11_20/2_1.jpg",
+        // "../../images/web/11_20/2_2.jpg",
+        // "../../images/web/11_20/2_3.jpg",
+        // "../../images/web/11_20/2_4.jpg"
       ]
     },
     {
@@ -329,10 +330,10 @@
       technologyStack: ["SPA or hybrid", "Node/Django", "PostgreSQL", "Stripe", "QR lib", "Workers"],
       developmentSteps: ["Event model", "Ticketing", "Payments", "Check-in", "Dashboard", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
-        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
-        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
-        "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80"
+        "../../images/web/11_20/3_1.jpg",
+        // "../../images/web/11_20/3_2.jpg",
+        // "../../images/web/11_20/3_3.jpg",
+        // "../../images/web/11_20/3_4.jpg"
       ]
     },
     {
@@ -354,10 +355,10 @@
       technologyStack: ["SPA/Flutter Web", "Node/Laravel", "PostgreSQL", "S3/CDN", "Stripe", "Workers"],
       developmentSteps: ["Course model", "Player UX", "Progress", "Assessments", "Admin", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
-        "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
-        "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80"
+        "../../images/web/11_20/4_1.jpg",
+        // "../../images/web/11_20/4_2.jpg",
+        // "../../images/web/11_20/4_3.jpg",
+        // "../../images/web/11_20/4_4.jpg"
       ]
     },
     {
@@ -379,10 +380,10 @@
       technologyStack: ["SPA", "Node/Rails", "PostgreSQL", "Stripe Connect", "Redis", "Search"],
       developmentSteps: ["Two-sided design", "Listings", "Checkout", "Payouts", "Moderation", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1556740758-90de374c12ad?w=800&q=80",
-        "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&q=80",
-        "https://images.unsplash.com/photo-1556742111-a301550d8024?w=800&q=80",
-        "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800&q=80"
+        "../../images/web/11_20/5_1.jpg",
+        // "../../images/web/11_20/5_2.jpg",
+        // "../../images/web/11_20/5_3.jpg", 
+        // "../../images/web/11_20/5_4.jpg"
       ]
     },
     {
@@ -404,10 +405,10 @@
       technologyStack: ["Dashboard SPA", "Node/Go", "PostgreSQL", "Redis", "Maps", "Push/SMS"],
       developmentSteps: ["Order model", "Dispatch UX", "Tracking", "Driver flows", "Notifications", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
-        "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80",
-        "https://images.unsplash.com/photo-1601584115197-04ecc1dedea6?w=800&q=80",
-        "https://images.unsplash.com/photo-1578574577315-52ac881c63ea?w=800&q=80"
+        "../../images/web/11_20/6_1.jpg",
+        // "../../images/web/11_20/6_2.jpg",
+        // "../../images/web/11_20/6_3.jpg",
+        // "../../images/web/11_20/6_4.jpg"
       ]
     },
     {
@@ -429,10 +430,10 @@
       technologyStack: ["CMS or static + API", "Giving API", "Email", "CDN", "SSL"],
       developmentSteps: ["Content IA", "Design", "Media", "Events", "Giving", "Training", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1438236812111-d05a4f8e6d0e?w=800&q=80",
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
-        "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&q=80",
-        "https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=800&q=80"
+        "../../images/web/11_20/7_1.jpg",
+        // "../../images/web/11_20/7_2.jpg",
+        // "../../images/web/11_20/7_3.jpg",
+        // "../../images/web/11_20/7_4.jpg"
       ]
     },
     {
@@ -454,10 +455,10 @@
       technologyStack: ["CMS or custom", "Donation API", "Email", "Analytics", "CDN"],
       developmentSteps: ["Messaging", "IA", "Donate flow", "CMS", "Forms", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
-        "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80",
-        "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=800&q=80",
-        "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80"
+        "../../images/web/11_20/8_1.jpg",
+        // "../../images/web/11_20/8_2.jpg",
+        // "../../images/web/11_20/8_3.jpg",
+        // "../../images/web/11_20/8_4.jpg"
       ]
     },
     {
@@ -479,10 +480,10 @@
       technologyStack: ["SPA", "Node/Go", "PostgreSQL", "Redis", "S3", "Push"],
       developmentSteps: ["Core entities", "Feed", "Groups", "Moderation", "Notifications", "QA", "Launch"],
       images: [
-        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
-        "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&q=80",
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
-        "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80"
+        "../../images/web/11_20/9_1.jpg",
+        // "../../images/web/11_20/9_2.jpg",
+        // "../../images/web/11_20/9_3.jpg",
+        // "../../images/web/11_20/9_4.jpg"
       ]
     },
     {
@@ -504,10 +505,10 @@
       technologyStack: ["SPA/Flutter Web", "Node/Python", "PostgreSQL", "Auth provider", "Charts", "Workers"],
       developmentSteps: ["Domain model", "RBAC", "Core screens", "Reports", "Audit", "QA", "Rollout"],
       images: [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-        "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
-        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80"
+        "../../images/web/11_20/0_1.jpg",
+        // "../../images/web/11_20/0_2.jpg",
+        // "../../images/web/11_20/0_3.jpg",
+        // "../../images/web/11_20/0_4.jpg"
       ]
     }
   ];
@@ -617,8 +618,7 @@
         <ul class="card-tags">${tags}</ul>
         <div class="card-actions">
           <button type="button" class="btn btn-secondary btn-sm" data-action="read-more" data-id="${project.id}">Read More</button>
-          <button type="button" class="btn btn-ghost btn-sm" data-action="gallery" data-id="${project.id}">View Images</button>
-          <a href="../home.html" class="btn btn-primary btn-sm">Start This Project</a>
+          <a href="../home.html" class="btn btn-primary btn-sm">Web Questionnaire</a>
         </div>
       </div>
     `;
@@ -720,7 +720,7 @@
       </div>
       <div class="modal-cta">
         <p style="margin:0 0 1rem;color:var(--color-text-muted);font-size:0.9375rem;">Ready to build something like this?</p>
-        <a href="../home.html" class="btn btn-primary btn-lg">Start This Project</a>
+        <a href="../home.html" class="btn btn-primary btn-lg">Web Questionnaire</a>
       </div>
     `;
 

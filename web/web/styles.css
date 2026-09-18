@@ -1,6 +1,6 @@
 /* ==========================================================================
    Design system
-   ========================================================================== */
+   ======================logo==================================================== */
 :root {
   --color-bg: #0b1220;
   --color-bg-elevated: #111827;
@@ -216,7 +216,7 @@ a:hover {
   width: 28px;
   height: 28px;
   border-radius: 8px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  /* background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); */
   flex-shrink: 0;
 }
 
