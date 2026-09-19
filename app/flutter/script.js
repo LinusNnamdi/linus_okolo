@@ -21,11 +21,14 @@
         "A production-ready authentication and onboarding experience covering login, registration, OTP verification, password recovery, biometric unlock, and guided first-run flows. Designed for security, accessibility, and conversion.",
       tags: ["OTP", "Biometric", "OAuth", "Security"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Login", alt: "Flutter login screen", caption: "Modern login with email and social options" },
-        { src: "https://placehold.co/390x844/0f172a/0ab599?text=Sign+Up", alt: "Flutter sign-up screen", caption: "Registration with validation" },
-        { src: "https://placehold.co/390x844/111827/11a791?text=OTP", alt: "OTP verification screen", caption: "OTP verification flow" },
-        { src: "https://placehold.co/390x844/1e293b/0ab599?text=Biometric", alt: "Biometric authentication", caption: "Biometric unlock" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Onboarding", alt: "Onboarding carousel", caption: "Onboarding introduction" },
+        { src: "../../images/app/1_10/1_1.jpg", alt: "Auth Pages", caption: "Modern Auth pages" },
+        { src: "../../images/app/1_10/1_2.jpg", alt: "Flutter sign-up screen", caption: "Registration with validation" },
+        { src: "../../images/app/1_10/1_3.jpg", alt: "OTP verification screen", caption: "OTP verification flow" },
+        { src: "../../images/app/1_10/1_4.jpg", alt: "Biometric authentication", caption: "Biometric unlock" },
+        { src: "../../images/app/1_10/1_5.jpg", alt: "Onboarding carousel", caption: "Onboarding introduction" },
+        { src: "../../images/app/1_10/1_6.jpg", alt: "Biometric authentication", caption: "Biometric unlock" },
+        { src: "../../images/app/1_10/1_7.jpg", alt: "Onboarding carousel", caption: "Onboarding introduction" },
+        { src: "../../images/app/1_10/1_8.jpg", alt: "Onboarding carousel", caption: "Onboarding introduction" },
       ],
       frontend: [
         "Login & registration forms",
@@ -89,10 +92,10 @@
         "A high-density yet readable dashboard that surfaces KPIs, charts, recent activity, and quick actions. Built for decision-makers who need clarity at a glance across web and mobile.",
       tags: ["KPIs", "Charts", "Activity", "Shortcuts"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Dashboard", alt: "Main dashboard", caption: "Primary metrics overview" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Charts", alt: "Analytics charts", caption: "Interactive chart views" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Activity", alt: "Activity feed", caption: "Recent activity stream" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Widgets", alt: "Customizable widgets", caption: "Configurable widget layout" },
+        { src: "../../images/app/1_10/2_1.jpg", alt: "Main dashboard", caption: "Primary metrics overview" },
+        { src: "../../images/app/1_10/2_2.jpg", alt: "Analytics charts", caption: "Interactive chart views" },
+        // { src: "../../images/app/1_10/2_3.jpg", alt: "Activity feed", caption: "Recent activity stream" },
+        // { src: "../../images/app/1_10/2_4.jpg", alt: "Customizable widgets", caption: "Configurable widget layout" },
       ],
       frontend: [
         "KPI cards and summary widgets",
@@ -138,11 +141,11 @@
         "End-to-end shopping experience from discovery through checkout and order history. Optimized for conversion, performance, and multi-platform consistency.",
       tags: ["Catalog", "Cart", "Checkout", "Orders"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Shop+Home", alt: "Shop home", caption: "Featured products and categories" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Listing", alt: "Product listing", caption: "Product grid with filters" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=PDP", alt: "Product detail", caption: "Product detail page" },
-        { src: "https://placehold.co/390x844/0f172a/0ab599?text=Cart", alt: "Shopping cart", caption: "Cart and quantity controls" },
-        { src: "https://placehold.co/390x844/1e293b/94a3b8?text=Checkout", alt: "Checkout", caption: "Checkout and payment" },
+        { src: "../../images/app/1_10/3_1.jpg", alt: "Shop home", caption: "Featured products and categories" },
+        { src: "../../images/app/1_10/3_2.jpg", alt: "Product listing", caption: "Product grid with filters" },
+        { src: "../../images/app/1_10/3_3.jpg", alt: "Product detail", caption: "Product detail page" },
+        { src: "../../images/app/1_10/3_4.jpg", alt: "Shopping cart", caption: "Cart and quantity controls" },
+        // { src: "../../images/app/1_10/3_1.jpg", alt: "Checkout", caption: "Checkout and payment" },
       ],
       frontend: [
         "Home / category navigation",
@@ -189,11 +192,11 @@
         "Complete food delivery experience with restaurant discovery, menu browsing, cart, real-time order status, and map-based tracking for drivers and customers.",
       tags: ["Restaurants", "Menu", "Tracking", "Orders"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Restaurants", alt: "Restaurant discovery", caption: "Nearby restaurants" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Menu", alt: "Menu screen", caption: "Restaurant menu" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Cart", alt: "Food cart", caption: "Order cart" },
-        { src: "https://placehold.co/390x844/0f172a/0ab599?text=Tracking", alt: "Delivery tracking", caption: "Live delivery map" },
-        { src: "https://placehold.co/390x844/1e293b/94a3b8?text=Status", alt: "Order status", caption: "Order status timeline" },
+        { src: "../../images/app/1_10/4_1.jpg", alt: "Restaurant discovery", caption: "Nearby restaurants" },
+        { src: "../../images/app/1_10/4_2.jpg", alt: "Menu screen", caption: "Restaurant menu" },
+        { src: "../../images/app/1_10/4_3.jpg", alt: "Food cart", caption: "Order cart" },
+        // { src: "../../images/app/1_10/4_4.jpg", alt: "Delivery tracking", caption: "Live delivery map" },
+        // { src: "../../images/app/1_10/4_1.jpg", alt: "Order status", caption: "Order status timeline" },
       ],
       frontend: [
         "Restaurant list and filters",
@@ -238,10 +241,10 @@
         "Ride-hailing flows from location selection and fare estimate through driver matching, in-trip tracking, and post-trip payment and rating.",
       tags: ["Maps", "Matching", "Tracking", "Payments"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Request", alt: "Ride request", caption: "Pickup and destination" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Matching", alt: "Driver matching", caption: "Finding a driver" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Trip", alt: "Active trip", caption: "Live trip tracking" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Receipt", alt: "Trip receipt", caption: "Payment and rating" },
+        { src: "../../images/app/1_10/5_1.jpg", alt: "Ride request", caption: "Pickup and destination" },
+        { src: "../../images/app/1_10/5_2.jpg", alt: "Driver matching", caption: "Finding a driver" },
+        { src: "../../images/app/1_10/5_3.jpg", alt: "Active trip", caption: "Live trip tracking" },
+        { src: "../../images/app/1_10/5_4.jpg", alt: "Trip receipt", caption: "Payment and rating" },
       ],
       frontend: [
         "Map-based pickup / dropoff",
@@ -285,10 +288,10 @@
         "Secure digital banking and wallet experiences including balances, transfers, card management, beneficiaries, and detailed transaction history with strong security controls.",
       tags: ["Transfers", "Cards", "History", "Security"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Wallet", alt: "Wallet home", caption: "Balance and quick actions" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Transfer", alt: "Transfer screen", caption: "Send money flow" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=History", alt: "Transaction history", caption: "Transaction list" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Cards", alt: "Cards management", caption: "Virtual and physical cards" },
+        { src: "../../images/app/1_10/6_1.jpg", alt: "Wallet home", caption: "Balance and quick actions" },
+        { src: "../../images/app/1_10/6_2.jpg", alt: "Transfer screen", caption: "Send money flow" },
+        { src: "../../images/app/1_10/6_3.jpg", alt: "Transaction history", caption: "Transaction list" },
+        { src: "../../images/app/1_10/6_4.jpg", alt: "Cards management", caption: "Virtual and physical cards" },
       ],
       frontend: [
         "Account overview",
@@ -337,10 +340,10 @@
         "Two-sided job marketplace supporting job seekers (search, apply, track) and employers (post, screen, message) with clear application pipelines.",
       tags: ["Jobs", "Apply", "ATS", "Search"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Jobs", alt: "Job list", caption: "Job discovery feed" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Detail", alt: "Job detail", caption: "Job description and apply" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Apply", alt: "Application form", caption: "Application flow" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Tracker", alt: "Application tracker", caption: "Application status" },
+        { src: "../../images/app/1_10/7_1.jpg", alt: "Job list", caption: "Job discovery feed" },
+        { src: "../../images/app/1_10/7_2.jpg", alt: "Job detail", caption: "Job description and apply" },
+        // { src: "../../images/app/1_10/7_3.jpg", alt: "Application form", caption: "Application flow" },
+        // { src: "../../images/app/1_10/7_4.jpg", alt: "Application tracker", caption: "Application status" },
       ],
       frontend: [
         "Job search and filters",
@@ -384,10 +387,10 @@
         "Core social product surfaces: algorithmic or chronological feed, rich posts, engagement, profiles, follow graph, and in-app messaging with notification plumbing.",
       tags: ["Feed", "Posts", "Profile", "Engage"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Feed", alt: "Social feed", caption: "Home feed" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Post", alt: "Create post", caption: "Composer" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Profile", alt: "User profile", caption: "Profile and posts grid" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Comments", alt: "Comments", caption: "Comments and reactions" },
+        { src: "../../images/app/1_10/8_1.jpg", alt: "Social feed", caption: "Home feed" },
+        // { src: "../../images/app/1_10/8_2.jpg", alt: "Create post", caption: "Composer" },
+        // { src: "../../images/app/1_10/8_3.jpg", alt: "User profile", caption: "Profile and posts grid" },
+        // { src: "../../images/app/1_10/8_4.jpg", alt: "Comments", caption: "Comments and reactions" },
       ],
       frontend: [
         "Infinite feed",
@@ -430,10 +433,10 @@
         "Reliable messaging product with 1:1 and group chats, media sharing, presence, typing indicators, read receipts, and notification sync across devices.",
       tags: ["1:1", "Groups", "Media", "Realtime"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Chats", alt: "Chat list", caption: "Conversation list" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Thread", alt: "Chat thread", caption: "Message thread" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Group", alt: "Group chat", caption: "Group conversation" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Media", alt: "Media share", caption: "Sharing images and files" },
+        { src: "../../images/app/1_10/9_1.jpg", alt: "Chat list", caption: "Conversation list" },
+        { src: "../../images/app/1_10/9_2.jpg", alt: "Chat thread", caption: "Message thread" },
+        { src: "../../images/app/1_10/9_3.jpg", alt: "Group chat", caption: "Group conversation" },
+        // { src: "../../images/app/1_10/9_4.jpg", alt: "Media share", caption: "Sharing images and files" },
       ],
       frontend: [
         "Conversation list",
@@ -476,10 +479,10 @@
         "Patient- and clinician-facing healthcare flows: booking, profiles, medical records access, prescriptions, and secure messaging aligned with privacy expectations.",
       tags: ["Appointments", "Records", "Rx", "Care"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Book", alt: "Book appointment", caption: "Appointment booking" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Doctors", alt: "Doctor list", caption: "Find a doctor" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Records", alt: "Medical records", caption: "Health records view" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Rx", alt: "Prescriptions", caption: "Prescription list" },
+        { src: "../../images/app/1_10/0_1.jpg", alt: "Book appointment", caption: "Appointment booking" },
+        { src: "../../images/app/1_10/0_2.jpg", alt: "Doctor list", caption: "Find a doctor" },
+        { src: "../../images/app/1_10/0_3.jpg", alt: "Medical records", caption: "Health records view" },
+        // { src: "../../images/app/1_10/0_4.jpg", alt: "Prescriptions", caption: "Prescription list" },
       ],
       frontend: [
         "Appointment scheduling",
@@ -516,6 +519,7 @@
         "Pilot with clinics",
       ],
     },
+    // 11
     {
       id: 11,
       number: "11",
@@ -527,10 +531,10 @@
         "Fitness product with guided plans, live workout tracking, progress charts, goal setting, and activity history designed to keep users engaged over time.",
       tags: ["Plans", "Tracking", "Goals", "Analytics"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Plans", alt: "Workout plans", caption: "Training programs" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Workout", alt: "Active workout", caption: "Exercise tracking" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Progress", alt: "Progress charts", caption: "Progress analytics" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Goals", alt: "Goals", caption: "Goal setting" },
+        { src: "../../images/app/11_20/1_1.jpg", alt: "Workout plans", caption: "Training programs" },
+        // { src: "../../images/app/11_20/1_2.jpg", alt: "Active workout", caption: "Exercise tracking" },
+        // { src: "../../images/app/11_20/1_3.jpg", alt: "Progress charts", caption: "Progress analytics" },
+        // { src: "../../images/app/11_20/1_4.jpg", alt: "Goals", caption: "Goal setting" },
       ],
       frontend: [
         "Plan browser",
@@ -573,10 +577,10 @@
         "Learning platform experiences: course catalogs, lesson players, quizzes, progress tracking, certificates, and instructor or student dashboards.",
       tags: ["Courses", "Quizzes", "Progress", "Certificates"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Courses", alt: "Course catalog", caption: "Browse courses" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Lesson", alt: "Lesson player", caption: "Video / lesson view" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Quiz", alt: "Quiz screen", caption: "Interactive quiz" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Progress", alt: "Student progress", caption: "Progress dashboard" },
+        { src: "../../images/app/11_20/2_1.jpg", alt: "Course catalog", caption: "Browse courses" },
+        // { src: "../../images/app/11_20/2_2.jpg", alt: "Lesson player", caption: "Video / lesson view" },
+        // { src: "../../images/app/11_20/2_3.jpg", alt: "Quiz screen", caption: "Interactive quiz" },
+        // { src: "../../images/app/11_20/2_4.jpg", alt: "Student progress", caption: "Progress dashboard" },
       ],
       frontend: [
         "Course catalog and search",
@@ -619,10 +623,10 @@
         "Travel booking flows covering destination discovery, hotel search with rich filters, property details, room selection, checkout, and reservation management.",
       tags: ["Search", "Hotels", "Booking", "Payments"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Search", alt: "Hotel search", caption: "Search destinations" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Results", alt: "Search results", caption: "Filtered results" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Property", alt: "Property detail", caption: "Hotel detail and rooms" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Book", alt: "Booking", caption: "Confirm and pay" },
+        { src: "../../images/app/11_20/3_1.jpg", alt: "Hotel search", caption: "Search destinations" },
+        // { src: "../../images/app/11_20/3_2.jpg", alt: "Search results", caption: "Filtered results" },
+        // { src: "../../images/app/11_20/3_3.jpg", alt: "Property detail", caption: "Hotel detail and rooms" },
+        // { src: "../../images/app/11_20/3_4.jpg", alt: "Booking", caption: "Confirm and pay" },
       ],
       frontend: [
         "Search and date pickers",
@@ -665,10 +669,10 @@
         "Property marketplace for buyers and renters: rich search, map exploration, detailed listings with galleries, agent contact, and inquiry management.",
       tags: ["Listings", "Maps", "Agents", "Inquiry"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Listings", alt: "Property list", caption: "Browse listings" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Map", alt: "Map search", caption: "Map-based discovery" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Detail", alt: "Property detail", caption: "Listing detail and gallery" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Inquiry", alt: "Contact agent", caption: "Inquiry form" },
+        { src: "../../images/app/11_20/4_1.jpg", alt: "Property list", caption: "Browse listings" },
+        // { src: "../../images/app/11_20/4_2.jpg", alt: "Map search", caption: "Map-based discovery" },
+        // { src: "../../images/app/11_20/4_3.jpg", alt: "Property detail", caption: "Listing detail and gallery" },
+        // { src: "../../images/app/11_20/4_4.jpg", alt: "Contact agent", caption: "Inquiry form" },
       ],
       frontend: [
         "List and map search",
@@ -711,10 +715,10 @@
         "Event discovery and ticketing: browse events, select tickets, checkout, receive QR tickets, and manage upcoming and past events.",
       tags: ["Events", "Tickets", "QR", "Checkout"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Events", alt: "Event list", caption: "Discover events" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Detail", alt: "Event detail", caption: "Event information" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Tickets", alt: "Ticket selection", caption: "Choose tickets" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=QR", alt: "QR ticket", caption: "Mobile QR ticket" },
+        { src: "../../images/app/11_20/5_1.jpg", alt: "Event list", caption: "Discover events" },
+        // { src: "../../images/app/11_20/5_2.jpg", alt: "Event detail", caption: "Event information" },
+        // { src: "../../images/app/11_20/5_3.jpg", alt: "Ticket selection", caption: "Choose tickets" },
+        // { src: "../../images/app/11_20/5_4.jpg", alt: "QR ticket", caption: "Mobile QR ticket" },
       ],
       frontend: [
         "Event discovery and filters",
@@ -757,10 +761,10 @@
         "Logistics tracking for shippers and recipients: create shipments, track status, view driver and location updates, and manage delivery exceptions.",
       tags: ["Shipments", "Tracking", "Status", "Maps"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Shipments", alt: "Shipment list", caption: "Active shipments" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Create", alt: "Create shipment", caption: "New shipment form" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Track", alt: "Live tracking", caption: "Map tracking" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Status", alt: "Status timeline", caption: "Delivery timeline" },
+        { src: "../../images/app/11_20/6_1.jpg", alt: "Shipment list", caption: "Active shipments" },
+        // { src: "../../images/app/11_20/6_2.jpg", alt: "Create shipment", caption: "New shipment form" },
+        // { src: "../../images/app/11_20/6_3.jpg", alt: "Live tracking", caption: "Map tracking" },
+        // { src: "../../images/app/11_20/6_4.jpg", alt: "Status timeline", caption: "Delivery timeline" },
       ],
       frontend: [
         "Shipment list and filters",
@@ -803,10 +807,10 @@
         "Employee-facing and manager tools for attendance, leave requests, task assignment, schedules, basic payroll visibility, and operational reports.",
       tags: ["Attendance", "Leave", "Tasks", "HR"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Home", alt: "Employee home", caption: "Employee dashboard" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Attendance", alt: "Attendance", caption: "Clock in / out" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Leave", alt: "Leave request", caption: "Leave management" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Schedule", alt: "Schedule", caption: "Work schedule" },
+        { src: "../../images/app/11_20/7_1.jpg", alt: "Employee home", caption: "Employee dashboard" },
+        { src: "../../images/app/11_20/7_2.jpg", alt: "Attendance", caption: "Clock in / out" },
+        // { src: "../../images/app/11_20/7_3.jpg", alt: "Leave request", caption: "Leave management" },
+        // { src: "../../images/app/11_20/7_4.jpg", alt: "Schedule", caption: "Work schedule" },
       ],
       frontend: [
         "Employee dashboard",
@@ -849,10 +853,10 @@
         "Restaurant operations suite: menu and inventory control, table management, order flow to kitchen, and sales analytics for owners and staff.",
       tags: ["Menu", "Orders", "Kitchen", "POS"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Orders", alt: "Orders board", caption: "Active orders" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Menu", alt: "Menu manager", caption: "Menu editing" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Kitchen", alt: "Kitchen display", caption: "Kitchen workflow" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Analytics", alt: "Sales analytics", caption: "Sales overview" },
+        { src: "../../images/app/11_20/8_1.jpg", alt: "Orders board", caption: "Active orders" },
+        // { src: "../../images/app/11_20/8_2.jpg", alt: "Menu manager", caption: "Menu editing" },
+        // { src: "../../images/app/11_20/8_3.jpg", alt: "Kitchen display", caption: "Kitchen workflow" },
+        // { src: "../../images/app/11_20/8_4.jpg", alt: "Sales analytics", caption: "Sales overview" },
       ],
       frontend: [
         "Order intake UI",
@@ -895,10 +899,10 @@
         "Collaborative project and task management with boards or lists, assignees, due dates, priorities, progress tracking, and lightweight analytics for teams.",
       tags: ["Tasks", "Boards", "Teams", "Deadlines"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Projects", alt: "Project list", caption: "Projects overview" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Board", alt: "Task board", caption: "Kanban board" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Task", alt: "Task detail", caption: "Task detail and comments" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Analytics", alt: "Team analytics", caption: "Productivity metrics" },
+        { src: "../../images/app/11_20/9_1.jpg", alt: "Project list", caption: "Projects overview" },
+        // { src: "../../images/app/11_20/9_2.jpg", alt: "Task board", caption: "Kanban board" },
+        // { src: "../../images/app/11_20/9_3.jpg", alt: "Task detail", caption: "Task detail and comments" },
+        // { src: "../../images/app/11_20/9_4.jpg", alt: "Team analytics", caption: "Productivity metrics" },
       ],
       frontend: [
         "Project list and detail",
@@ -941,10 +945,11 @@
         "Internal admin and analytics surface for operators: system-wide KPIs, charts, user and transaction management, configurable reports, and operational controls.",
       tags: ["BI", "KPIs", "Reports", "Admin"],
       images: [
-        { src: "https://placehold.co/390x844/0f172a/11a791?text=Admin", alt: "Admin home", caption: "Admin overview" },
-        { src: "https://placehold.co/390x844/111827/0ab599?text=Charts", alt: "Analytics charts", caption: "Detailed charts" },
-        { src: "https://placehold.co/390x844/1e293b/11a791?text=Users", alt: "User management", caption: "Users table" },
-        { src: "https://placehold.co/390x844/0f172a/94a3b8?text=Reports", alt: "Reports", caption: "Exportable reports" },
+        { src: "../../images/app/11_20/0_1.jpg", alt: "Admin home", caption: "Admin overview" },
+        { src: "../../images/app/11_20/0_2.jpg", alt: "Analytics charts", caption: "Detailed charts" },
+        { src: "../../images/app/11_20/0_3.jpg", alt: "User management", caption: "Users table" },
+        { src: "../../images/app/11_20/0_4.jpg", alt: "User management", caption: "Users table" },
+        { src: "../../images/app/11_20/0_5.jpg", alt: "Reports", caption: "Exportable reports" },
       ],
       frontend: [
         "KPI overview",
