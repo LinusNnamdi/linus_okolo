@@ -1,7 +1,7 @@
 /* ============================================================
    LINUS NNAMDI OKOLO — Portfolio Styles
    Premium, professional, modern, conversion-focused
-   =========================logo=================================== */
+   ============================================================ */
 
 /* ---------- CSS Variables ---------- */
 :root {
@@ -467,8 +467,7 @@ button {
 }
 
 .about-lead {
-  font-size: 1.15rem;
-  font-weight: 500;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
