@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6d28d9">
+  <title>Cloud & DevOps Quiz</title>
+  <link rel="icon" href="images/earndee.png" type="image/png">
+  <style>
+    :root {
+      --purple: #28d9aa;
+      --purple-dark: #1d9395;
+      --purple-light: #f3e8ff;
+      --purple-mid: #5cf6d2;
+      --ink: #1a2c28;
+      --muted: #6b7d7d;
+      --line: #e9e5ef;
+      --surface: #ffffff;
+      --page: #f8f7fb;
+      --green: #451580;
+      --green-bg: #dcfce7;
+      --red: #b91c1c;
+      --red-bg: #fee2e2;
+      --shadow: 0 12px 34px rgba(20, 70, 63, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button:focus-visible {
+      outline: 3px solid #c4b5fd;
+      outline-offset: 3px;
+    }
+
+    .topbar {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -.4px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      background: linear-gradient(145deg, var(--purple-mid), var(--purple-dark));
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      box-shadow: 0 6px 15px #6d28d933;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    .top-label {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: auto;
+      padding: 34px 24px 64px;
+    }
+
+    .eyebrow {
+      color: var(--purple);
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 1.8px;
+      margin-bottom: 9px;
+    }
+
+    h1 {
+      font-size: clamp(30px, 4vw, 43px);
+      line-height: 1.12;
+      letter-spacing: -1.6px;
+      margin: 0 0 12px;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 660px;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .section-label {
+      font-size: 13px;
+      font-weight: 800;
+      margin: 28px 0 12px;
+    }
+
+    .provider-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .provider-btn {
+      border: 1px solid var(--line);
+      color: #5e566b;
+      background: white;
+      border-radius: 12px;
+      padding: 11px 17px;
+      font-weight: 750;
+      transition: .18s ease;
+    }
+
+    .provider-btn:hover {
+      border-color: #c4b5fd;
+      color: var(--purple);
+    }
+
+    .provider-btn.active {
+      background: var(--purple);
+      color: white;
+      border-color: var(--purple);
+      box-shadow: 0 5px 14px #6d28d92b;
+    }
+
+    .empty-note {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 19px;
+      box-shadow: var(--shadow);
+    }
+
+    .topics-panel {
+      margin-top: 27px;
+      padding: 22px;
+    }
+
+    .panel-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 19px;
+      letter-spacing: -.4px;
+    }
+
+    .subtext {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .topic-count {
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .topic-row {
+      display: flex;
+      gap: 9px;
+      overflow-x: auto;
+      padding: 2px 2px 10px;
+      scrollbar-width: thin;
+      scrollbar-color: #d8c8f7 transparent;
+    }
+
+    .topic-btn {
+      flex: 0 0 auto;
+      max-width: 300px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: #fff;
+      color: #5f566d;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .topic-btn.active {
+      color: var(--purple-dark);
+      background: var(--purple-light);
+      border-color: #c4b5fd;
+    }
+
+    .topic-detail {
+      margin-top: 17px;
+      padding: 20px;
+      border-radius: 15px;
+      background: linear-gradient(115deg, #faf7ff, #fff);
+      border: 1px solid #eee5ff;
+    }
+
+    .topic-detail h3 {
+      margin: 0;
+      font-size: 17px;
+      letter-spacing: -.3px;
+    }
+
+    .detail-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 12px;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      color: #625a70;
+    }
+
+    .meta-pill strong {
+      color: var(--ink);
+    }
+
+    .primary,
+    .secondary,
+    .danger {
+      border: 0;
+      border-radius: 11px;
+      padding: 11px 17px;
+      font-weight: 750;
+      transition: .18s ease;
+    }
+
+    .primary {
+      background: var(--purple);
+      color: white;
+      box-shadow: 0 5px 12px #6d28d926;
+    }
+
+    .primary:hover {
+      background: var(--purple-dark);
+      transform: translateY(-1px);
+    }
+
+    .secondary {
+      background: white;
+      color: #51485f;
+      border: 1px solid var(--line);
+    }
+
+    .secondary:hover {
+      border-color: #bba4f5;
+      color: var(--purple);
+    }
+
+    .danger {
+      background: var(--red-bg);
+      color: var(--red);
+    }
+
+    .start-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-top: 19px;
+    }
+
+    .start-hint {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .quiz-area {
+      display: none;
+      margin-top: 27px;
+    }
+
+    .quiz-head {
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .quiz-head-title {
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .quiz-progress-label {
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .progress-track {
+      height: 6px;
+      background: #eeeaf4;
+      border-radius: 99px;
+      overflow: hidden;
+      margin: 0 22px 20px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--purple), #a78bfa);
+      border-radius: inherit;
+      transition: width .2s;
+    }
+
+    .question-card {
+      padding: 27px;
+    }
+
+    .question-kicker {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--purple);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      margin-bottom: 12px;
+    }
+
+    .difficulty {
+      display: inline-block;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: #fff7ed;
+      color: #9a3412;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: capitalize;
+      letter-spacing: 0;
+    }
+
+    .question-text {
+      font-size: clamp(18px, 2.5vw, 22px);
+      font-weight: 750;
+      line-height: 1.48;
+      letter-spacing: -.35px;
+      margin: 0 0 22px;
+    }
+
+    .options {
+      display: grid;
+      gap: 11px;
+    }
+
+    .option {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 15px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: white;
+      color: #393143;
+      text-align: left;
+      transition: .15s;
+    }
+
+    .option:hover {
+      border-color: #c4b5fd;
+      background: #fdfbff;
+    }
+
+    .option.selected {
+      border-color: var(--purple);
+      background: #f7f1ff;
+      box-shadow: inset 0 0 0 1px var(--purple);
+    }
+
+    .option-letter {
+      flex: 0 0 27px;
+      height: 27px;
+      border-radius: 8px;
+      background: #f3f0f7;
+      color: #655a75;
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .option.selected .option-letter {
+      background: var(--purple);
+      color: white;
+    }
+
+    .option-text {
+      padding-top: 2px;
+      font-size: 14px;
+    }
+
+    .quiz-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 9px;
+    }
+
+    .unanswered-note {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .preview-area,
+    .result-area {
+      display: none;
+      margin-top: 27px;
+    }
+
+    .preview-top,
+    .result-top {
+      padding: 25px;
+    }
+
+    .preview-list {
+      padding: 0 25px 25px;
+      display: grid;
+      gap: 11px;
+    }
+
+    .preview-item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 15px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .preview-item p {
+      margin: 4px 0 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .preview-number {
+      color: var(--purple);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .answer-status {
+      white-space: nowrap;
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .answered {
+      color: var(--green);
+      background: var(--green-bg);
+    }
+
+    .not-answered {
+      color: #92400e;
+      background: #fef3c7;
+    }
+
+    .preview-actions {
+      padding: 0 25px 25px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .result-top {
+      text-align: center;
+    }
+
+    .score-circle {
+      width: 120px;
+      height: 120px;
+      margin: 18px auto 12px;
+      border: 8px solid var(--purple-light);
+      border-top-color: var(--purple);
+      border-right-color: var(--purple-mid);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+    }
+
+    .score-circle strong {
+      font-size: 29px;
+      letter-spacing: -1px;
+    }
+
+    .score-circle span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: -25px;
+    }
+
+    .result-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 25px;
+      text-align: left;
+    }
+
+    .stat {
+      background: #faf9fc;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      padding: 15px;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .stat-value {
+      font-size: 20px;
+      font-weight: 850;
+      letter-spacing: -.5px;
+      margin-top: 4px;
+    }
+
+    .review-head {
+      padding: 23px 25px 0;
+    }
+
+    .review-list {
+      padding: 18px 25px 25px;
+      display: grid;
+      gap: 13px;
+    }
+
+    .review-item {
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      padding: 17px;
+    }
+
+    .review-item.correct {
+      border-left: 4px solid var(--green);
+    }
+
+    .review-item.incorrect {
+      border-left: 4px solid var(--red);
+    }
+
+    .review-q {
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .review-line {
+      font-size: 13px;
+      margin: 6px 0;
+    }
+
+    .review-line strong {
+      color: #43394f;
+    }
+
+    .review-explanation {
+      color: var(--muted);
+      background: #faf9fc;
+      padding: 11px 12px;
+      border-radius: 9px;
+      font-size: 12px;
+      margin-top: 11px;
+    }
+
+    .result-actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0 0;
+      flex-wrap: wrap;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    footer {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px 28px;
+      color: #938b9e;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        padding: 14px 17px;
+      }
+
+      main {
+        padding: 26px 15px 45px;
+      }
+
+      .top-label {
+        display: none;
+      }
+
+      .topics-panel {
+        padding: 16px;
+      }
+
+      .panel-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .question-card {
+        padding: 20px 16px;
+      }
+
+      .quiz-head {
+        padding: 17px 16px;
+      }
+
+      .progress-track {
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+
+      .result-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .preview-top,
+      .result-top {
+        padding: 20px 16px;
+      }
+
+      .preview-list,
+      .review-list {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .preview-actions {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .start-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .start-row .primary {
+        width: 100%;
+      }
+
+      .quiz-nav {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .nav-right {
+        justify-content: flex-end;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">Qz</div>
+        <div>Cloud & DevOps Quiz<small>Practice. Measure. Improve.</small></div>
+      </div>
+      <div class="top-label">Certification-focused practice</div>
+    </div>
+  </header>
+
+  <main>
+    <section id="libraryView">
+      <div class="eyebrow">Your learning workspace</div>
+      <h1>Build confidence, one question at a time.</h1>
+      <p class="intro">
+        Choose a cloud or DevOps platform, select a topic, and test your knowledge with our practice quizzes.
+      </p>
+
+      <div class="section-label">Choose a platform</div>
+      <div class="provider-list" id="providerList" aria-label="Quiz platforms"></div>
+      <div id="platformNote" class="empty-note"></div>
+
+      <section class="panel topics-panel" id="topicsPanel">
+        <div class="panel-heading">
+          <div>
+            <h2 id="topicsHeading">AWS topics</h2>
+            <div class="subtext">Select a topic to see its quiz details.</div>
+          </div>
+          <div class="topic-count" id="topicCount"></div>
+        </div>
+        <div class="topic-row" id="topicRow" aria-label="Scrollable quiz topics"></div>
+        <div class="topic-detail" id="topicDetail"></div>
+        <div class="start-row">
+          <div class="start-hint">You can leave questions unanswered and review your choices before submitting.</div>
+          <button class="primary" id="startButton">Start quiz&nbsp; →</button>
+        </div>
+      </section>
+    </section>
+
+    <section class="quiz-area" id="quizArea">
+      <div class="panel">
+        <div class="quiz-head">
+          <div>
+            <div class="quiz-head-title" id="quizTopicTitle"></div>
+            <div class="subtext" id="quizPlatformTitle"></div>
+          </div>
+          <div class="quiz-progress-label" id="progressLabel"></div>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="question-card">
+          <div class="question-kicker"><span id="questionNumberLabel"></span><span class="difficulty"
+              id="questionDifficulty"></span></div>
+          <h2 class="question-text" id="questionText"></h2>
+          <div class="options" id="optionsList"></div>
+          <div class="quiz-nav">
+            <div class="unanswered-note" id="answerHint">Choose an answer or move on to return later.</div>
+            <div class="nav-right">
+              <button class="secondary" id="previousButton">← Previous</button>
+              <button class="primary" id="nextButton">Next →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview-area" id="previewArea">
+      <div class="panel">
+        <div class="preview-top">
+          <div class="eyebrow">Before you submit</div>
+          <h2>Review your answers</h2>
+          <p class="subtext" id="previewSummary"></p>
+        </div>
+        <div class="preview-list" id="previewList"></div>
+        <div class="preview-actions">
+          <button class="secondary" id="backToQuizButton">← Back to quiz</button>
+          <button class="primary" id="submitButton">Submit quiz&nbsp; ✓</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-area" id="resultArea">
+      <div class="panel">
+        <div class="result-top">
+          <div class="eyebrow">Quiz completed</div>
+          <h2 id="resultHeading">Your results</h2>
+          <div class="score-circle"><strong id="scorePercent">0%</strong></div>
+          <div id="scoreCaption" class="subtext"></div>
+          <div class="result-stats">
+            <div class="stat">
+              <div class="stat-label">CORRECT ANSWERS</div>
+              <div class="stat-value" id="correctStat"></div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">TIME TAKEN</div>
+              <div class="stat-value" id="timeStat"></div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">AVERAGE / QUESTION</div>
+              <div class="stat-value" id="averageStat"></div>
+            </div>
+          </div>
+          <div class="result-actions">
+            <button class="primary" id="retryButton">Try this topic again</button>
+            <button class="secondary" id="homeButton">Back to topics</button>
+          </div>
+        </div>
+        <div class="review-head">
+          <h2>Answer review</h2>
+          <div class="subtext">Compare your answers with the correct answers and read the explanations.</div>
+        </div>
+        <div class="review-list" id="reviewList"></div>
+      </div>
+    </section>
+  </main>
+  <footer>Copyright© 2026 Linus Nnamdi Okolo. All rights reserved.</footer>
+
+  <script>
+    const QUIZ = {
+      AWS: [
+        {
+          "id": "aws_a_0001",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A retailer experiences unpredictable traffic increases during promotional campaigns. The company wants infrastructure capacity to increase during traffic spikes and decrease after demand returns to normal. Which cloud characteristic BEST addresses this requirement?",
+          "options": [
+            "Resource pooling",
+            "Measured service",
+            "Elasticity",
+            "Network accessibility",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "Elasticity allows provisioned resources to dynamically increase or decrease as workload demand changes. This helps avoid maintaining peak capacity when it is not required.",
+        },
+        {
+          "id": "aws_a_0002",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A company wants developers to create compute resources whenever required without submitting hardware procurement requests to the IT department. Which cloud characteristic enables this approach?",
+          "options": [
+            "On-demand self-service",
+            "Resource pooling",
+            "Measured consumption",
+            "Broad network access",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "On-demand self-service allows customers to provision computing capabilities when needed without requiring manual intervention from the cloud provider.",
+        },
+        {
+          "id": "aws_a_0003",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "Several organizations consume computing capacity from a large collection of infrastructure operated by AWS while each organization's workloads remain logically separated. Which cloud characteristic does this illustrate?",
+          "options": [
+            "Measured service",
+            "Fault tolerance",
+            "Broad network access",
+            "Resource pooling",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "Resource pooling allows a cloud provider to serve multiple customers using shared pools of computing resources while maintaining logical isolation between customers.",
+        },
+        {
+          "id": "aws_a_0004",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "An organization wants employees to provision cloud resources through standard network connections from different supported devices and locations. Which cloud characteristic is MOST relevant?",
+          "options": [
+            "Measured consumption",
+            "Broad network access",
+            "Resource pooling",
+            "Rapid elasticity",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "Broad network access means cloud capabilities are available over networks and can be accessed using standard mechanisms from supported client platforms.",
+        },
+        {
+          "id": "aws_a_0005",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A finance team needs usage information so that different departments can be charged according to the cloud resources they consume. Which cloud characteristic MOST directly supports this requirement?",
+          "options": [
+            "Resource pooling",
+            "Broad network access",
+            "Measured service",
+            "On-demand provisioning",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "Measured service enables resource consumption to be monitored, measured, and reported. This supports usage-based billing and internal cost allocation.",
+        },
+        {
+          "id": "aws_a_0006",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A company purchases servers, storage arrays, and networking equipment before launching a new application. How should these infrastructure purchases generally be classified?",
+          "options": [
+            "Capital expenditure",
+            "Operational expenditure",
+            "Variable consumption",
+            "Usage-based expenditure",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "Purchasing long-lived infrastructure assets upfront is generally considered capital expenditure because the organization acquires assets expected to provide value over time.",
+        },
+        {
+          "id": "aws_a_0007",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A startup replaces most of its purchased server infrastructure with AWS resources and receives recurring charges based largely on consumption. Which financial change has the company made?",
+          "options": [
+            "OpEx to fixed assets",
+            "CapEx to operational spending",
+            "Variable costs to capital assets",
+            "Usage charges to depreciation",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "Using cloud resources can shift infrastructure spending away from large upfront capital purchases toward ongoing operational expenses based on consumption.",
+        },
+        {
+          "id": "aws_a_0008",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "An application currently runs on one large EC2 instance. The architecture team replaces it with several smaller instances that can process requests concurrently. Which approach has been adopted?",
+          "options": [
+            "Vertical scaling",
+            "Capacity reservation",
+            "Resource pooling",
+            "Horizontal scaling",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "Horizontal scaling changes capacity by adding or removing separate resources or instances rather than increasing the capacity of a single resource.",
+        },
+        {
+          "id": "aws_a_0009",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "An administrator replaces an EC2 instance with another instance type that provides more CPU and memory. Which scaling technique is being used?",
+          "options": [
+            "Vertical scaling",
+            "Horizontal scaling",
+            "Elastic scaling",
+            "Geographic scaling",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "Vertical scaling increases or decreases the capacity of an individual resource, such as changing an EC2 instance to a larger instance type.",
+        },
+        {
+          "id": "aws_a_0010",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A workload automatically adds compute instances when utilization rises and removes unnecessary instances after utilization falls. Which concept is MOST completely demonstrated?",
+          "options": [
+            "High availability",
+            "Resource pooling",
+            "Elasticity",
+            "Disaster recovery",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "Elasticity dynamically matches provisioned resources to changing workload demand. Automated scaling in both directions is a common implementation of this concept.",
+        },
+        {
+          "id": "aws_a_0011",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A business application is deployed across multiple independent infrastructure locations so that service can be restored quickly when one location experiences a failure. Which design objective is primarily being addressed?",
+          "options": [
+            "Cost optimization",
+            "High availability",
+            "Resource pooling",
+            "Measured service",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "High availability focuses on maximizing service uptime by reducing single points of failure and enabling service to recover quickly from component failures.",
+        },
+        {
+          "id": "aws_a_0012",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A transaction-processing platform continues processing requests without service interruption even after one of its active components fails. Which characteristic BEST describes this architecture?",
+          "options": [
+            "High scalability",
+            "Disaster recovery",
+            "Rapid elasticity",
+            "Fault tolerance",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "Fault tolerance is the ability of a system to continue operating despite the failure of one or more components.",
+        },
+        {
+          "id": "aws_a_0013",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A company's primary environment becomes unavailable after a major disruptive event. The company activates procedures to restore applications, recover data, and resume business operations. Which discipline does this represent?",
+          "options": [
+            "Disaster recovery",
+            "Fault isolation",
+            "Elastic computing",
+            "Capacity planning",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "Disaster recovery focuses on restoring systems, data, and business operations after significant disruptive events.",
+        },
+        {
+          "id": "aws_a_0014",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A development team creates temporary environments in minutes, tests several designs, and removes unsuccessful environments without purchasing hardware. Which cloud benefit is MOST directly demonstrated?",
+          "options": [
+            "Durability",
+            "Agility",
+            "Data sovereignty",
+            "Fault isolation",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "Cloud agility enables organizations to provision, modify, experiment with, and remove resources quickly as requirements change.",
+        },
+        {
+          "id": "aws_a_0015",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A company consumes virtual machines, networking, and storage from a provider but remains responsible for configuring operating systems and installed applications. Which service model BEST describes this arrangement?",
+          "options": [
+            "Software as a Service",
+            "Platform as a Service",
+            "Infrastructure as a Service",
+            "Business Process as a Service",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "IaaS provides fundamental computing infrastructure while customers retain responsibility for operating systems, applications, and many configuration tasks.",
+        },
+        {
+          "id": "aws_a_0016",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "Developers want to deploy application code while avoiding routine management of the servers and much of the underlying runtime infrastructure. Which service model BEST matches this requirement?",
+          "options": [
+            "Infrastructure as a Service",
+            "Private cloud hosting",
+            "Software as a Service",
+            "Platform as a Service",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "PaaS provides a managed application platform so developers can focus primarily on application development while the provider manages much of the underlying infrastructure.",
+        },
+        {
+          "id": "aws_a_0017",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "Employees use a complete business application through a web browser while another provider manages the application platform and underlying infrastructure. Which service model applies?",
+          "options": [
+            "Software as a Service",
+            "Infrastructure as a Service",
+            "Platform as a Service",
+            "Dedicated private cloud",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "SaaS provides complete applications to end users while the service provider manages the application and its supporting infrastructure.",
+        },
+        {
+          "id": "aws_a_0018",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "An enterprise maintains sensitive workloads in its own data center while using AWS for customer-facing applications and additional compute capacity. Which deployment model does this represent?",
+          "options": [
+            "Public cloud",
+            "Hybrid cloud",
+            "Private cloud",
+            "Community cloud",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "A hybrid cloud combines private or on-premises infrastructure with public cloud resources.",
+        },
+        {
+          "id": "aws_a_0019",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "An organization operates cloud infrastructure dedicated exclusively to its own workloads and does not share that environment with unrelated organizations. Which deployment model BEST describes this environment?",
+          "options": [
+            "Hybrid cloud",
+            "Public cloud",
+            "Private cloud",
+            "Distributed cloud",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "A private cloud is dedicated to a single organization and can provide greater control over infrastructure, security, and configuration.",
+        },
+        {
+          "id": "aws_a_0020",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "Multiple unrelated organizations consume logically isolated services from infrastructure owned and operated by AWS. Which deployment model is being used?",
+          "options": [
+            "Private cloud",
+            "Hybrid cloud",
+            "Dedicated cloud",
+            "Public cloud",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "AWS primarily provides public cloud infrastructure in which shared provider infrastructure serves many customers while customer resources remain logically isolated.",
+        },
+        {
+          "id": "aws_a_0021",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A company must select an AWS geographic area for a workload based on regulatory requirements, service availability, latency, and cost. Which AWS infrastructure component should the company evaluate?",
+          "options": [
+            "AWS Region",
+            "Edge location",
+            "Availability Zone",
+            "Individual data center",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "AWS Regions are geographic areas used for deploying workloads. Region selection commonly considers compliance requirements, proximity, service availability, and pricing.",
+        },
+        {
+          "id": "aws_a_0022",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "Architects want to reduce the effect that failure of one infrastructure location could have on a production application while keeping the workload within the same AWS Region. Which approach BEST meets the requirement?",
+          "options": [
+            "Deploy through multiple edge locations",
+            "Deploy across multiple Availability Zones",
+            "Deploy into multiple customer accounts",
+            "Deploy through multiple pricing models",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "Availability Zones provide separate fault-isolation boundaries within an AWS Region. Multi-AZ architectures can improve availability without requiring deployment to another Region.",
+        },
+        {
+          "id": "aws_a_0023",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A global media company wants frequently requested static content delivered from infrastructure geographically closer to viewers. Which AWS infrastructure component is MOST relevant?",
+          "options": [
+            "Customer gateway",
+            "Regional subnet",
+            "Edge location",
+            "Availability Zone",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "AWS edge locations are points of presence used by services such as Amazon CloudFront to deliver content closer to end users and reduce latency.",
+        },
+        {
+          "id": "aws_a_0024",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A network administrator is designing an Amazon VPC and must determine the scope at which the VPC itself is created. Which statement is correct?",
+          "options": [
+            "A VPC belongs to one data center",
+            "A VPC belongs to one edge location",
+            "A VPC belongs to one Availability Zone",
+            "A VPC belongs to one AWS Region",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "An Amazon VPC is a Regional resource. It can contain subnets that are individually associated with Availability Zones within that Region.",
+        },
+        {
+          "id": "aws_a_0025",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A network team creates several subnets for an application architecture. At which infrastructure scope is each individual subnet associated?",
+          "options": [
+            "An Availability Zone",
+            "An AWS partition",
+            "An edge location",
+            "An entire AWS Region",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "A subnet resides within a single Availability Zone. A VPC can span Availability Zones by containing separate subnets in those AZs.",
+        },
+        {
+          "id": "aws_a_0026",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A company launches an Amazon EC2 instance and installs a custom operating system configuration and business application. Under the AWS Shared Responsibility Model, who is responsible for maintaining the guest operating system?",
+          "options": [
+            "AWS Support",
+            "The customer",
+            "The hardware vendor",
+            "The AWS Region operator",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "For Amazon EC2, the customer is responsible for the guest operating system, including its configuration and applicable operating-system patching.",
+        },
+        {
+          "id": "aws_a_0027",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "An auditor reviews responsibilities for an application running on Amazon EC2. Which responsibility belongs to AWS rather than the customer?",
+          "options": [
+            "Configuring application permissions",
+            "Protecting customer account credentials",
+            "Maintaining physical host hardware",
+            "Patching the EC2 guest operating system",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "AWS is responsible for security of the cloud, including physical facilities, physical servers, networking infrastructure, and the virtualization layer.",
+        },
+        {
+          "id": "aws_a_0028",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A security team is reviewing activities that remain under customer control when using AWS. Which task is generally a customer responsibility?",
+          "options": [
+            "Maintaining AWS data centers",
+            "Replacing failed physical disks",
+            "Securing the virtualization layer",
+            "Managing identities and permissions",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "Customers are responsible for security in the cloud, which includes managing identities, access permissions, data, and service configurations.",
+        },
+        {
+          "id": "aws_a_0029",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A company moves an application from Amazon EC2 to a more fully managed AWS service. How does this generally affect the Shared Responsibility Model?",
+          "options": [
+            "AWS manages more of the underlying stack",
+            "The customer manages the physical infrastructure",
+            "AWS assumes responsibility for customer data",
+            "The customer assumes responsibility for networking",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "As services become more managed, AWS generally takes responsibility for more of the underlying infrastructure and platform while customers retain responsibilities such as data and access management.",
+        },
+        {
+          "id": "aws_a_0030",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A new cloud administrator wants to inspect AWS resources and perform configuration tasks using a graphical browser interface. Which access method is MOST appropriate?",
+          "options": [
+            "AWS SDK",
+            "AWS Management Console",
+            "AWS CLI",
+            "AWS service endpoint",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "The AWS Management Console provides a browser-based graphical interface for viewing, creating, and managing AWS resources.",
+        },
+        {
+          "id": "aws_a_0031",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "An operations engineer wants to execute AWS management commands from a terminal and incorporate those commands into shell scripts. Which tool is MOST appropriate?",
+          "options": [
+            "AWS Management Console",
+            "AWS Pricing Calculator",
+            "AWS CLI",
+            "AWS Cost Explorer",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "The AWS Command Line Interface allows administrators to interact with AWS services from a command-line environment and is suitable for scripting.",
+        },
+        {
+          "id": "aws_a_0032",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A development team is building an application that must create and retrieve objects from AWS services directly from application code. Which approach is MOST appropriate?",
+          "options": [
+            "AWS Management Console",
+            "AWS Cost Explorer",
+            "AWS Pricing Calculator",
+            "AWS SDK",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "AWS SDKs provide language-specific libraries that allow application code to interact programmatically with AWS service APIs.",
+        },
+        {
+          "id": "aws_a_0033",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A team is evaluating a new application with irregular usage and cannot predict how long the workload will operate. Which purchasing approach generally provides the greatest flexibility without a long-term usage commitment?",
+          "options": [
+            "On-Demand pricing",
+            "Savings Plans",
+            "Reserved commitments",
+            "Dedicated capacity",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "On-Demand pricing is suitable for short-term, irregular, or unpredictable workloads because it does not require a long-term usage commitment.",
+        },
+        {
+          "id": "aws_a_0034",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A company has stable compute usage that is expected to continue for several years. It wants discounted compute pricing while accepting a defined usage commitment. Which option should it evaluate?",
+          "options": [
+            "AWS Free Tier",
+            "Savings Plans",
+            "Spot pricing",
+            "On-Demand pricing",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "Savings Plans provide discounted compute pricing in exchange for committing to a consistent amount of eligible compute usage for a one-year or three-year term.",
+        },
+        {
+          "id": "aws_a_0035",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A batch-processing workload can pause, retry, or replace compute capacity when infrastructure becomes unavailable. The company prioritizes reducing compute cost over uninterrupted instance availability. Which purchasing model should it consider?",
+          "options": [
+            "Reserved capacity",
+            "On-Demand pricing",
+            "Spot pricing",
+            "Dedicated hosting",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "Spot capacity can provide substantial discounts by using spare AWS compute capacity, but workloads must tolerate interruptions.",
+        },
+        {
+          "id": "aws_a_0036",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "An architect wants to estimate the monthly cost of a proposed AWS architecture before any resources are deployed. Which AWS capability is MOST appropriate?",
+          "options": [
+            "AWS Cost Explorer",
+            "AWS Budgets",
+            "AWS Support Center",
+            "AWS Pricing Calculator",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "AWS Pricing Calculator is designed to estimate expected costs for planned AWS architectures based on selected services and expected usage.",
+        },
+        {
+          "id": "aws_a_0037",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A finance manager wants an alert when monthly AWS spending approaches a predetermined amount. Which AWS cost-management capability BEST meets this requirement?",
+          "options": [
+            "AWS Budgets",
+            "AWS Pricing Calculator",
+            "AWS Cost Explorer",
+            "AWS Free Tier",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "AWS Budgets allows organizations to define cost or usage thresholds and configure notifications when actual or forecasted values approach or exceed those thresholds.",
+        },
+        {
+          "id": "aws_a_0038",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A finance team wants to investigate how AWS spending changed during the previous six months and determine which services contributed most to the increase. Which capability should the team use?",
+          "options": [
+            "AWS Pricing Calculator",
+            "AWS Cost Explorer",
+            "AWS Support Center",
+            "AWS Management Console",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "AWS Cost Explorer provides visualizations and filtering capabilities for analyzing historical and forecasted AWS cost and usage data.",
+        },
+        {
+          "id": "aws_a_0039",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "An architecture transfers large volumes of application data between geographically separate AWS locations. Which factor should architects evaluate because it can materially affect the AWS bill?",
+          "options": [
+            "Number of IAM users",
+            "Number of console sessions",
+            "Data-transfer charges",
+            "Number of account aliases",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "Data transfer can incur charges depending on where data moves, such as between Regions, between some Availability Zone resources, or between AWS and the internet.",
+        },
+        {
+          "id": "aws_a_0040",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "intermediate",
+          "type": "single",
+          "question":
+            "A student is experimenting with AWS and wants to minimize charges while using eligible services within specified usage allowances. Which AWS offering should the student investigate?",
+          "options": [
+            "AWS Cost Explorer",
+            "AWS Support plans",
+            "Savings Plans",
+            "AWS Free Tier",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "AWS Free Tier provides free usage opportunities for eligible services subject to the applicable limits, eligibility rules, and offer types.",
+        },
+        {
+          "id": "aws_a_0041",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A production system needs both additional capacity during traffic increases and reduced capacity when traffic subsides. Which architectural approach BEST aligns resource consumption with workload demand?",
+          "options": [
+            "Automated elastic scaling",
+            "Permanent peak provisioning",
+            "Manual vertical resizing",
+            "Fixed capacity allocation",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "Automated elastic scaling can increase and decrease capacity as demand changes, helping align provisioned resources and costs with actual workload requirements.",
+        },
+        {
+          "id": "aws_a_0042",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A company wants its application to remain available during the loss of infrastructure in one Availability Zone. Which design decision BEST supports this objective?",
+          "options": [
+            "Use one larger instance in one AZ",
+            "Distribute resources across multiple AZs",
+            "Increase storage within one subnet",
+            "Move all resources to one data center",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "Deploying redundant application resources across multiple Availability Zones reduces dependency on a single AZ and is a fundamental AWS high-availability design pattern.",
+        },
+        {
+          "id": "aws_a_0043",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "An application is designed to recover service quickly after a component failure, but users might experience a brief interruption during recovery. Which description BEST fits the design?",
+          "options": [
+            "Completely fault tolerant",
+            "Permanently elastic",
+            "Highly available",
+            "Globally distributed",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "High availability aims to minimize downtime and restore service quickly. Unlike strict fault tolerance, it does not necessarily guarantee uninterrupted operation during every failure.",
+        },
+        {
+          "id": "aws_a_0044",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "Two architectures are compared. Architecture A may briefly interrupt service while failed components are replaced. Architecture B continues processing requests despite a component failure. Which property distinguishes Architecture B?",
+          "options": [
+            "Resource pooling",
+            "Measured consumption",
+            "Operational agility",
+            "Fault tolerance",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "Fault-tolerant systems are designed to continue operating despite component failures, whereas highly available systems can permit brief interruptions while service is restored.",
+        },
+        {
+          "id": "aws_a_0045",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A company historically purchased enough hardware to handle its maximum expected annual traffic even though average utilization was much lower. Which cloud capability can MOST directly reduce this overprovisioning?",
+          "options": [
+            "Elastic resource allocation",
+            "Physical infrastructure ownership",
+            "Long-term hardware procurement",
+            "Dedicated peak provisioning",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "Elastic resource allocation allows capacity to change with demand, reducing the need to maintain enough infrastructure for peak workloads at all times.",
+        },
+        {
+          "id": "aws_a_0046",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A company is evaluating whether to build a new data center or migrate workloads to AWS. Management wants to avoid forecasting hardware requirements several years in advance. Which cloud advantage BEST addresses this concern?",
+          "options": [
+            "Physical asset ownership",
+            "On-demand resource provisioning",
+            "Fixed infrastructure capacity",
+            "Long procurement cycles",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "On-demand provisioning reduces the need to predict long-term infrastructure capacity because resources can be acquired as requirements emerge.",
+        },
+        {
+          "id": "aws_a_0047",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A company operates resources in several AWS Regions. Which statement BEST describes the relationship between AWS Regions and Availability Zones?",
+          "options": [
+            "Each AZ contains several independent Regions",
+            "Each Region represents one physical building",
+            "Each Region contains multiple Availability Zones",
+            "Each AZ operates as an AWS edge location",
+          ],
+          "correctAnswer": 2,
+          "explanation":
+            "An AWS Region is a geographic area containing multiple Availability Zones. Availability Zones provide separate infrastructure fault-isolation boundaries within the Region.",
+        },
+        {
+          "id": "aws_a_0048",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A security review identifies four operational activities for an EC2 workload. Which activity falls under AWS responsibility according to the Shared Responsibility Model?",
+          "options": [
+            "Classifying application data",
+            "Configuring IAM permissions",
+            "Updating application packages",
+            "Protecting physical facilities",
+          ],
+          "correctAnswer": 3,
+          "explanation":
+            "AWS is responsible for protecting the physical infrastructure that runs AWS services, including facilities, hardware, networking, and foundational infrastructure.",
+        },
+        {
+          "id": "aws_a_0049",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A workload runs continuously at a predictable baseline but occasionally experiences temporary spikes. Which cost strategy is MOST reasonable at a conceptual level?",
+          "options": [
+            "Commit predictable usage and keep variable capacity flexible",
+            "Purchase all possible peak capacity through long commitments",
+            "Use only interruptible capacity for every application component",
+            "Maintain permanent maximum capacity regardless of utilization",
+          ],
+          "correctAnswer": 0,
+          "explanation":
+            "Predictable baseline consumption can potentially benefit from commitment-based discounts, while variable capacity can retain flexible purchasing options. This avoids committing unnecessarily to temporary peaks.",
+        },
+        {
+          "id": "aws_a_0050",
+          "topic": "AWS Cloud Concepts & Fundamentals",
+          "difficulty": "advanced",
+          "type": "single",
+          "question":
+            "A company needs an architecture that minimizes upfront infrastructure investment, supports rapid experimentation, adjusts capacity with changing demand, and charges based largely on consumption. Which approach BEST satisfies the overall requirement?",
+          "options": [
+            "Purchase dedicated hardware for projected maximum demand",
+            "Use cloud resources with elastic consumption-based capacity",
+            "Build a private data center with fixed infrastructure capacity",
+            "Lease static infrastructure sized for long-term peak demand",
+          ],
+          "correctAnswer": 1,
+          "explanation":
+            "Cloud computing combines on-demand provisioning, elasticity, measured consumption, and reduced dependence on upfront infrastructure purchases, making it suitable for this combination of requirements.",
+        },
+      ],
+
+      // Add questions to these groups when they are ready.
+      GCP: [],
+      Azure: [],
+      Docker: [],
+      Kubernetes: [],
+      Linux: [],
+      "Git & GitHub": [],
+      Terraform: []
+    };
+
+    const state = {
+      platform: Object.keys(QUIZ).find(name => Array.isArray(QUIZ[name]) && QUIZ[name].length > 0) || Object.keys(QUIZ)[0],
+      topic: null,
+      questions: [],
+      answers: [],
+      index: 0,
+      startedAt: null,
+      finishedAt: null
+    };
+
+    const $ = id => document.getElementById(id);
+    const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, ch => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[ch]));
+    const prettyPlatform = value => value;
+    const platformQuestions = platform => Array.isArray(QUIZ[platform]) ? QUIZ[platform] : [];
+    const availablePlatforms = () => Object.keys(QUIZ).filter(platform => platformQuestions(platform).length > 0);
+    const topicsFor = platform => [...new Set(platformQuestions(platform).map(q => q.topic).filter(Boolean))];
+    const questionsFor = (platform, topic) => platformQuestions(platform).filter(q => q.topic === topic);
+    const difficultySummary = questions => {
+      const counts = {};
+      questions.forEach(q => {
+        const level = String(q.difficulty || "unspecified").toLowerCase();
+        counts[level] = (counts[level] || 0) + 1;
+      });
+      return Object.entries(counts).map(([level, count]) => `${count} ${level}`).join(" · ") || "Not specified";
+    };
+    const formatDuration = seconds => {
+      const total = Math.max(0, Math.floor(seconds));
+      const h = Math.floor(total / 3600);
+      const m = Math.floor((total % 3600) / 60);
+      const s = total % 60;
+      if (h) return `${h}h ${m}m ${s}s`;
+      if (m) return `${m}m ${s}s`;
+      return `${s}s`;
+    };
+    const selectedTopic = () => state.topic || topicsFor(state.platform)[0] || null;
+
+    function renderPlatforms() {
+      const available = availablePlatforms();
+      $("providerList").innerHTML = Object.keys(QUIZ).map(platform => {
+        const count = platformQuestions(platform).length;
+        const active = platform === state.platform;
+        return `<button class="provider-btn ${active ? "active" : ""}" data-platform="${escapeHtml(platform)}" ${count === 0 ? 'aria-label="' + escapeHtml(platform) + ', no questions added yet"' : ""}>${escapeHtml(platform)}${count ? ` <span style="opacity:.75">(${count})</span>` : ""}</button>`;
+      }).join("");
+      $("platformNote").textContent = available.length
+        ? `${available.length} platform${available.length === 1 ? "" : "s"} currently have questions. Platforms without questions will become available automatically when I add quiz entries.`
+        : "No questions have been added yet.";
+      $("providerList").querySelectorAll("[data-platform]").forEach(button => {
+        button.addEventListener("click", () => {
+          const platform = button.dataset.platform;
+          if (!platformQuestions(platform).length) {
+            $("platformNote").textContent = `${platform} has no questions yet.`;
+            return;
+          }
+          state.platform = platform;
+          state.topic = topicsFor(platform)[0] || null;
+          renderLibrary();
+        });
+      });
+    }
+
+    function renderLibrary() {
+      renderPlatforms();
+      const topics = topicsFor(state.platform);
+      if (!topics.includes(state.topic)) state.topic = topics[0] || null;
+      $("topicsHeading").textContent = `${state.platform} topics`;
+      $("topicCount").textContent = `${topics.length} topic${topics.length === 1 ? "" : "s"}`;
+      $("topicRow").innerHTML = topics.map(topic => {
+        const count = questionsFor(state.platform, topic).length;
+        return `<button class="topic-btn ${topic === state.topic ? "active" : ""}" data-topic="${escapeHtml(topic)}">${escapeHtml(topic)} <span style="opacity:.7">· ${count}</span></button>`;
+      }).join("");
+      $("topicRow").querySelectorAll("[data-topic]").forEach(button => {
+        button.addEventListener("click", () => {
+          state.topic = button.dataset.topic;
+          renderLibrary();
+        });
+      });
+      const questions = state.topic ? questionsFor(state.platform, state.topic) : [];
+      if (!state.topic) {
+        $("topicDetail").innerHTML = `<h3>No topics available</h3><div class="subtext"> We will Add it soon.</div>`;
+        $("startButton").disabled = true;
+        $("startButton").style.opacity = ".55";
+        return;
+      }
+      $("startButton").disabled = false;
+      $("startButton").style.opacity = "1";
+      $("topicDetail").innerHTML = `
+    <h3>${escapeHtml(state.topic)}</h3>
+    <div class="subtext">A practice session for this topic.</div>
+    <div class="detail-meta">
+      <span class="meta-pill">▤ <strong>${questions.length}</strong> question${questions.length === 1 ? "" : "s"}</span>
+      <span class="meta-pill">◈ <strong>${escapeHtml(difficultySummary(questions))}</strong></span>
+      <span class="meta-pill">☑ <strong>Single-answer</strong> format supported</span>
+    </div>`;
+      $("startButton").textContent = questions.length ? "Start quiz →" : "No questions yet";
+      $("startButton").disabled = questions.length === 0;
+      $("startButton").style.opacity = questions.length ? "1" : ".55";
+    }
+
+    function showOnly(view) {
+      ["libraryView", "quizArea", "previewArea", "resultArea"].forEach(id => {
+        $(id).style.display = id === view ? "block" : "none";
+      });
+    }
+
+    function startQuiz() {
+      const questions = questionsFor(state.platform, state.topic);
+      if (!questions.length) return;
+      state.questions = questions.slice();
+      state.answers = questions.map(() => null);
+      state.index = 0;
+      state.startedAt = Date.now();
+      state.finishedAt = null;
+      $("quizTopicTitle").textContent = state.topic;
+      $("quizPlatformTitle").textContent = `${state.platform} · ${questions.length} question${questions.length === 1 ? "" : "s"}`;
+      showOnly("quizArea");
+      renderQuestion();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function renderQuestion() {
+      const question = state.questions[state.index];
+      const total = state.questions.length;
+      $("progressLabel").textContent = `Question ${state.index + 1} of ${total}`;
+      $("progressFill").style.width = `${((state.index + 1) / total) * 100}%`;
+      $("questionNumberLabel").textContent = `Question ${String(state.index + 1).padStart(2, "0")}`;
+      $("questionDifficulty").textContent = question.difficulty || "Unspecified";
+      $("questionText").textContent = question.question;
+      $("optionsList").innerHTML = (question.options || []).map((option, index) => `
+    <button class="option ${state.answers[state.index] === index ? "selected" : ""}" data-option="${index}" aria-pressed="${state.answers[state.index] === index}">
+      <span class="option-letter">${String.fromCharCode(65 + index)}</span>
+      <span class="option-text">${escapeHtml(option)}</span>
+    </button>`).join("");
+      $("optionsList").querySelectorAll("[data-option]").forEach(button => {
+        button.addEventListener("click", () => {
+          state.answers[state.index] = Number(button.dataset.option);
+          renderQuestion();
+        });
+      });
+      $("previousButton").disabled = state.index === 0;
+      $("previousButton").style.opacity = state.index === 0 ? ".45" : "1";
+      $("nextButton").textContent = state.index === total - 1 ? "Review answers →" : "Next →";
+      $("answerHint").textContent = state.answers[state.index] === null
+        ? "Choose an answer or move on to return later."
+        : "Answer saved. You can change it before submitting.";
+    }
+
+    function showPreview() {
+      const answered = state.answers.filter(answer => answer !== null).length;
+      $("previewSummary").textContent = `${answered} of ${state.questions.length} questions answered. You can go back and change any answer before submitting.`;
+      $("previewList").innerHTML = state.questions.map((q, i) => {
+        const answer = state.answers[i];
+        return `<div class="preview-item">
+      <div><div class="preview-number">QUESTION ${String(i + 1).padStart(2, "0")}</div>
+      <p>${escapeHtml(q.question)}</p>
+      <p><strong>Your answer:</strong> ${answer === null ? "Not answered" : escapeHtml(q.options[answer])}</p></div>
+      <span class="answer-status ${answer === null ? "not-answered" : "answered"}">${answer === null ? "Unanswered" : "Answered"}</span>
+    </div>`;
+      }).join("");
+      showOnly("previewArea");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function submitQuiz() {
+      state.finishedAt = Date.now();
+      const total = state.questions.length;
+      const correct = state.questions.reduce((sum, q, i) => sum + (state.answers[i] === q.correctAnswer ? 1 : 0), 0);
+      const elapsed = Math.max(0, Math.floor((state.finishedAt - state.startedAt) / 1000));
+      const percentage = total ? Math.round((correct / total) * 100) : 0;
+      $("resultHeading").textContent = `${state.topic} results`;
+      $("scorePercent").textContent = `${percentage}%`;
+      $("scoreCaption").textContent = percentage >= 80 ? "Excellent work. Keep building on this knowledge." :
+        percentage >= 50 ? "Good effort. Review the explanations to strengthen your understanding." :
+          "Use the answer review below to identify what to study next.";
+      $("correctStat").textContent = `${correct} / ${total}`;
+      $("timeStat").textContent = formatDuration(elapsed);
+      $("averageStat").textContent = formatDuration(total ? elapsed / total : 0);
+      $("reviewList").innerHTML = state.questions.map((q, i) => {
+        const chosen = state.answers[i];
+        const isCorrect = chosen === q.correctAnswer;
+        const correctText = Array.isArray(q.options) ? q.options[q.correctAnswer] : "Correct answer not configured";
+        const chosenText = chosen === null ? "Not answered" : (q.options?.[chosen] ?? "Unknown option");
+        return `<article class="review-item ${isCorrect ? "correct" : "incorrect"}">
+      <div class="question-kicker">${isCorrect ? "✓ Correct" : "✕ Incorrect"} <span style="color:var(--muted);font-weight:650;letter-spacing:0">· Question ${i + 1}</span></div>
+      <div class="review-q">${escapeHtml(q.question)}</div>
+      <div class="review-line"><strong>Your answer:</strong> ${escapeHtml(chosenText)}</div>
+      <div class="review-line"><strong>Correct answer:</strong> ${escapeHtml(correctText)}</div>
+      <div class="review-explanation"><strong>Explanation:</strong> ${escapeHtml(q.explanation || "No explanation has been added for this question.")}</div>
+    </article>`;
+      }).join("");
+      showOnly("resultArea");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    $("startButton").addEventListener("click", startQuiz);
+    $("previousButton").addEventListener("click", () => {
+      if (state.index > 0) { state.index--; renderQuestion(); }
+    });
+    $("nextButton").addEventListener("click", () => {
+      if (state.index < state.questions.length - 1) {
+        state.index++;
+        renderQuestion();
+      } else {
+        showPreview();
+      }
+    });
+    $("backToQuizButton").addEventListener("click", () => {
+      showOnly("quizArea");
+      renderQuestion();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    $("submitButton").addEventListener("click", submitQuiz);
+    $("retryButton").addEventListener("click", startQuiz);
+    $("homeButton").addEventListener("click", () => {
+      renderLibrary();
+      showOnly("libraryView");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    renderLibrary();
+  </script>
+</body>
+
+</html>
